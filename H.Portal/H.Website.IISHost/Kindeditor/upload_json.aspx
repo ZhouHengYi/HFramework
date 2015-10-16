@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="upload_json.aspx.cs" Inherits="H.Website.IISHost.Kindeditor.upload_json1" %>

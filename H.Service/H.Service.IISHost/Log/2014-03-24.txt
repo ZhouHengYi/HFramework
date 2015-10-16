@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <GlobalName>H.Service.IISHost</GlobalName>
+  <LocalName>H.Service.IISHost</LocalName>
+  <Content>Message: 网络访问已中断。若要继续，请关闭数据库，然后再将其打开。.
+Exception Type: System.Data.OleDb.OleDbException.
+Source: Microsoft Office Access Database Engine.
+Module Name: C:\Windows\Microsoft.Net\assembly\GAC_32\System.Data\v4.0_4.0.0.0__b77a5c561934e089\System.Data.dll.
+Stack Trace:    at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionInternal.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at H.Core.DataAccess.DbHelper.GetOpenConnection(String connectionString, IDbFactory factory, Boolean disposeInnerConnection) in e:\Desktop\H.Framework\H.Framework_V2_Mini\H.Core\H.Core.DataAccess\DbHelper.cs:line 97
+   at H.Core.DataAccess.DbHelper.GetOpenConnection(String connectionString, IDbFactory factory) in e:\Desktop\H.Framework\H.Framework_V2_Mini\H.Core\H.Core.DataAccess\DbHelper.cs:line 74
+   at H.Core.DataAccess.DbHelper.ExecuteReader(String databaseName, CommandType cmdType, String cmdText, Int32 timeout, DbParameter[] commandParameters) in e:\Desktop\H.Framework\H.Framework_V2_Mini\H.Core\H.Core.DataAccess\DbHelper.cs:line 137
+   at H.Core.DataAccess.DataCommand.ExecuteDataReader() in e:\Desktop\H.Framework\H.Framework_V2_Mini\H.Core\H.Core.DataAccess\DataCommand.cs:line 355
+   at H.Core.DataAccess.DataCommand.ExecuteEntity[T](Action`2 manualMapper, Boolean propertyNameIgnoreCase, Boolean skipNotExistProperty, Char splitter) in e:\Desktop\H.Framework\H.Framework_V2_Mini\H.Core\H.Core.DataAccess\DataCommand.cs:line 502
+   at H.Core.DataAccess.DataCommand.ExecuteEntity[T](Action`2 manualMapper, Boolean propertyNameIgnoreCase, Boolean skipNotExistProperty) in e:\Desktop\H.Framework\H.Framework_V2_Mini\H.Core\H.Core.DataAccess\DataCommand.cs:line 496
+   at H.Core.DataAccess.DataCommand.ExecuteEntity[T]() in e:\Desktop\H.Framework\H.Framework_V2_Mini\H.Core\H.Core.DataAccess\DataCommand.cs:line 486
+   at H.Service.MicrosoftAccessDataAccess.SystemUser.SystemUserDataAccess.Login(SystemUserEntity entity) in e:\Desktop\H.Framework\H.Framework_V2_Mini\H.Service\H.Service.Domain\H.Service.MicrosoftAccessDataAccess\SystemUser\SystemUserDataAccess.cs:line 31
+   at H.Service.Rest.SystemUserService.Login(SystemUserEntity entity) in e:\Desktop\H.Framework\H.Framework_V2_Mini\H.Service\H.Service.Domain\H.Service.Rest\SystemUser\SystemUserService.cs:line 74
+   at SyncInvokeLogin(Object , Object[] , Object[] )
+   at System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]&amp; outputs)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage41(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage4(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage3(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage2(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage1(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet).
+</Content>
+  <Category>ExceptionLog</Category>
+  <ExtendedProperties>
+    <ExtendedPropertyData>
+      <PropertyName>Method Arguments Type</PropertyName>
+      <PropertyValue xsi:type="xsd:string">N/A</PropertyValue>
+    </ExtendedPropertyData>
+    <ExtendedPropertyData>
+      <PropertyName>Method Arguments Value</PropertyName>
+      <PropertyValue xsi:type="xsd:string">N/A</PropertyValue>
+    </ExtendedPropertyData>
+  </ExtendedProperties>
+</LogEntry>
+数据库连接失败**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <GlobalName>H.Website.IISHost</GlobalName>
+  <LocalName>H.Website.IISHost</LocalName>
+  <Content>Message: 文件不存在。.
+Exception Type: System.Web.HttpException.
+Source: System.Web.
+Module Name: C:\Windows\Microsoft.Net\assembly\GAC_32\System.Web\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.dll.
+Stack Trace:    在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously).
+</Content>
+  <Category>ExceptionLog</Category>
+  <ExtendedProperties>
+    <ExtendedPropertyData>
+      <PropertyName>Method Arguments Type</PropertyName>
+      <PropertyValue xsi:type="xsd:string">N/A</PropertyValue>
+    </ExtendedPropertyData>
+    <ExtendedPropertyData>
+      <PropertyName>Method Arguments Value</PropertyName>
+      <PropertyValue xsi:type="xsd:string">N/A</PropertyValue>
+    </ExtendedPropertyData>
+  </ExtendedProperties>
+</LogEntry>
+数据库连接失败**********************************************************************
+<?xml version="1.0" encoding="utf-16"?>
+<LogEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <GlobalName>H.Service.IISHost</GlobalName>
+  <LocalName>H.Service.IISHost</LocalName>
+  <Content>Message: 网络访问已中断。若要继续，请关闭数据库，然后再将其打开。.
+Exception Type: System.Data.OleDb.OleDbException.
+Source: Microsoft Office Access Database Engine.
+Module Name: C:\Windows\Microsoft.Net\assembly\GAC_32\System.Data\v4.0_4.0.0.0__b77a5c561934e089\System.Data.dll.
+Stack Trace:    at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionInternal.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at H.Core.DataAccess.DbHelper.GetOpenConnection(String connectionString, IDbFactory factory, Boolean disposeInnerConnection) in e:\Desktop\H.Framework\H.Framework_V2_Mini\H.Core\H.Core.DataAccess\DbHelper.cs:line 97
+   at H.Core.DataAccess.DbHelper.GetOpenConnection(String connectionString, IDbFactory factory) in e:\Desktop\H.Framework\H.Framework_V2_Mini\H.Core\H.Core.DataAccess\DbHelper.cs:line 74
+   at H.Core.DataAccess.DbHelper.ExecuteReader(String databaseName, CommandType cmdType, String cmdText, Int32 timeout, DbParameter[] commandParameters) in e:\Desktop\H.Framework\H.Framework_V2_Mini\H.Core\H.Core.DataAccess\DbHelper.cs:line 137
+   at H.Core.DataAccess.DataCommand.ExecuteDataReader() in e:\Desktop\H.Framework\H.Framework_V2_Mini\H.Core\H.Core.DataAccess\DataCommand.cs:line 355
+   at H.Core.DataAccess.DataCommand.ExecuteEntity[T](Action`2 manualMapper, Boolean propertyNameIgnoreCase, Boolean skipNotExistProperty, Char splitter) in e:\Desktop\H.Framework\H.Framework_V2_Mini\H.Core\H.Core.DataAccess\DataCommand.cs:line 502
+   at H.Core.DataAccess.DataCommand.ExecuteEntity[T](Action`2 manualMapper, Boolean propertyNameIgnoreCase, Boolean skipNotExistProperty) in e:\Desktop\H.Framework\H.Framework_V2_Mini\H.Core\H.Core.DataAccess\DataCommand.cs:line 496
+   at H.Core.DataAccess.DataCommand.ExecuteEntity[T]() in e:\Desktop\H.Framework\H.Framework_V2_Mini\H.Core\H.Core.DataAccess\DataCommand.cs:line 486
+   at H.Service.MicrosoftAccessDataAccess.SystemUser.SystemUserDataAccess.Login(SystemUserEntity entity) in e:\Desktop\H.Framework\H.Framework_V2_Mini\H.Service\H.Service.Domain\H.Service.MicrosoftAccessDataAccess\SystemUser\SystemUserDataAccess.cs:line 31
+   at H.Service.Rest.SystemUserService.Login(SystemUserEntity entity) in e:\Desktop\H.Framework\H.Framework_V2_Mini\H.Service\H.Service.Domain\H.Service.Rest\SystemUser\SystemUserService.cs:line 74
+   at SyncInvokeLogin(Object , Object[] , Object[] )
+   at System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]&amp; outputs)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage41(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage4(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage3(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage2(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage1(MessageRpc&amp; rpc)
+   at System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet).
+</Content>
+  <Category>ExceptionLog</Category>
+  <ExtendedProperties>
+    <ExtendedPropertyData>
+      <PropertyName>Method Arguments Type</PropertyName>
+      <PropertyValue xsi:type="xsd:string">N/A</PropertyValue>
+    </ExtendedPropertyData>
+    <ExtendedPropertyData>
+      <PropertyName>Method Arguments Value</PropertyName>
+      <PropertyValue xsi:type="xsd:string">N/A</PropertyValue>
+    </ExtendedPropertyData>
+  </ExtendedProperties>
+</LogEntry>
+数据库连接失败**********************************************************************

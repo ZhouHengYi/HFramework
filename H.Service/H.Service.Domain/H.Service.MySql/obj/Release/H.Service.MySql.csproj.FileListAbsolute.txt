@@ -1,0 +1,15 @@
+E:\Desktop\H.Framework\苏州君和诚信会计师事务所管理系统H.Framework_V2_Mini\H.Service\H.Service.Domain\H.Service.MySql\bin\Release\H.Service.MySql.dll
+E:\Desktop\H.Framework\苏州君和诚信会计师事务所管理系统H.Framework_V2_Mini\H.Service\H.Service.Domain\H.Service.MySql\bin\Release\H.Service.MySql.pdb
+E:\Desktop\H.Framework\苏州君和诚信会计师事务所管理系统H.Framework_V2_Mini\H.Service\H.Service.Domain\H.Service.MySql\bin\Release\H.Core.DataAccess.dll
+E:\Desktop\H.Framework\苏州君和诚信会计师事务所管理系统H.Framework_V2_Mini\H.Service\H.Service.Domain\H.Service.MySql\bin\Release\H.Core.Utility.dll
+E:\Desktop\H.Framework\苏州君和诚信会计师事务所管理系统H.Framework_V2_Mini\H.Service\H.Service.Domain\H.Service.MySql\bin\Release\H.Entity.dll
+E:\Desktop\H.Framework\苏州君和诚信会计师事务所管理系统H.Framework_V2_Mini\H.Service\H.Service.Domain\H.Service.MySql\bin\Release\H.Service.IDataAccess.dll
+E:\Desktop\H.Framework\苏州君和诚信会计师事务所管理系统H.Framework_V2_Mini\H.Service\H.Service.Domain\H.Service.MySql\bin\Release\MySql.Data.dll
+E:\Desktop\H.Framework\苏州君和诚信会计师事务所管理系统H.Framework_V2_Mini\H.Service\H.Service.Domain\H.Service.MySql\bin\Release\Microsoft.Http.dll
+E:\Desktop\H.Framework\苏州君和诚信会计师事务所管理系统H.Framework_V2_Mini\H.Service\H.Service.Domain\H.Service.MySql\bin\Release\H.Core.DataAccess.pdb
+E:\Desktop\H.Framework\苏州君和诚信会计师事务所管理系统H.Framework_V2_Mini\H.Service\H.Service.Domain\H.Service.MySql\bin\Release\H.Core.Utility.pdb
+E:\Desktop\H.Framework\苏州君和诚信会计师事务所管理系统H.Framework_V2_Mini\H.Service\H.Service.Domain\H.Service.MySql\bin\Release\H.Entity.pdb
+E:\Desktop\H.Framework\苏州君和诚信会计师事务所管理系统H.Framework_V2_Mini\H.Service\H.Service.Domain\H.Service.MySql\bin\Release\H.Service.IDataAccess.pdb
+E:\Desktop\H.Framework\苏州君和诚信会计师事务所管理系统H.Framework_V2_Mini\H.Service\H.Service.Domain\H.Service.MySql\obj\Release\H.Service.MySql.csprojResolveAssemblyReference.cache
+E:\Desktop\H.Framework\苏州君和诚信会计师事务所管理系统H.Framework_V2_Mini\H.Service\H.Service.Domain\H.Service.MySql\obj\Release\H.Service.MySql.dll
+E:\Desktop\H.Framework\苏州君和诚信会计师事务所管理系统H.Framework_V2_Mini\H.Service\H.Service.Domain\H.Service.MySql\obj\Release\H.Service.MySql.pdb

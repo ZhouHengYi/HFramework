@@ -1,0 +1,50 @@
+<LogEntry xmlns="http://schemas.datacontract.org/2004/07/H.Core.Utility.Log" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><_x003C_Category_x003E_k__BackingField>ExceptionLog</_x003C_Category_x003E_k__BackingField><_x003C_Content_x003E_k__BackingField>Message: 引发类型为“System.Web.HttpUnhandledException”的异常。.&#xD;
+Exception Type: System.Web.HttpUnhandledException.&#xD;
+Source: System.Web.&#xD;
+Module Name: C:\Windows\Microsoft.Net\assembly\GAC_32\System.Web\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.dll.&#xD;
+Stack Trace:    在 System.Web.UI.Page.HandleError(Exception e)&#xD;
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&#xD;
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&#xD;
+   在 System.Web.UI.Page.ProcessRequest()&#xD;
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)&#xD;
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)&#xD;
+   在 ASP.webform1_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\a8ae313f\84ad690f\App_Web_qsmctpfb.0.cs:行号 0&#xD;
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()&#xD;
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously).&#xD;
+&#xD;
+Inner Exception:&#xD;
+	Message: Protal 测试异常. &#xD;
+	Exception Type: System.ApplicationException.&#xD;
+	Source: H.Website.IISHost.&#xD;
+	Stack Trace:    在 H.Website.IISHost.WebForm1.Page_Load(Object sender, EventArgs e) 位置 e:\Desktop\H.Framework_V2\H.Website\H.Website.IISHost\WebForm1.aspx.cs:行号 16&#xD;
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)&#xD;
+   在 System.Web.UI.Control.OnLoad(EventArgs e)&#xD;
+   在 System.Web.UI.Control.LoadRecursive()&#xD;
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint).&#xD;
+</_x003C_Content_x003E_k__BackingField><_x003C_GlobalName_x003E_k__BackingField>SystemPortal</_x003C_GlobalName_x003E_k__BackingField><_x003C_LocalName_x003E_k__BackingField>Website</_x003C_LocalName_x003E_k__BackingField><_x003C_LogUserName_x003E_k__BackingField i:nil="true"/><_x003C_ReferenceKey_x003E_k__BackingField i:nil="true"/><extendedProperties><ExtendedPropertyData><_x003C_PropertyName_x003E_k__BackingField>Method Arguments Type</_x003C_PropertyName_x003E_k__BackingField><_x003C_PropertyValue_x003E_k__BackingField i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">N/A</_x003C_PropertyValue_x003E_k__BackingField></ExtendedPropertyData><ExtendedPropertyData><_x003C_PropertyName_x003E_k__BackingField>Method Arguments Value</_x003C_PropertyName_x003E_k__BackingField><_x003C_PropertyValue_x003E_k__BackingField i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">N/A</_x003C_PropertyValue_x003E_k__BackingField></ExtendedPropertyData></extendedProperties><m_LogID>25f8308f-a193-4463-85f5-eef27eec63b4</m_LogID></LogEntry>
+数据库连接失败**********************************************************************
+<LogEntry xmlns="http://schemas.datacontract.org/2004/07/H.Core.Utility.Log" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><_x003C_Category_x003E_k__BackingField>ExceptionLog</_x003C_Category_x003E_k__BackingField><_x003C_Content_x003E_k__BackingField>Message: 引发类型为“System.Web.HttpUnhandledException”的异常。.&#xD;
+Exception Type: System.Web.HttpUnhandledException.&#xD;
+Source: System.Web.&#xD;
+Module Name: C:\Windows\Microsoft.Net\assembly\GAC_32\System.Web\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.dll.&#xD;
+Stack Trace:    在 System.Web.UI.Page.HandleError(Exception e)&#xD;
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&#xD;
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)&#xD;
+   在 System.Web.UI.Page.ProcessRequest()&#xD;
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)&#xD;
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)&#xD;
+   在 ASP.webform1_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\a8ae313f\84ad690f\App_Web_vkn0beeh.1.cs:行号 0&#xD;
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()&#xD;
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously).&#xD;
+&#xD;
+Inner Exception:&#xD;
+	Message: Protal 测试异常. &#xD;
+	Exception Type: System.ApplicationException.&#xD;
+	Source: H.Website.IISHost.&#xD;
+	Stack Trace:    在 H.Website.IISHost.WebForm1.Page_Load(Object sender, EventArgs e) 位置 e:\Desktop\H.Framework_V2\H.Website\H.Website.IISHost\WebForm1.aspx.cs:行号 16&#xD;
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)&#xD;
+   在 System.Web.UI.Control.OnLoad(EventArgs e)&#xD;
+   在 System.Web.UI.Control.LoadRecursive()&#xD;
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint).&#xD;
+</_x003C_Content_x003E_k__BackingField><_x003C_GlobalName_x003E_k__BackingField>SystemPortal</_x003C_GlobalName_x003E_k__BackingField><_x003C_LocalName_x003E_k__BackingField>Website</_x003C_LocalName_x003E_k__BackingField><_x003C_LogUserName_x003E_k__BackingField i:nil="true"/><_x003C_ReferenceKey_x003E_k__BackingField i:nil="true"/><extendedProperties><ExtendedPropertyData><_x003C_PropertyName_x003E_k__BackingField>Method Arguments Type</_x003C_PropertyName_x003E_k__BackingField><_x003C_PropertyValue_x003E_k__BackingField i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">N/A</_x003C_PropertyValue_x003E_k__BackingField></ExtendedPropertyData><ExtendedPropertyData><_x003C_PropertyName_x003E_k__BackingField>Method Arguments Value</_x003C_PropertyName_x003E_k__BackingField><_x003C_PropertyValue_x003E_k__BackingField i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">N/A</_x003C_PropertyValue_x003E_k__BackingField></ExtendedPropertyData></extendedProperties><m_LogID>80c24e80-c3bb-4ff3-8f09-dab3558866f5</m_LogID></LogEntry>
+数据库连接失败**********************************************************************

@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D8E1874C-B86C-44D0-90A9-35E868D64C62}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>H.Website</RootNamespace>
+    <AssemblyName>H.Website</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="caseshow.html" />
+    <Content Include="Configuration\Language\CN\language_cn.js" />
+    <Content Include="Configuration\Language\EN\language_cn.js" />
+    <Content Include="css\css.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Demo\Register\Register.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Demo\Product\Product.aspx" />
+    <Content Include="Demo\Product\ProShow.aspx" />
+    <Content Include="images\abg_01.png" />
+    <Content Include="images\abg_03.png" />
+    <Content Include="images\abtext.png" />
+    <Content Include="images\banner01bg.JPG" />
+    <Content Include="images\banner02_01.png" />
+    <Content Include="images\banner02_02.png" />
+    <Content Include="images\banner03bg.jpg" />
+    <Content Include="images\banner03_1.png" />
+    <Content Include="images\banner03_2.png" />
+    <Content Include="images\banner1_01.png" />
+    <Content Include="images\banner1_02.png" />
+    <Content Include="images\banner2bg.jpg" />
+    <Content Include="images\bannerbg.jpg" />
+    <Content Include="images\bbt_03.png" />
+    <Content Include="images\bbt_05.png" />
+    <Content Include="images\big.jpg" />
+    <Content Include="images\big1.jpg" />
+    <Content Include="images\big2.jpg" />
+    <Content Include="images\border.png" />
+    <Content Include="images\bt_arr.png" />
+    <Content Include="images\bt_top.gif" />
+    <Content Include="images\case_03.jpg" />
+    <Content Include="images\case_05.jpg" />
+    <Content Include="images\case_10.jpg" />
+    <Content Include="images\case_13.jpg" />
+    <Content Include="images\controls.png" />
+    <Content Include="images\icon.png" />
+    <Content Include="images\jlbg.jpg" />
+    <Content Include="images\line.jpg" />
+    <Content Include="images\loading.gif" />
+    <Content Include="images\loading_background.png" />
+    <Content Include="images\logo.jpg" />
+    <Content Include="images\logo2.jpg" />
+    <Content Include="images\logobot.jpg" />
+    <Content Include="images\logodh.jpg" />
+    <Content Include="images\map.jpg" />
+    <Content Include="images\mbg.jpg" />
+    <Content Include="images\mbg_02.jpg" />
+    <Content Include="images\mbg_03.jpg" />
+    <Content Include="images\mbg_04.jpg" />
+    <Content Include="images\narrow_03.png" />
+    <Content Include="images\narrow_05.png" />
+    <Content Include="images\navhover.jpg" />
+    <Content Include="images\pgbg_03.png" />
+    <Content Include="images\qq_03.jpg" />
+    <Content Include="images\ser_box1.png" />
+    <Content Include="images\ser_box1b.png" />
+    <Content Include="images\ser_box2.png" />
+    <Content Include="images\ser_box2b.png" />
+    <Content Include="images\ser_box3.png" />
+    <Content Include="images\ser_box3b.png" />
+    <Content Include="images\sm.jpg" />
+    <Content Include="images\sm1.jpg" />
+    <Content Include="images\sm2.jpg" />
+    <Content Include="images\tg_clients_1.gif" />
+    <Content Include="images\tg_clients_10.gif" />
+    <Content Include="images\tg_clients_11.gif" />
+    <Content Include="images\tg_clients_12.gif" />
+    <Content Include="images\tg_clients_13.gif" />
+    <Content Include="images\tg_clients_14.gif" />
+    <Content Include="images\tg_clients_15.gif" />
+    <Content Include="images\tg_clients_16.gif" />
+    <Content Include="images\tg_clients_17.gif" />
+    <Content Include="images\tg_clients_18.gif" />
+    <Content Include="images\tg_clients_2.gif" />
+    <Content Include="images\tg_clients_3.gif" />
+    <Content Include="images\tg_clients_4.gif" />
+    <Content Include="images\tg_clients_5.gif" />
+    <Content Include="images\tg_clients_6.gif" />
+    <Content Include="images\tg_clients_7.gif" />
+    <Content Include="images\tg_clients_8.gif" />
+    <Content Include="images\tg_clients_9.gif" />
+    <Content Include="images\yq_03.jpg" />
+    <Content Include="images\复件 bannerbg.gif" />
+    <Content Include="images\复件 logo.gif" />
+    <Content Include="index.html" />
+    <Content Include="js\index.js" />
+    <Content Include="js\jquery.colorbox-min.js" />
+    <Content Include="js\jquery.easing.1.3.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\jquery.mousewheel.min.js" />
+    <Content Include="js\lrtk.js" />
+    <Content Include="js\scrolltopcontrol.js" />
+    <Content Include="js\slides.min.jquery.js" />
+    <Content Include="js\tab.js" />
+    <Content Include="personalresume.html" />
+    <Content Include="Web.config" />
+    <Content Include="WebResource\css\box.css" />
+    <Content Include="WebResource\images\box\loading.gif" />
+    <Content Include="WebResource\images\box\load_box.gif" />
+    <Content Include="WebResource\images\box\load_box.png" />
+    <Content Include="WebResource\images\box\load_close.gif" />
+    <Content Include="WebResource\js\Base.js" />
+    <Content Include="WebResource\js\common.js" />
+    <Content Include="WebResource\js\jquery.min-1.7.1.js" />
+    <Content Include="WebResource\js\upload\jquery.uploadify.js" />
+    <Content Include="WebResource\js\upload\jquery.uploadify.min.js" />
+    <Content Include="WebResource\js\upload\uploadify.swf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demo\Register\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demo\Register\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Demo\Product\Product.aspx.cs">
+      <DependentUpon>Product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demo\Product\Product.aspx.designer.cs">
+      <DependentUpon>Product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demo\Product\ProShow.aspx.cs">
+      <DependentUpon>ProShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demo\Product\ProShow.aspx.designer.cs">
+      <DependentUpon>ProShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Configuration\UrlMapping.config" />
+    <Content Include="Configuration\FileWatcher.config" />
+    <Content Include="Configuration\Autorun.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="..\..\H.Service\H.Service.IISHost\Configuration\Data\Database.config">
+      <Link>Configuration\Data\Database.config</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\H.Service\H.Service.IISHost\Configuration\Data\DbCommandFiles.config">
+      <Link>Configuration\Data\DbCommandFiles.config</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Configuration\Language\CN\language_cn.config" />
+    <Content Include="Configuration\Language\EN\language_cn.config" />
+    <Content Include="..\..\H.Service\H.Service.IISHost\Configuration\Data\SqlServerDbCommand\Log.config">
+      <Link>Configuration\Data\DbCommand\Log.config</Link>
+    </Content>
+    <Content Include="..\..\H.Service\H.Service.IISHost\Configuration\Data\SqlServerDbCommand\MyREST.config">
+      <Link>Configuration\Data\DbCommand\MyREST.config</Link>
+    </Content>
+    <None Include="Properties\PublishProfiles\LangeuageWebsite.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\H.Core\H.Core.Utility\H.Core.Utility.csproj">
+      <Project>{b2168ac0-ac04-4e54-aa65-bb227fbc15cd}</Project>
+      <Name>H.Core.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\H.Facade\H.Facade.csproj">
+      <Project>{76c79c21-4a67-44cd-beae-abac2328e86b}</Project>
+      <Name>H.Facade</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Configuration\Language\JP\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>8318</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:18866/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

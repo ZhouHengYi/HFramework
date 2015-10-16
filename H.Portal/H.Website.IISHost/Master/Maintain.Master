@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Maintain.master.cs" Inherits="H.Website.IISHost.Master.Maintain" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <title>苏州君和诚信会计师事务所管理系统</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/WebResource/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/WebResource/css/bootstrap-responsive.min.css" />
+    <link rel="stylesheet" href="/WebResource/css/matrix-style.css" />
+    <link rel="stylesheet" href="/WebResource/css/matrix-media.css" />
+    <link href="/WebResource/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+        .widget-box {
+            margin-top: 0;
+        }
+
+        .container-fluid {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        .form-horizontal .controls {
+            margin-left: 150px;
+        }
+
+        .form-horizontal .control-label {
+            width: 120px;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="cph_Head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <asp:ContentPlaceHolder ID="cph_Content" runat="server">
+    </asp:ContentPlaceHolder>
+    <script src="/WebResource/js/jquery.min.js"></script>
+    <script src="/WebResource/js/jquery.ui.custom.js"></script>
+    <script src="/WebResource/js/bootstrap.min.js"></script>
+    <script src="/WebResource/js/matrix.js"></script>
+    <script src="/WebResource/CustomJs/common.js" type="text/javascript"></script>
+    <script src="/WebResource/CustomJs/Base.js"></script>
+    <asp:ContentPlaceHolder ID="cph_Bottom" runat="server">
+    </asp:ContentPlaceHolder>
+</body>
+</html>

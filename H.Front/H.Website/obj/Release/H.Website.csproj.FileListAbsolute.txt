@@ -1,0 +1,17 @@
+C:\Users\hz07\Desktop\H.Framework_V2\H.Front\H.Website\bin\Configuration\Data\DbCommand\Log.config
+C:\Users\hz07\Desktop\H.Framework_V2\H.Front\H.Website\bin\Configuration\Data\DbCommand\MyREST.config
+C:\Users\hz07\Desktop\H.Framework_V2\H.Front\H.Website\bin\Configuration\Data\Database.config
+C:\Users\hz07\Desktop\H.Framework_V2\H.Front\H.Website\bin\Configuration\Data\DbCommandFiles.config
+C:\Users\hz07\Desktop\H.Framework_V2\H.Front\H.Website\bin\H.Website.dll
+C:\Users\hz07\Desktop\H.Framework_V2\H.Front\H.Website\bin\H.Website.pdb
+C:\Users\hz07\Desktop\H.Framework_V2\H.Front\H.Website\bin\H.Core.Utility.dll
+C:\Users\hz07\Desktop\H.Framework_V2\H.Front\H.Website\bin\H.Facade.dll
+C:\Users\hz07\Desktop\H.Framework_V2\H.Front\H.Website\bin\PostSharp.dll
+C:\Users\hz07\Desktop\H.Framework_V2\H.Front\H.Website\bin\Microsoft.Http.dll
+C:\Users\hz07\Desktop\H.Framework_V2\H.Front\H.Website\bin\H.Entity.dll
+C:\Users\hz07\Desktop\H.Framework_V2\H.Front\H.Website\bin\H.Core.Utility.pdb
+C:\Users\hz07\Desktop\H.Framework_V2\H.Front\H.Website\bin\H.Facade.pdb
+C:\Users\hz07\Desktop\H.Framework_V2\H.Front\H.Website\bin\H.Entity.pdb
+C:\Users\hz07\Desktop\H.Framework_V2\H.Front\H.Website\obj\Release\H.Website.csprojResolveAssemblyReference.cache
+C:\Users\hz07\Desktop\H.Framework_V2\H.Front\H.Website\obj\Release\H.Website.dll
+C:\Users\hz07\Desktop\H.Framework_V2\H.Front\H.Website\obj\Release\H.Website.pdb

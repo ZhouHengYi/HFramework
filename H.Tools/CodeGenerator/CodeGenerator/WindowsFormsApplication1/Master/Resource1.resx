@@ -1,0 +1,1315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DataAccesstxt" xml:space="preserve">
+    <value>using H.Core.DataAccess;
+using H.Core.Utility;
+using H.Entity;
+using H.Service.IDataAccess;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Text;
+
+namespace H.Service.SqlDataAccess
+{
+    /// &lt;summary&gt;
+    /// $$$Remark$$$DA
+    /// &lt;/summary&gt;
+    [VersionExport(typeof(I$$$TableName$$$DataAccess))]
+    public class $$$TableName$$$DataAccess : I$$$TableName$$$DataAccess
+    {
+    
+        public List&lt;$$$TableName$$$Entity&gt; Search(QueryCondition&lt;$$$TableName$$$Entity&gt; entity)
+        {
+            CustomDataCommand command = DataCommandManager.CreateCustomDataCommandFromConfig("$$$TableName$$$Search");
+            using (DynamicSqlBuilder sqlBuilder = new DynamicSqlBuilder(command, entity.PagingInfo, "SysNo Desc"))
+            {
+                $$$TableName$$$Entity query = entity.Condition;
+                sqlBuilder.Conditions.AddCustomCondition(RelationType.AND, " Status &lt;&gt; -1");
+                if (query != null)
+                {
+                    //if (!string.IsNullOrEmpty(query.Title))
+                    //{
+                    //    sqlBuilder.Conditions.AddCustomCondition(RelationType.AND, " (Title Like'%'+@Title+'%')");
+                    //    command.AddInputParameter("@Title", DbType.String, query.Title);
+                    //}
+                    if (!string.IsNullOrEmpty(query.InDateCondition) &amp;&amp;
+                        query.InDateCondition.IndexOf('-') &gt; 0)
+                    {
+                        sqlBuilder.Conditions.AddCustomCondition(RelationType.AND, " InDate BETWEEN @BeginInDate AND @EndInDate");
+                        command.AddInputParameter("@BeginInDate", DbType.String, query.InDateCondition.Split('-')[0]);
+                        command.AddInputParameter("@EndInDate", DbType.String, query.InDateCondition.Split('-')[1]);
+                    }
+                }
+                command.CommandText = sqlBuilder.BuildQuerySql();
+                return command.ExecuteEntityList&lt;$$$TableName$$$Entity&gt;();
+            }
+        }
+
+
+        public int Insert$$$TableName$$$($$$TableName$$$Entity entity)
+        {
+            CustomDataCommand command = DataCommandManager.CreateCustomDataCommandFromConfig("Insert$$$TableName$$$");
+            $$$ParamsNoPrimary$$$
+                        object obj = command.ExecuteScalar();
+            return obj.ToInt32();
+            //if (obj != null)
+            //{
+            //    int result = Convert.ToInt32(obj);
+            //    if (result &gt; 0)
+            //    {
+            //        entity.Files.ForEach(x =&gt;
+            //        {
+            //            x.FSysNo = result;
+            //            new FilesDataAccess().InsertFiles(x);
+            //        });
+            //    }
+            //    return Convert.ToInt32(obj);
+            //}
+            //else
+            //    return 0;
+        }
+
+
+        public int Update$$$TableName$$$($$$TableName$$$Entity entity)
+        {
+            CustomDataCommand command = DataCommandManager.CreateCustomDataCommandFromConfig("Update$$$TableName$$$");
+            $$$Params$$$
+            int result = command.ExecuteNonQuery();
+            //if (result &gt; 0)
+            //{
+            //    FilesDataAccess fda = new FilesDataAccess();
+            //    fda.DeleteFilesByFSysNo(entity.SysNo);
+            //    entity.Files.ForEach(x =&gt;
+            //    {
+            //        new FilesDataAccess().InsertFiles(x);
+            //    });
+            //}
+            return result;
+        }
+
+
+        public int Delete$$$TableName$$$(string sysno)
+        {
+            CustomDataCommand command = DataCommandManager.CreateCustomDataCommandFromConfig("Delete$$$TableName$$$");
+            command.CommandText = command.CommandText.Replace("#SysNo#", sysno);
+            int result = command.ExecuteNonQuery();
+            return result;
+        }
+
+
+        public $$$TableName$$$Entity LoadEntity(string sysno)
+        {
+            CustomDataCommand command = DataCommandManager.CreateCustomDataCommandFromConfig("$$$TableName$$$LoadEntity");
+            command.SetParameterValue("@SysNo", sysno);
+            $$$TableName$$$Entity result = command.ExecuteEntity&lt;$$$TableName$$$Entity&gt;();
+            return result;
+        }
+    }
+}</value>
+  </data>
+  <data name="DataAccess_Assembly" xml:space="preserve">
+    <value>using H.Core.DataAccess;
+using H.Core.Utility;
+using H.Entity;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Text;
+
+namespace H.Service.SqlDataAccess
+{
+    /// &lt;summary&gt;
+    /// $$$Remark$$$DA
+    /// &lt;/summary&gt;
+    public class $$$TableName$$$DataAccess
+    {
+    
+        public List&lt;$$$TableName$$$Entity&gt; Search(QueryCondition&lt;$$$TableName$$$Entity&gt; entity)
+        {
+            CustomDataCommand command = DataCommandManager.CreateCustomDataCommandFromConfig("$$$TableName$$$Search");
+            using (DynamicSqlBuilder sqlBuilder = new DynamicSqlBuilder(command, entity.PagingInfo, "SysNo Desc"))
+            {
+                $$$TableName$$$Entity query = entity.Condition;
+                sqlBuilder.Conditions.AddCustomCondition(RelationType.AND, " Status &lt;&gt; -1");
+                if (query != null)
+                {
+                    //if (!string.IsNullOrEmpty(query.Title))
+                    //{
+                    //    sqlBuilder.Conditions.AddCustomCondition(RelationType.AND, " (Title Like'%'+@Title+'%')");
+                    //    command.AddInputParameter("@Title", DbType.String, query.Title);
+                    //}
+                    if (!string.IsNullOrEmpty(query.InDateCondition) &amp;&amp;
+                        query.InDateCondition.IndexOf('-') &gt; 0)
+                    {
+                        sqlBuilder.Conditions.AddCustomCondition(RelationType.AND, " InDate BETWEEN @BeginInDate AND @EndInDate");
+                        command.AddInputParameter("@BeginInDate", DbType.String, query.InDateCondition.Split('-')[0]);
+                        command.AddInputParameter("@EndInDate", DbType.String, query.InDateCondition.Split('-')[1]);
+                    }
+                }
+                command.CommandText = sqlBuilder.BuildQuerySql();
+                return command.ExecuteEntityList&lt;$$$TableName$$$Entity&gt;();
+            }
+        }
+
+
+        public int Insert$$$TableName$$$($$$TableName$$$Entity entity)
+        {
+            CustomDataCommand command = DataCommandManager.CreateCustomDataCommandFromConfig("$$$TableName$$$Insert");
+            $$$ParamsNoPrimary$$$
+            object obj = command.ExecuteScalar();
+            return obj.ToInt32();
+        }
+
+
+        public int Update$$$TableName$$$($$$TableName$$$Entity entity)
+        {
+            CustomDataCommand command = DataCommandManager.CreateCustomDataCommandFromConfig("$$$TableName$$$Update");
+            $$$Params$$$
+            int result = command.ExecuteNonQuery();
+            return result;
+        }
+
+
+        public int Delete$$$TableName$$$(string sysno)
+        {
+            CustomDataCommand command = DataCommandManager.CreateCustomDataCommandFromConfig("$$$TableName$$$Delete");
+            command.CommandText = command.CommandText.Replace("#SysNo#", sysno);
+            int result = command.ExecuteNonQuery();
+            return result;
+        }
+
+
+        public $$$TableName$$$Entity LoadEntity(string sysno)
+        {
+            CustomDataCommand command = DataCommandManager.CreateCustomDataCommandFromConfig("$$$TableName$$$LoadEntity");
+            command.SetParameterValue("@SysNo", sysno);
+            $$$TableName$$$Entity result = command.ExecuteEntity&lt;$$$TableName$$$Entity&gt;();
+            return result;
+        }
+    }
+}</value>
+  </data>
+  <data name="DbCommandxml" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8" ?&gt;  
+&lt;dataOperations xmlns="http://zhy.seo.sh.cn/DataOperation"&gt;
+  &lt;dataCommand name="$$$TableName$$$Search" database="CenterDataBase" commandType="Text"&gt;
+    &lt;commandText&gt;
+      &lt;![CDATA[
+		SELECT @TotalCount = COUNT(2) FROM [dbo].[$$$TableName$$$] #StrWhere#
+			
+		SELECT *,@TotalCount AS TotalCount FROM (
+			SELECT TOP (@EndNumber) *,(ROW_NUMBER() OVER(ORDER BY  sm.sysno DESC )) AS RowNumber
+			FROM [dbo].[$$$TableName$$$] sm WITH (NOLOCK)
+			#StrWhere#
+		)sm 
+		WHERE RowNumber &gt; @StartNumber
+		ORDER BY #SortColumnName#
+		]]&gt;
+    &lt;/commandText&gt;
+  &lt;/dataCommand&gt;
+  &lt;dataCommand name="$$$TableName$$$Insert" database="CenterDataBase" commandType="Text"&gt;
+    &lt;commandText&gt;
+      &lt;![CDATA[
+    $$$IsertSql$$$
+		]]&gt;
+    &lt;/commandText&gt;
+    &lt;parameters&gt;
+      $$$ParamsNoPrimary$$$
+    &lt;/parameters&gt;
+  &lt;/dataCommand&gt;
+  &lt;dataCommand name="$$$TableName$$$Delete" database="CenterDataBase" commandType="Text"&gt;
+    &lt;commandText&gt;
+      &lt;![CDATA[
+		UPDATE DBO.$$$TableName$$$
+		SET Status = -1
+		WHERE SysNo IN (#SysNo#)
+		]]&gt;
+    &lt;/commandText&gt;
+  &lt;/dataCommand&gt;
+  &lt;dataCommand name="$$$TableName$$$Update" database="CenterDataBase" commandType="Text"&gt;
+    &lt;commandText&gt;
+      &lt;![CDATA[
+    $$$UpdateSql$$$
+		]]&gt;
+    &lt;/commandText&gt;
+    &lt;parameters&gt;
+      $$$Params$$$
+    &lt;/parameters&gt;
+  &lt;/dataCommand&gt;
+  &lt;dataCommand name="$$$TableName$$$LoadEntity" database="CenterDataBase" commandType="Text"&gt;
+    &lt;commandText&gt;
+      &lt;![CDATA[        
+		SELECT * FROM DBO.$$$TableName$$$ WITH(NOLOCK) WHERE SysNo = @SysNo AND Status &lt;&gt; -1
+		]]&gt;
+    &lt;/commandText&gt;
+    &lt;parameters&gt;
+      &lt;param name="@SysNo" dbType="Int32" /&gt;
+    &lt;/parameters&gt;
+  &lt;/dataCommand&gt;
+&lt;/dataOperations&gt;</value>
+  </data>
+  <data name="Entitytxt" xml:space="preserve">
+    <value>using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.Serialization;
+using System.Text;
+
+namespace H.Entity
+{
+  //$$$Remark$$$
+  [DataContract(Namespace = "http://zhy.seo.sh.cn")]
+  [Serializable]
+  public class $$$TableName$$$Entity : PageBase
+  {
+  
+    $$$DefaultStructure$$$
+    $$%FildBegin%$$
+	/// &lt;summary&gt;
+	/// $$$FileRemark$$$
+	/// &lt;/summary&gt;
+	[DataMember]
+	public $$$FileType$$$ $$$FileName$$$
+	{
+		get; set;
+	}
+    $$%FildEnd%$$
+    
+    [DataMember]
+    public string InDateStr
+    {
+        get
+        {
+            if (InDate != null)
+            {
+                return Convert.ToDateTime(InDate).ToString("yyyy-MM-dd HH:dd:ss");
+            }
+            else
+            {
+                return "";
+            }
+        }
+        set { }
+    }
+    [DataMember]
+    public string InDateCondition { get; set; }
+  }    
+}</value>
+  </data>
+  <data name="Facadetxt" xml:space="preserve">
+    <value>using H.Core.Utility;
+using H.Entity;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace H.Website.Facade
+{
+	/// &lt;summary&gt;
+    /// $$$Remark$$$Facade
+    /// &lt;/summary&gt;
+    public class $$$TableName$$$Facade
+    {
+        /// &lt;summary&gt;
+        /// 
+        /// &lt;/summary&gt;
+        /// &lt;param name="log"&gt;&lt;/param&gt;
+        public static List&lt;$$$TableName$$$Entity&gt; Search(QueryCondition&lt;$$$TableName$$$Entity&gt; entity)
+        {
+            return RestClient.Post&lt;List&lt;$$$TableName$$$Entity&gt;&gt;("$$$TableName$$$Service/Search", entity);
+        }
+
+        /// &lt;summary&gt;
+        /// 
+        /// &lt;/summary&gt;
+        /// &lt;param name="log"&gt;&lt;/param&gt;
+        public static int Insert$$$TableName$$$($$$TableName$$$Entity entity)
+        {
+            return RestClient.Post&lt;int&gt;("$$$TableName$$$Service/Insert$$$TableName$$$", entity);
+        }
+
+        /// &lt;summary&gt;
+        /// 
+        /// &lt;/summary&gt;
+        /// &lt;param name="log"&gt;&lt;/param&gt;
+        public static int Update$$$TableName$$$($$$TableName$$$Entity entity)
+        {
+            return RestClient.Post&lt;int&gt;("$$$TableName$$$Service/Update$$$TableName$$$", entity);
+        }
+
+        /// &lt;summary&gt;
+        /// 
+        /// &lt;/summary&gt;
+        /// &lt;param name="log"&gt;&lt;/param&gt;
+        public static int Delete$$$TableName$$$(string sysno)
+        {
+            return RestClient.Post&lt;int&gt;("$$$TableName$$$Service/Delete$$$TableName$$$", sysno);
+        }
+
+        /// &lt;summary&gt;
+        /// 
+        /// &lt;/summary&gt;
+        /// &lt;param name="log"&gt;&lt;/param&gt;
+        public static $$$TableName$$$Entity LoadEntity(int sysno)
+        {
+            return RestClient.Get&lt;$$$TableName$$$Entity&gt;("$$$TableName$$$Service/LoadEntity/" + sysno);
+        }
+    }
+}</value>
+  </data>
+  <data name="IDataAccesstxt" xml:space="preserve">
+    <value>using H.Entity;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace H.Service.IDataAccess
+{
+    /// &lt;summary&gt;
+    /// $$$Remark$$$Interface
+    /// &lt;/summary&gt;
+    public interface I$$$TableName$$$DataAccess
+    {
+
+        List&lt;$$$TableName$$$Entity&gt; Search(QueryCondition&lt;$$$TableName$$$Entity&gt; entity);
+
+        int Insert$$$TableName$$$($$$TableName$$$Entity entity);
+
+        int Update$$$TableName$$$($$$TableName$$$Entity entity);
+
+        int Delete$$$TableName$$$(string sysno);
+
+        $$$TableName$$$Entity LoadEntity(string sysno);
+    }
+}</value>
+  </data>
+  <data name="Maintainaspx" xml:space="preserve">
+    <value>&lt;%@ Page Title="" Language="C#" MasterPageFile="~/Master/Maintain.Master" AutoEventWireup="true" CodeBehind="Maintain.aspx.cs" Inherits="H.Website.IISHost.Pages.$$$TableName$$$.Maintain" %&gt;
+
+&lt;asp:Content ID="Content1" ContentPlaceHolderID="cph_Head" runat="server"&gt;
+    &lt;link href="/WebResource/css/upload/uploadify.css" rel="stylesheet" /&gt;
+    &lt;link href="/WebResource/css/uniform.css" rel="stylesheet" /&gt;
+    &lt;link href="/WebResource/css/select2.css" rel="stylesheet" /&gt;
+    &lt;link href="/WebResource/css/jquery-ui.css" rel="stylesheet" /&gt;
+&lt;/asp:Content&gt;
+&lt;asp:Content ID="Content2" ContentPlaceHolderID="cph_Content" runat="server"&gt;
+
+    &lt;form id="Form2" action="#" method="get" class="form-horizontal" runat="server"&gt;
+        &lt;div class="container-fluid"&gt;
+            &lt;div class="row-fluid"&gt;
+                &lt;div class="span6"&gt;
+                    &lt;div class="widget-box" style="width: 850px;"&gt;
+                        &lt;div class="widget-title"&gt;
+                            &lt;ul class="nav nav-tabs"&gt;
+                                &lt;li class="active"&gt;&lt;a href="#tab1" data-toggle="tab"&gt;基本信息编辑&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/div&gt;
+                        &lt;div class="widget-content tab-content" style="width: 800px;"&gt;
+                            &lt;div class="tab-pane active" id="tab1"&gt;
+                                &lt;div class="control-group"&gt;
+                                    &lt;label class="control-label"&gt;标准名称 :&lt;/label&gt;
+                                    &lt;div class="controls"&gt;
+                                        &lt;input type="text" class="span11" placeholder="First name" id="txt_Title" bind="SchoolName" datatype="*2-100" style="width: 150px;" /&gt;
+                                        &lt;div class="Validform_checktip"&gt;&lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;div class="control-group"&gt;
+                                    &lt;label class="control-label"&gt;地区：&lt;/label&gt;
+                                    &lt;div class="controls" style="width: 200px;"&gt;
+                                        &lt;select id="txt_Position" datatype="*1-20" bind="Position"&gt;
+                                            &lt;option value="1"&gt;北海道&lt;/option&gt;
+                                            &lt;option value="2"&gt;青森县&lt;/option&gt;
+                                            &lt;option value="3"&gt;岩手县&lt;/option&gt;
+                                        &lt;/select&gt;
+                                        &lt;div class="Validform_checktip"&gt;&lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;div class="control-group"&gt;
+                                    &lt;label class="control-label" style="padding-top: 10px;"&gt;大学类别：&lt;/label&gt;
+                                    &lt;div class="controls"&gt;
+                                        &lt;label style="padding-left: 1%; float: left;"&gt;
+                                            &lt;span&gt;国立&lt;/span&gt;
+                                            &lt;input type="radio" name="Classes" checked="checked" value="1" bind="Classes" /&gt;
+                                        &lt;/label&gt;
+                                        &lt;label style="padding-left: 1%; float: left;"&gt;
+                                            &lt;span&gt;公立&lt;/span&gt;
+                                            &lt;input type="radio" name="Classes" value="2" bind="Classes" /&gt;
+                                        &lt;/label&gt;
+                                        &lt;label style="padding-left: 1%; float: left;"&gt;
+                                            &lt;span&gt;私立&lt;/span&gt;
+                                            &lt;input type="radio" name="Classes" value="3" bind="Classes" /&gt;
+                                        &lt;/label&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+
+                                &lt;div class="control-group"&gt;
+                                    &lt;label class="control-label"&gt;排序：&lt;/label&gt;
+                                    &lt;div class="controls"&gt;
+                                        &lt;input type="text" id="amount" style="border: 0px; font-weight: bold; width: 50px; background-color: #F9F9F9;" bind="Sort"&gt;
+                                        &lt;div id="slider" style="width: 90%; float: right; margin-top: 8px;"&gt;&lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;div class="control-group"&gt;
+                                    &lt;label class="control-label"&gt;附件：&lt;/label&gt;
+                                    &lt;div class="controls"&gt;
+                                        &lt;div id="queue"&gt;&lt;/div&gt;
+                                        &lt;input id="file_upload" name="file_upload" type="file" multiple="true"&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;div class="control-group"&gt;
+                                    &lt;div id="div_uploadMsg"&gt;
+                                        &lt;table class="table table-bordered table-striped" style="width: 95%; float: right; border-bottom: 1px solid #DDDDDD; border-top: 1px solid #DDDDDD; margin-bottom: 10px;"&gt;
+                                            &lt;thead&gt;
+                                                &lt;tr&gt;
+                                                    &lt;th width="8%"&gt;状态&lt;/th&gt;
+                                                    &lt;th&gt;Path&lt;/th&gt;
+                                                    &lt;th width="10%"&gt;删除&lt;/th&gt;
+                                                &lt;/tr&gt;
+                                            &lt;/thead&gt;
+                                            &lt;tbody id="tbody_files"&gt;
+                                                &lt;tr id="tr_fileTipMsg"&gt;
+                                                    &lt;td colspan="3"&gt;暂无信息..&lt;/td&gt;
+                                                &lt;/tr&gt;
+                                            &lt;/tbody&gt;
+                                        &lt;/table&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;div class="control-group" id="div_InUser"&gt;
+                                    &lt;label class="control-label" style="padding-top: 10px;"&gt;发布人：&lt;/label&gt;&lt;div class="controls" id="div_InUserHtml" bind="InUser"&gt;&lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;div class="control-group" id="div_InDate"&gt;
+                                    &lt;label class="control-label" style="padding-top: 10px;"&gt;发布时间：&lt;/label&gt;&lt;div class="controls" id="div_InDateHtml" bind="InDateStr"&gt;&lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;div class="control-group"&gt;
+                                    &lt;label class="control-label" style="padding-top: 10px;"&gt;语言版本：&lt;/label&gt;
+                                    &lt;div class="controls"&gt;
+                                        &lt;label style="padding-left: 1%; float: left;"&gt;
+                                            &lt;span&gt;日文&lt;/span&gt;
+                                            &lt;input type="radio" name="Language" checked="checked" value="1" bind="Language" /&gt;
+                                        &lt;/label&gt;
+                                        &lt;label style="padding-left: 1%; float: left;"&gt;
+                                            &lt;span&gt;英文&lt;/span&gt;
+                                            &lt;input type="radio" name="Language" value="2" bind="Language" /&gt;
+                                        &lt;/label&gt;
+                                        &lt;label style="padding-left: 1%; float: left;"&gt;
+                                            &lt;span&gt;中文&lt;/span&gt;
+                                            &lt;input type="radio" name="Language" value="3" bind="Language" /&gt;
+                                        &lt;/label&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;div class="control-group"&gt;
+                                    &lt;label class="control-label"&gt;内容描述：&lt;/label&gt;
+                                    &lt;div class="controls"&gt;
+                                        &lt;textarea name="content" style="visibility: hidden; width: 450px;" id="Method" bind="Content"&gt;&lt;p class="p3"&gt;正在考虑去中央大学留学的同学们：&lt;/p&gt;&lt;p class="p3"&gt;日本大学数量众多，学校各有特色，如何选择适合自己的学校也是一个大问题。为了解决同学们的困惑，和风留学携手日本最大升学辅导机构行知学院推出了日本大学、大学院专业咨询服务。为希望前往日本就读大学、大学院的同学提供专业一对一咨询，为了免费制定专业留学方案。我们目前拥有来自东大、京大、坂大、一桥、东京工业大学、庆应义塾大学、早稻田大学等名牌大学的80多名老师。希望能为你提供有价值的指导和答疑。需要咨询者请点击此处QQ&lt;/p&gt;&lt;/textarea&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="form-actions"&gt;
+                            &lt;button type="button" class="btn btn-success" id="btn_submit"&gt;Save&lt;/button&gt;
+                            &lt;%--&lt;button class="btn btn-danger" type="button"&gt;Cancel&lt;/button&gt;--%&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/form&gt;
+&lt;/asp:Content&gt;
+&lt;asp:Content ID="Content3" ContentPlaceHolderID="cph_Bottom" runat="server"&gt;
+    &lt;script src="/WebResource/js/jquery.uniform.js"&gt;&lt;/script&gt;
+    &lt;script src="/WebResource/js/jquery.gritter.min.js"&gt;&lt;/script&gt;
+    &lt;script src="/WebResource/js/jquery.peity.min.js"&gt;&lt;/script&gt;
+    &lt;script src="/WebResource/js/matrix.js"&gt;&lt;/script&gt;
+    &lt;script src="/WebResource/CustomJs/validate/Validform_v5.3.2_min.js"&gt;&lt;/script&gt;
+    &lt;script src="/WebResource/CustomJs/upload/jquery.uploadify.js"&gt;&lt;/script&gt;
+    &lt;script src="/WebResource/js/select2.min.js"&gt;&lt;/script&gt;
+    &lt;script src="/WebResource/CustomJs/kindeditor-master/kindeditor.js?v=2"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript"&gt;
+        var mgmte = {
+	    editor: null ,
+            init: function () {
+                $('input[type=checkbox],input[type=radio]').uniform();
+                $('select').select2();
+                $("#amount").blur(function () {
+                    mgmte.loadSilder($(this).val());
+                });
+                this.initEditor();
+                this.loadEntity();
+                this.initData();
+            },
+            loadEntity: function () {
+                this.Sysno = $.hFramework.querystring.get("sysno");
+                if (this.Sysno &amp;&amp; this.Sysno != 0) {
+                    Portal.Maintain.LoadEntity(this.Sysno, function (result) {
+                        if (result.error) {
+                            document.write(result.error.Message);
+                        } else {
+                            mgmte.setFiles(result.value.SmallImageUrl, result.value.BigImage);
+                            mgmte.loadSilder(result.value.Sort);
+                            bindHelper.bindEntity(result.value);
+			    editor.html(result.value.content);
+                        }
+                    });
+                } else {
+
+                    this.loadSilder(1);
+                    $("#div_InUser").hide();
+                    $("#div_InDate").hide();
+                }
+            },
+            initData: function () {
+                var _self = this;
+                $(".form-horizontal").Validform({
+                    btnSubmit: "#btn_submit",
+                    tiptype: 2,
+                    beforeSubmit: function (curform) {
+                        var entity = bindHelper.SetEntity();
+                        this.Sysno = $.hFramework.querystring.get("sysno");
+                        if (this.Sysno &amp;&amp; this.Sysno != 0) {
+                            entity.Sysno = this.Sysno;
+                            Portal.Maintain.Update(entity, function (result) {
+                                if (parseInt(result.value) &gt; 0) {
+                                    $.alert("修改成功!", function () {
+                                        window.parent.winClose();
+                                    });
+                                } else {
+                                    $.alert("修改失败!");
+                                }
+                            });
+                        } else {
+                            Portal.Maintain.Insert(entity, function (result) {
+                                if (parseInt(result.value) &gt; 0) {
+                                    $.alert("创建成功!", function () {
+                                        window.parent.winClose();
+                                    });
+                                } else {
+                                    $.alert("创建失败!");
+                                }
+                            });
+                        }
+                        return false;
+                    }
+                });
+            }, initEditor: function () {
+                KindEditor.ready(function (K) {
+                    width: "450px"
+                    , editor = K.create('textarea[name="content"]', {
+                        items: [
+                            'source', 'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
+                            'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
+                            'insertunorderedlist', '|', 'image', 'link']
+                    , afterBlur: function () { this.sync(); }
+                    , uploadJson: '../../Kindeditor/upload_json.aspx'
+                    , fileManagerJson: '../../Kindeditor/file_manager_json.aspx'
+                    , allowFileManager: true
+                    , afterChange: function () {
+                        KindEditor('.word_count1').html(this.count());
+                    }
+                    });
+                });
+            }, loadSilder: function (val) {
+                $("#slider").slider({
+                    value: val,
+                    min: 1,
+                    max: 9999,
+                    step: 1,
+                    slide: function (event, ui) {
+                        $("#amount").val(ui.value);
+                    }
+                });
+                $("#amount").val($("#slider").slider("value"));
+            }, getSmallImageHtml: function (path, url) {
+                var smllImage = "&lt;span class=\"date badge badge-info\" name=\"smallImage\" path='" + path + "'&gt;小图&lt;/span&gt;";
+                var item = "&lt;tr&gt;&lt;td width=\"5%\"&gt;" + smllImage + "&lt;/td&gt;&lt;td&gt;&lt;a href='" + url + "' target='_blank' name='files' bind='SmallImageUrl'&gt;" + path + "&lt;/a&gt;&lt;/td&gt;&lt;td width=\"10%\" style='text-align:center;'&gt;&lt;a href=\"javaScript:void(0);\" name='a_Del'&gt;删除&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;";
+                return item;
+            }, getBigImageHtml: function (path, url) {
+                var bigImage = "&lt;span class=\"date badge badge-info\" name=\"bigImage\" path='" + path + "'&gt;大图&lt;/span&gt;";
+                var item = "&lt;tr&gt;&lt;td width=\"5%\"&gt;" + bigImage + "&lt;/td&gt;&lt;td&gt;&lt;a href='" + url + "' target='_blank' name='files' bind='BigImage'&gt;" + path + "&lt;/a&gt;&lt;/td&gt;&lt;td width=\"10%\" style='text-align:center;'&gt;&lt;a href=\"javaScript:void(0);\" name='a_Del'&gt;删除&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;";
+                return item;
+            },
+            setFiles: function (SmallImageUrl, BigImage) {
+                if ($("#tr_fileTipMsg").length &gt; 0)
+                    $("#tr_fileTipMsg").remove();
+                var surl = '&lt;%=UploadImageUrl%&gt;' + SmallImageUrl;
+                var burl = '&lt;%=UploadImageUrl%&gt;' + BigImage;
+                var item = "";
+                item = mgmte.getBigImageHtml(BigImage, burl);
+                $("#tbody_files").append(item);
+                item = mgmte.getSmallImageHtml(SmallImageUrl, surl);
+                $("#tbody_files").append(item);
+            }
+        };
+        $(function () {
+            mgmte.init();
+
+            $("[name*='a_Del']").live("click", function () {
+                $(this).parent().parent().remove();
+
+                if ($("[name*='a_Del']").length &gt; 0) {
+                    $("#tr_fileTipMsg").remove();
+                } else {
+                    $("#tbody_files").append("&lt;tr id=\"tr_fileTipMsg\"&gt;&lt;td colspan=\"3\"&gt;暂无信息..&lt;/td&gt;&lt;/tr&gt;");
+                }
+            });
+        });
+    &lt;/script&gt;
+    &lt;script type="text/javascript"&gt;
+        $(function () {
+            $("#file_upload").uploadify({
+                buttonText: '选择文件',
+                height: 30,
+                swf: '/WebResource/CustomJs/upload/uploadify.swf',
+                cancelImg: '/WebResource/images/upload/uploadify-cancel.png',
+                uploader: '&lt;%=UploadUrl%&gt;?datetime=' + new Date().getTime(),
+                width: 120,
+                fileSizeLimit: '5MB',                //文件大小
+                'removeCompleted': true,
+                fileTypeDesc: '请选择 *.jpg;*.jpeg;*.gif;*.ai;*.pdg 文件', //文件类型提示
+                fileTypeExts: '*.jpg;*.jpeg;*.gif;*.ai;*.pdg',             //可选文件类型
+                'uploadLimit': 10,                     //上传文件数量
+                'queueSizeLimit': 2,
+                onUploadSuccess: function (file, data, response) {
+                    if (response) {
+                        $("#tr_fileTipMsg").remove();
+                        var url = '&lt;%=UploadImageUrl%&gt;' + data;
+                        //&lt;span class=\"label label-success\"&gt;Success&lt;/span&gt;
+                        var item = "";
+                        if ($("[name*='bigImage']").length == 0) {
+                            item = mgmte.getBigImageHtml(data, url);
+                        } else {
+                            item = mgmte.getSmallImageHtml(data, url);
+                        }
+                        $("#tbody_files").append(item);
+                    } else {
+                        $("#div_uploadMsg").html("操作失败，请稍后重试！");
+                    }
+
+                }
+            });
+        });
+    &lt;/script&gt;
+&lt;/asp:Content&gt;</value>
+  </data>
+  <data name="Maintainaspxcs" xml:space="preserve">
+    <value>using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using H.Website.Facade;
+using H.Entity;
+
+namespace H.Website.IISHost.Pages.$$$TableName$$$
+{
+    [AjaxPro.AjaxNamespace("Portal.Maintain")]
+    public partial class Maintain : H.Website.Facade.PageBase
+    {
+        public string UploadUrl
+        {
+            get;
+            set;
+        }
+
+        public string UploadImageUrl
+        {
+            get;
+            set;
+        }
+
+        /// &lt;summary&gt;
+        /// 不需登录验证
+        /// &lt;/summary&gt;
+        protected override bool RequireAuth
+        {
+            get { return true; }
+        }
+
+        protected override void Initialize()
+        {
+            AjaxPro.Utility.RegisterTypeForAjax(typeof(Maintain));
+            UploadUrl = H.Core.Utility.WebConfig.UploadService;
+            UploadImageUrl = H.Core.Utility.WebConfig.UploadImageUrl;
+
+        }
+
+        /// &lt;summary&gt;
+        /// 根据系统编号获取用户信息
+        /// &lt;/summary&gt;
+        [AjaxPro.AjaxMethod()]
+        public $$$TableName$$$Entity LoadEntity(string sysno)
+        {
+            $$$TableName$$$Entity entity = $$$TableName$$$Facade.LoadEntity(sysno);
+            return entity;
+        }
+
+        /// &lt;summary&gt;
+        /// 
+        /// &lt;/summary&gt;
+        /// &lt;returns&gt;&lt;/returns&gt;
+        [AjaxPro.AjaxMethod()]
+        public int Insert($$$TableName$$$Entity entity)
+        {
+            entity.InDate = DateTime.Now;
+            entity.InUser = WebContext.LoginUser.UserName;
+            return $$$TableName$$$Facade.Insert$$$TableName$$$(entity);
+        }
+
+
+        /// &lt;summary&gt;
+        /// 
+        /// &lt;/summary&gt;
+        /// &lt;returns&gt;&lt;/returns&gt;
+        [AjaxPro.AjaxMethod()]
+        public int Update($$$TableName$$$Entity entity)
+        {
+            return $$$TableName$$$Facade.Update$$$TableName$$$(entity);
+        }
+    }
+}</value>
+  </data>
+  <data name="Maintainaspxdesignercs" xml:space="preserve">
+    <value>//------------------------------------------------------------------------------
+// &lt;自动生成&gt;
+//     此代码由工具生成。
+//
+//     对此文件的更改可能会导致不正确的行为，并且如果
+//     重新生成代码，这些更改将会丢失。 
+// &lt;/自动生成&gt;
+//------------------------------------------------------------------------------
+
+namespace H.Website.IISHost.Pages.$$$TableName$$$ {
+    
+    
+    public partial class Maintain {
+        
+        /// &lt;summary&gt;
+        /// Form1 控件。
+        /// &lt;/summary&gt;
+        /// &lt;remarks&gt;
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// &lt;/remarks&gt;
+        protected global::System.Web.UI.HtmlControls.HtmlForm Form1;
+    }
+}</value>
+  </data>
+  <data name="RestServicetxt" xml:space="preserve">
+    <value>using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.ServiceModel;
+using System.ServiceModel.Activation;
+using System.ServiceModel.Web;
+using System.Text;
+using System.Threading.Tasks;
+using H.Core.Utility;
+using H.Entity;
+using H.Core.Utility.Log;
+using H.Service.IDataAccess;
+
+namespace H.Service.Rest
+{
+    /// &lt;summary&gt;
+    /// $$$Remark$$$Interface
+    /// &lt;/summary&gt;
+    [ServiceContract]
+    [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
+    [ServiceBehavior(ConcurrencyMode = ConcurrencyMode.Multiple, InstanceContextMode = InstanceContextMode.Single, AddressFilterMode = AddressFilterMode.Any)]
+    public class $$$TableName$$$Service
+    {
+        /// &lt;summary&gt;
+        /// 
+        /// &lt;/summary&gt;
+        /// &lt;param name="log"&gt;&lt;/param&gt;
+        [WebInvoke(UriTemplate = "/Search", Method = "POST")]
+        public List&lt;$$$TableName$$$Entity&gt; Search(QueryCondition&lt;$$$TableName$$$Entity&gt; entity)
+        {
+            return ObjectFactory&lt;I$$$TableName$$$DataAccess&gt;.Instance.Search(entity);
+        }
+
+        /// &lt;summary&gt;
+        /// 
+        /// &lt;/summary&gt;
+        /// &lt;param name="log"&gt;&lt;/param&gt;
+        [WebInvoke(UriTemplate = "/Insert$$$TableName$$$", Method = "POST")]
+        public int Insert$$$TableName$$$($$$TableName$$$Entity entity)
+        {
+            return ObjectFactory&lt;I$$$TableName$$$DataAccess&gt;.Instance.Insert$$$TableName$$$(entity);
+        }
+
+        /// &lt;summary&gt;
+        /// 
+        /// &lt;/summary&gt;
+        /// &lt;param name="log"&gt;&lt;/param&gt;
+        [WebInvoke(UriTemplate = "/Update$$$TableName$$$", Method = "POST")]
+        public int Update$$$TableName$$$($$$TableName$$$Entity entity)
+        {
+            return ObjectFactory&lt;I$$$TableName$$$DataAccess&gt;.Instance.Update$$$TableName$$$(entity);
+        }
+
+        /// &lt;summary&gt;
+        /// 
+        /// &lt;/summary&gt;
+        /// &lt;param name="log"&gt;&lt;/param&gt;
+        [WebInvoke(UriTemplate = "/Delete$$$TableName$$$", Method = "POST")]
+        public int Delete$$$TableName$$$(string sysno)
+        {
+            return ObjectFactory&lt;I$$$TableName$$$DataAccess&gt;.Instance.Delete$$$TableName$$$(sysno);
+        }
+
+        /// &lt;summary&gt;
+        /// 
+        /// &lt;/summary&gt;
+        /// &lt;param name="log"&gt;&lt;/param&gt;
+        [WebInvoke(UriTemplate = "/LoadEntity/{SysNo}", Method = "GET")]
+        public $$$TableName$$$Entity LoadEntity(string sysno)
+        {
+            return ObjectFactory&lt;I$$$TableName$$$DataAccess&gt;.Instance.LoadEntity(sysno);
+        }
+    }
+}</value>
+  </data>
+  <data name="WebPageaspx" xml:space="preserve">
+    <value>&lt;%@ Page Title="" Language="C#" MasterPageFile="~/Master/Master.Master" AutoEventWireup="true" CodeBehind="$$$TableName$$$.aspx.cs" Inherits="H.Website.IISHost.Pages.$$$TableName$$$.$$$TableName$$$" %&gt;
+
+&lt;asp:Content ID="Content1" ContentPlaceHolderID="cph_Head" runat="server"&gt;
+
+    &lt;link rel="stylesheet" href="/WebResource/css/datepicker.css" /&gt;
+    &lt;link rel="stylesheet" href="/WebResource/css/select2.css" /&gt;
+    &lt;link href="../../WebResource/css/uniform.css" rel="stylesheet" /&gt;
+    &lt;link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet"&gt;
+
+    &lt;style&gt;
+        #div_condition input {
+            line-height: 0px;
+        }
+
+        #div_condition input {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            padding: 4px 6px;
+        }
+    &lt;/style&gt;
+&lt;/asp:Content&gt;
+&lt;asp:Content ID="Content2" ContentPlaceHolderID="cph_Content" runat="server"&gt;
+    &lt;div id="content-header"&gt;
+        &lt;div id="breadcrumb"&gt;&lt;a href="#" title="Go to Home" class="tip-bottom"&gt;&lt;i class="icon-home"&gt;&lt;/i&gt;Home&lt;/a&gt; &lt;a href="#" class="current"&gt;$$$TableName$$$&lt;/a&gt;&lt;/div&gt;
+        &lt;div id="div_condition" style="padding-left: 20px; padding-right: 20px; padding-top: 20px; display: block;" class="controls"&gt;
+            &lt;table style="width: 100%;" class="table table-bordered data-table dataTable"&gt;
+                &lt;tr&gt;
+                    &lt;td width="40%" style="text-align: center;"&gt;
+                        &lt;label style="padding-left: 2%;"&gt;
+                            &lt;span style="margin-left:0px;"&gt;学系名称:&lt;/span&gt;
+                                &lt;input type="text" style="margin-left: 10px;" data-name="DepartmentName"&gt;&lt;/label&gt;
+
+                    &lt;/td&gt;
+                    &lt;td width="50%"&gt;
+                        &lt;label&gt;
+                            &lt;span style="margin-left:30px;"&gt;学校名:&lt;/span&gt;
+                            &lt;input type="text" style="margin-left: 10px;" data-name="SchoolName"&gt;&lt;/label&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td width="40%" style="text-align: center; padding-left:26px;"&gt;
+                        &lt;label&gt;
+                            创建日期:
+                                &lt;span class="add-on input-group-addon" style="padding: 0px 2px 0px 10px;"&gt;
+                                    &lt;i class="glyphicon glyphicon-calendar fa fa-calendar"&gt;&lt;/i&gt;&lt;/span&gt;
+                            &lt;input type="text" style="width: 200px;" name="reservation" id="reservation2" class="form-control" value="03/18/2013 - 03/23/2013"  data-name="InDateCondition"/&gt;
+                        &lt;/label&gt;
+                    &lt;/td&gt;
+                    &lt;td&gt;
+                        &lt;button class="tip-bottom" type="button" data-original-title="Search" id="btn_search" style="margin-left: 5%; margin-top:5px;"&gt;&lt;i class="icon-search icon-white"&gt;&lt;/i&gt;&lt;/button&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;form id="Form1" runat="server"&gt;&lt;/form&gt;
+    &lt;div class="container-fluid"&gt;
+        &lt;div class="row-fluid"&gt;
+            &lt;div class="span12"&gt;
+                &lt;div class="widget-box"&gt;
+                    &lt;div class="widget-title"&gt;
+                        &lt;span class="icon"&gt;&lt;i class="icon-th"&gt;&lt;/i&gt;&lt;/span&gt;
+                        &lt;h5&gt;DataList&lt;/h5&gt;
+                    &lt;/div&gt;
+                    &lt;div class="widget-content nopadding"&gt;
+                        &lt;div role="grid" class="dataTables_wrapper" id="DataTables_Table_0_wrapper"&gt;
+                            &lt;table class="table table-bordered data-table dataTable" id="tbl_List"&gt;
+                                &lt;tr&gt;
+                                    &lt;td width="3%"&gt;
+                                        &lt;input type="checkbox" name="title-table-checkbox" onclick="bindHelper.selectElement(this)" /&gt;&lt;/td&gt;
+                                    &lt;td width="7%" style="text-align:center;"&gt;系统编号&lt;/td&gt;
+                                    &lt;td width="30%"&gt;学系名称&lt;/td&gt;
+                                    &lt;td width="30%"&gt;所属大学&lt;/td&gt;
+                                    &lt;td width="10%" style="text-align:center;"&gt;排序&lt;/td&gt;
+                                    &lt;td width="10%" style="text-align:center;"&gt;创建人&lt;/td&gt;
+                                    &lt;td width="10%" style="text-align:center;"&gt;创建日期&lt;/td&gt;
+                                    &lt;td style="text-align: center;" width="5%"&gt;操作&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr class="odd gradeX"&gt;
+                                    &lt;td style="text-align: center;" bind="$.Sysno"&gt;
+                                        &lt;input type="checkbox" value="$.Value" name="selectElement" /&gt;&lt;/td&gt;
+                                    &lt;td bind="$.Sysno" style="text-align: center;"&gt;&lt;/td&gt;
+                                    &lt;td bind="$.DepartmentName"&gt;&lt;/td&gt;
+                                    &lt;td bind="$.SchoolName"&gt;&lt;/td&gt;
+                                    &lt;td bind="$.Sort" style="text-align:center;"&gt;&lt;/td&gt;
+                                    &lt;td bind="$.InUser" style="text-align:center;"&gt;&lt;/td&gt;
+                                    &lt;td bind="$.InDateStr" style="text-align:center;"&gt;&lt;/td&gt;
+                                    &lt;td bind="$.Sysno" style="text-align: center;"&gt;
+                                        &lt;a class="btn btn-primary btn-mini" href="javaScript:cg.maintain($.Value)" style="font-size:13px;"&gt;编辑&lt;/a&gt;&amp;nbsp;
+                                    &lt;/td&gt;
+                                &lt;/tr&gt;
+                            &lt;/table&gt;
+                            &lt;div class="fg-toolbar ui-toolbar ui-widget-header ui-corner-bl ui-corner-br ui-helper-clearfix"&gt;
+                                &lt;div style="float: left; margin-top: 5px;"&gt;
+                                    &lt;a href="javaScript:cg.add();" data-toggle="modal" class="btn btn-info" style="padding-top:5px;padding-bottom:5px;"&gt;新增&lt;/a&gt;
+                                    &lt;a href="javaScript:cg.deleteSel();" data-toggle="modal" class="btn btn-danger" style="padding-top:5px;padding-bottom:5px;"&gt;删除&lt;/a&gt;
+                                &lt;/div&gt;
+                                &lt;div class="dataTables_paginate fg-buttonset ui-buttonset fg-buttonset-multi ui-buttonset-multi paging_full_numbers" style="float: right;" id="div_pager"&gt;
+
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/asp:Content&gt;
+&lt;asp:Content ID="Content3" ContentPlaceHolderID="cph_Bottom" runat="server"&gt;
+    &lt;script src="/WebResource/js/jquery.uniform.js"&gt;&lt;/script&gt;
+    &lt;script src="/WebResource/js/jquery.ui.custom.js"&gt;&lt;/script&gt;
+    &lt;script src="/WebResource/js/bootstrap-datepicker.js"&gt;&lt;/script&gt;
+    &lt;script src="/WebResource/js/select2.min.js"&gt;&lt;/script&gt;
+    &lt;script src="/WebResource/CustomJs/bindHelper.js" charset="gbk"&gt;&lt;/script&gt;
+
+    &lt;link href="/WebResource/js/bootstrap-daterangepicker/daterangepicker-bs3.css" rel="stylesheet" /&gt;
+    &lt;script src="/WebResource/js/bootstrap-daterangepicker/moment.js"&gt;&lt;/script&gt;
+    &lt;script src="/WebResource/js/bootstrap-daterangepicker/daterangepicker.js"&gt;&lt;/script&gt;
+
+    &lt;script type="text/javascript"&gt;
+        $(function () {
+            $('input[type=checkbox],input[type=radio],input[type=file]').uniform();
+            $("#reservation2").val("");
+            $('#reservation2').daterangepicker(null, function (start, end, label) {
+                console.log(start.toISOString(), end.toISOString(), label);
+            });
+
+            bindHelper.AjaxProObject = Portal.$$$TableName$$$;
+            bindHelper.init();
+
+            $(".progress").remove();
+        });
+
+        var cg = {
+            maintain: function (sysno) {
+                $.showWindow('维护信息', '&lt;%=BuildUrl(H.Website.Facade.PageAlias.$$$TableName$$$Maintain)%&gt;?sysno=' + sysno + '&amp;timer=' + new Date().getTime(), 913, 590);
+            }, add: function () {
+                $.showWindow('添加信息', '&lt;%=BuildUrl(H.Website.Facade.PageAlias.$$$TableName$$$Maintain)%&gt;?timer=' + new Date().getTime(), 913, 590);
+            },
+            deleteSel: function () {
+                var ids = bindHelper.getSelectElementSysNo();
+                if (ids.length &gt; 0) {
+                    easyDialog.open({
+                        container: {
+                            header: '提示！',
+                            content: '确定删除已选中数据吗？&lt;br&gt;系统编号为：' + ids,
+                            yesFn: function () {
+                                var result = Portal.$$$TableName$$$.Delete(ids);
+                                if (result.error) {
+                                    document.write(result.error.Message);
+                                } else {
+                                    var value = result.value;
+                                    $.Tip("本次已成功删除：" + value + "条数据！");
+                                    bindHelper.search();
+                                }
+                            },
+                            noFn: true
+                        }
+                    });
+                } else {
+                    $.alert("请选择删除项!");
+                }
+            }
+        };
+    &lt;/script&gt;
+&lt;/asp:Content&gt;</value>
+  </data>
+  <data name="WebPageaspxcs" xml:space="preserve">
+    <value>using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using H.Website.Facade;
+using H.Entity;
+using H.Website.Facade.Facade;
+using H.Core.Utility;
+
+
+namespace H.Website.IISHost.Pages.$$$TableName$$$
+{
+    [AjaxPro.AjaxNamespace("Portal.$$$TableName$$$")]
+    public partial class $$$TableName$$$ : H.Website.Facade.PageBase
+    {
+        /// &lt;summary&gt;
+        /// 不需登录验证
+        /// &lt;/summary&gt;
+        protected override bool RequireAuth
+        {
+            get { return true; }
+        }
+
+        protected override void Initialize()
+        {
+            AjaxPro.Utility.RegisterTypeForAjax(typeof($$$TableName$$$));
+        }
+
+        /// &lt;summary&gt;
+        /// 查询数据
+        /// &lt;/summary&gt;
+        [AjaxPro.AjaxMethod()]
+        public string Search(QueryCondition&lt;$$$TableName$$$Entity&gt; query)
+        {
+            try
+            {
+                List&lt;$$$TableName$$$Entity&gt; list = $$$TableName$$$Facade.Search(query);
+                return new JsonSerializer().Serialization(list, typeof(List&lt;$$$TableName$$$Entity&gt;));
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        /// &lt;summary&gt;
+        /// 批量删除选中信息
+        /// &lt;/summary&gt;
+        [AjaxPro.AjaxMethod()]
+        public int Delete(string ids)
+        {
+            return $$$TableName$$$Facade.Delete$$$TableName$$$(ids);
+        }
+    }
+}</value>
+  </data>
+  <data name="WebPageaspxdesignercs" xml:space="preserve">
+    <value>//------------------------------------------------------------------------------
+// &lt;自动生成&gt;
+//     此代码由工具生成。
+//
+//     对此文件的更改可能会导致不正确的行为，并且如果
+//     重新生成代码，这些更改将会丢失。 
+// &lt;/自动生成&gt;
+//------------------------------------------------------------------------------
+
+namespace H.Website.IISHost.Pages.$$$TableName$$$ {
+    
+    
+    public partial class $$$TableName$$$ {
+        
+        /// &lt;summary&gt;
+        /// Form1 控件。
+        /// &lt;/summary&gt;
+        /// &lt;remarks&gt;
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// &lt;/remarks&gt;
+        protected global::System.Web.UI.HtmlControls.HtmlForm Form1;
+    }
+}</value>
+  </data>
+  <data name="Facade_Assembly" xml:space="preserve">
+    <value>using H.Core.Utility;
+using H.Entity;
+using H.Service.SqlDataAccess;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace H.Website.Facade
+{
+	/// &lt;summary&gt;
+    /// $$$Remark$$$Facade
+    /// &lt;/summary&gt;
+    public class $$$TableName$$$Facade
+    {
+
+        static $$$TableName$$$DataAccess access = new $$$TableName$$$DataAccess();
+        /// &lt;summary&gt;
+        /// 
+        /// &lt;/summary&gt;
+        /// &lt;param name="log"&gt;&lt;/param&gt;
+        public static List&lt;$$$TableName$$$Entity&gt; Search(QueryCondition&lt;$$$TableName$$$Entity&gt; entity)
+        {
+            return access.Search(entity);
+        }
+
+        /// &lt;summary&gt;
+        /// 
+        /// &lt;/summary&gt;
+        /// &lt;param name="log"&gt;&lt;/param&gt;
+        public static int Insert$$$TableName$$$($$$TableName$$$Entity entity)
+        {
+            return access.Insert$$$TableName$$$(entity);
+        }
+
+        /// &lt;summary&gt;
+        /// 
+        /// &lt;/summary&gt;
+        /// &lt;param name="log"&gt;&lt;/param&gt;
+        public static int Update$$$TableName$$$($$$TableName$$$Entity entity)
+        {
+            return access.Update$$$TableName$$$(entity);
+        }
+
+        /// &lt;summary&gt;
+        /// 
+        /// &lt;/summary&gt;
+        /// &lt;param name="log"&gt;&lt;/param&gt;
+        public static int Delete$$$TableName$$$(string sysno)
+        {
+            return access.Delete$$$TableName$$$(sysno);
+        }
+
+        /// &lt;summary&gt;
+        /// 
+        /// &lt;/summary&gt;
+        /// &lt;param name="log"&gt;&lt;/param&gt;
+        public static $$$TableName$$$Entity LoadEntity(string sysno)
+        {
+            return access.LoadEntity(sysno);
+        }
+    }
+}</value>
+  </data>
+</root>

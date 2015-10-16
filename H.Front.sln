@@ -1,0 +1,178 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00_H.Core", "00_H.Core", "{14805447-51A4-4B0A-9D0E-AE41D9B0E09D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H.Core.Rest", "H.Core\H.Core.Rest\H.Core.Rest.csproj", "{4E3B35BD-FDD2-4D72-AA57-E323DA17DDF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H.Core.Utility", "H.Core\H.Core.Utility\H.Core.Utility.csproj", "{B2168AC0-AC04-4E54-AA65-BB227FBC15CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H.Core.DataAccess", "H.Core\H.Core.DataAccess\H.Core.DataAccess.csproj", "{90591A3F-0F48-4CD7-94F2-66FEF3015C8F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01_Entity", "01_Entity", "{48D1267A-4101-4F85-8B4C-226F87460C8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H.Entity", "H.Entity\H.Entity\H.Entity.csproj", "{3CF47E36-13D7-4663-905C-424B3DC6C127}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04_Front", "04_Front", "{419E3DBC-FE6A-41F8-B6E7-E73F1505C4BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H.Website", "H.Front\H.Website\H.Website.csproj", "{D8E1874C-B86C-44D0-90A9-35E868D64C62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H.Facade", "H.Front\H.Facade\H.Facade.csproj", "{76C79C21-4A67-44CD-BEAE-ABAC2328E86B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H.Core.Cache", "H.Core\H.Core.Cache\H.Core.Cache.csproj", "{E5ABA238-61FF-453B-AC84-2275EF19F19E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02_Service", "02_Service", "{76A2D354-AD87-4D20-BC04-BF7AB3958768}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "H.Service.Domain", "H.Service.Domain", "{C06B51FD-D67E-486A-A7E1-856F42B0BDCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H.Service.IDataAccess", "H.Service\H.Service.Domain\H.Service.IDataAccess\H.Service.IDataAccess.csproj", "{E8332746-2B25-43A6-B540-8F553D9D73C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H.Service.MicrosoftAccessDataAccess", "H.Service\H.Service.Domain\H.Service.MicrosoftAccessDataAccess\H.Service.MicrosoftAccessDataAccess.csproj", "{3E6A8077-4637-4D3C-A981-0E49681AE7B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H.Service.Rest", "H.Service\H.Service.Domain\H.Service.Rest\H.Service.Rest.csproj", "{D52B7D7C-8C1A-413D-9D9B-88E62F17EBBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H.Service.SqlDataAccess", "H.Service\H.Service.Domain\H.Service.SqlDataAccess\H.Service.SqlDataAccess.csproj", "{3540F550-B8B5-47DA-834A-3D5EBA52DFCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H.Service.IISHost", "H.Service\H.Service.IISHost\H.Service.IISHost.csproj", "{F6D7706A-300F-4F89-B285-69629C1133DE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "09_Tools", "09_Tools", "{A528EC8D-9744-438F-87C3-2CB5649C2B0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UploadService", "H.Tools\UploadService\UploadService.csproj", "{D6088C78-8FF5-4BA4-AE1A-F727612BC2BD}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 14
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://115.29.192.182:8080/tfs/home
+		SccProjectUniqueName0 = H.Core\\H.Core.Utility\\H.Core.Utility.csproj
+		SccProjectTopLevelParentUniqueName0 = H.Front.sln
+		SccProjectName0 = H.Core/H.Core.Utility
+		SccLocalPath0 = H.Core\\H.Core.Utility
+		SccProjectUniqueName1 = H.Core\\H.Core.Rest\\H.Core.Rest.csproj
+		SccProjectTopLevelParentUniqueName1 = H.Front.sln
+		SccProjectName1 = H.Core/H.Core.Rest
+		SccLocalPath1 = H.Core\\H.Core.Rest
+		SccProjectUniqueName2 = H.Core\\H.Core.DataAccess\\H.Core.DataAccess.csproj
+		SccProjectTopLevelParentUniqueName2 = H.Front.sln
+		SccProjectName2 = H.Core/H.Core.DataAccess
+		SccLocalPath2 = H.Core\\H.Core.DataAccess
+		SccProjectUniqueName3 = H.Entity\\H.Entity\\H.Entity.csproj
+		SccProjectTopLevelParentUniqueName3 = H.Front.sln
+		SccProjectName3 = H.Entity/H.Entity
+		SccLocalPath3 = H.Entity\\H.Entity
+		SccProjectUniqueName4 = H.Core\\H.Core.Cache\\H.Core.Cache.csproj
+		SccProjectTopLevelParentUniqueName4 = H.Front.sln
+		SccProjectName4 = H.Core/H.Core.Cache
+		SccLocalPath4 = H.Core\\H.Core.Cache
+		SccProjectUniqueName5 = H.Service\\H.Service.Domain\\H.Service.IDataAccess\\H.Service.IDataAccess.csproj
+		SccProjectTopLevelParentUniqueName5 = H.Front.sln
+		SccProjectName5 = H.Service/H.Service.Domain/H.Service.IDataAccess
+		SccLocalPath5 = H.Service\\H.Service.Domain\\H.Service.IDataAccess
+		SccProjectUniqueName6 = H.Service\\H.Service.Domain\\H.Service.MicrosoftAccessDataAccess\\H.Service.MicrosoftAccessDataAccess.csproj
+		SccProjectTopLevelParentUniqueName6 = H.Front.sln
+		SccProjectName6 = H.Service/H.Service.Domain/H.Service.MicrosoftAccessDataAccess
+		SccLocalPath6 = H.Service\\H.Service.Domain\\H.Service.MicrosoftAccessDataAccess
+		SccProjectUniqueName7 = H.Service\\H.Service.Domain\\H.Service.SqlDataAccess\\H.Service.SqlDataAccess.csproj
+		SccProjectTopLevelParentUniqueName7 = H.Front.sln
+		SccProjectName7 = H.Service/H.Service.Domain/H.Service.SqlDataAccess
+		SccLocalPath7 = H.Service\\H.Service.Domain\\H.Service.SqlDataAccess
+		SccProjectUniqueName8 = H.Service\\H.Service.Domain\\H.Service.Rest\\H.Service.Rest.csproj
+		SccProjectTopLevelParentUniqueName8 = H.Front.sln
+		SccProjectName8 = H.Service/H.Service.Domain/H.Service.Rest
+		SccLocalPath8 = H.Service\\H.Service.Domain\\H.Service.Rest
+		SccProjectUniqueName9 = H.Service\\H.Service.IISHost\\H.Service.IISHost.csproj
+		SccProjectTopLevelParentUniqueName9 = H.Front.sln
+		SccProjectName9 = H.Service/H.Service.IISHost
+		SccLocalPath9 = H.Service\\H.Service.IISHost
+		SccProjectUniqueName10 = H.Tools\\UploadService\\UploadService.csproj
+		SccProjectTopLevelParentUniqueName10 = H.Front.sln
+		SccProjectName10 = H.Tools/UploadService
+		SccLocalPath10 = H.Tools\\UploadService
+		SccLocalPath11 = .
+		SccProjectUniqueName12 = H.Front\\H.Website\\H.Website.csproj
+		SccProjectTopLevelParentUniqueName12 = H.Front.sln
+		SccProjectName12 = H.Front/H.Website
+		SccLocalPath12 = H.Front\\H.Website
+		SccProjectUniqueName13 = H.Front\\H.Facade\\H.Facade.csproj
+		SccProjectTopLevelParentUniqueName13 = H.Front.sln
+		SccProjectName13 = H.Front/H.Facade
+		SccLocalPath13 = H.Front\\H.Facade
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E3B35BD-FDD2-4D72-AA57-E323DA17DDF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E3B35BD-FDD2-4D72-AA57-E323DA17DDF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E3B35BD-FDD2-4D72-AA57-E323DA17DDF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E3B35BD-FDD2-4D72-AA57-E323DA17DDF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2168AC0-AC04-4E54-AA65-BB227FBC15CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2168AC0-AC04-4E54-AA65-BB227FBC15CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2168AC0-AC04-4E54-AA65-BB227FBC15CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2168AC0-AC04-4E54-AA65-BB227FBC15CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90591A3F-0F48-4CD7-94F2-66FEF3015C8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90591A3F-0F48-4CD7-94F2-66FEF3015C8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90591A3F-0F48-4CD7-94F2-66FEF3015C8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90591A3F-0F48-4CD7-94F2-66FEF3015C8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CF47E36-13D7-4663-905C-424B3DC6C127}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CF47E36-13D7-4663-905C-424B3DC6C127}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CF47E36-13D7-4663-905C-424B3DC6C127}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CF47E36-13D7-4663-905C-424B3DC6C127}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8E1874C-B86C-44D0-90A9-35E868D64C62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8E1874C-B86C-44D0-90A9-35E868D64C62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8E1874C-B86C-44D0-90A9-35E868D64C62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8E1874C-B86C-44D0-90A9-35E868D64C62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76C79C21-4A67-44CD-BEAE-ABAC2328E86B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76C79C21-4A67-44CD-BEAE-ABAC2328E86B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76C79C21-4A67-44CD-BEAE-ABAC2328E86B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76C79C21-4A67-44CD-BEAE-ABAC2328E86B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5ABA238-61FF-453B-AC84-2275EF19F19E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5ABA238-61FF-453B-AC84-2275EF19F19E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5ABA238-61FF-453B-AC84-2275EF19F19E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5ABA238-61FF-453B-AC84-2275EF19F19E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8332746-2B25-43A6-B540-8F553D9D73C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8332746-2B25-43A6-B540-8F553D9D73C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8332746-2B25-43A6-B540-8F553D9D73C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8332746-2B25-43A6-B540-8F553D9D73C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E6A8077-4637-4D3C-A981-0E49681AE7B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E6A8077-4637-4D3C-A981-0E49681AE7B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E6A8077-4637-4D3C-A981-0E49681AE7B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E6A8077-4637-4D3C-A981-0E49681AE7B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D52B7D7C-8C1A-413D-9D9B-88E62F17EBBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D52B7D7C-8C1A-413D-9D9B-88E62F17EBBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D52B7D7C-8C1A-413D-9D9B-88E62F17EBBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D52B7D7C-8C1A-413D-9D9B-88E62F17EBBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3540F550-B8B5-47DA-834A-3D5EBA52DFCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3540F550-B8B5-47DA-834A-3D5EBA52DFCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3540F550-B8B5-47DA-834A-3D5EBA52DFCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3540F550-B8B5-47DA-834A-3D5EBA52DFCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6D7706A-300F-4F89-B285-69629C1133DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6D7706A-300F-4F89-B285-69629C1133DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6D7706A-300F-4F89-B285-69629C1133DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6D7706A-300F-4F89-B285-69629C1133DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6088C78-8FF5-4BA4-AE1A-F727612BC2BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6088C78-8FF5-4BA4-AE1A-F727612BC2BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6088C78-8FF5-4BA4-AE1A-F727612BC2BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6088C78-8FF5-4BA4-AE1A-F727612BC2BD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4E3B35BD-FDD2-4D72-AA57-E323DA17DDF7} = {14805447-51A4-4B0A-9D0E-AE41D9B0E09D}
+		{B2168AC0-AC04-4E54-AA65-BB227FBC15CD} = {14805447-51A4-4B0A-9D0E-AE41D9B0E09D}
+		{90591A3F-0F48-4CD7-94F2-66FEF3015C8F} = {14805447-51A4-4B0A-9D0E-AE41D9B0E09D}
+		{E5ABA238-61FF-453B-AC84-2275EF19F19E} = {14805447-51A4-4B0A-9D0E-AE41D9B0E09D}
+		{3CF47E36-13D7-4663-905C-424B3DC6C127} = {48D1267A-4101-4F85-8B4C-226F87460C8B}
+		{D8E1874C-B86C-44D0-90A9-35E868D64C62} = {419E3DBC-FE6A-41F8-B6E7-E73F1505C4BF}
+		{76C79C21-4A67-44CD-BEAE-ABAC2328E86B} = {419E3DBC-FE6A-41F8-B6E7-E73F1505C4BF}
+		{C06B51FD-D67E-486A-A7E1-856F42B0BDCA} = {76A2D354-AD87-4D20-BC04-BF7AB3958768}
+		{F6D7706A-300F-4F89-B285-69629C1133DE} = {76A2D354-AD87-4D20-BC04-BF7AB3958768}
+		{E8332746-2B25-43A6-B540-8F553D9D73C9} = {C06B51FD-D67E-486A-A7E1-856F42B0BDCA}
+		{3E6A8077-4637-4D3C-A981-0E49681AE7B8} = {C06B51FD-D67E-486A-A7E1-856F42B0BDCA}
+		{D52B7D7C-8C1A-413D-9D9B-88E62F17EBBC} = {C06B51FD-D67E-486A-A7E1-856F42B0BDCA}
+		{3540F550-B8B5-47DA-834A-3D5EBA52DFCA} = {C06B51FD-D67E-486A-A7E1-856F42B0BDCA}
+		{D6088C78-8FF5-4BA4-AE1A-F727612BC2BD} = {A528EC8D-9744-438F-87C3-2CB5649C2B0F}
+	EndGlobalSection
+EndGlobal

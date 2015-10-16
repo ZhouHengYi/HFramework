@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3540F550-B8B5-47DA-834A-3D5EBA52DFCA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>H.Service.SqlDataAccess</RootNamespace>
+    <AssemblyName>H.Service.SqlDataAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\BrowsingHistoryDataAccess.cs" />
+    <Compile Include="Common\ErrorLogDataAccess.cs" />
+    <Compile Include="ElleUser\ElleUserDataAccess.cs" />
+    <Compile Include="Log\LogDataAccess.cs" />
+    <Compile Include="Product\ProductDataAccess.cs" />
+    <Compile Include="Product\ProductTypeDataAccess.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\ExportReportDataAccess.cs" />
+    <Compile Include="SystemUser\SystemUserDataAccess.cs" />
+    <Compile Include="SystemUser\SystemUser_PrivilegeDataAccess.cs" />
+    <Compile Include="SystemUser\SystemUser_RoleDataAccess.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\H.Core\H.Core.DataAccess\H.Core.DataAccess.csproj">
+      <Project>{90591a3f-0f48-4cd7-94f2-66fef3015c8f}</Project>
+      <Name>H.Core.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\H.Core\H.Core.Utility\H.Core.Utility.csproj">
+      <Project>{b2168ac0-ac04-4e54-aa65-bb227fbc15cd}</Project>
+      <Name>H.Core.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\H.Entity\H.Entity\H.Entity.csproj">
+      <Project>{3cf47e36-13d7-4663-905c-424b3dc6c127}</Project>
+      <Name>H.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\H.Service.IDataAccess\H.Service.IDataAccess.csproj">
+      <Project>{e8332746-2b25-43a6-b540-8f553d9d73c9}</Project>
+      <Name>H.Service.IDataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\H.Service.IISHost\Configuration\Data\AccessDbCommand\SystemUser.config">
+      <Link>Configuration\Data\AccessDbCommand\SystemUser.config</Link>
+    </None>
+    <None Include="..\..\H.Service.IISHost\Configuration\Data\Database.config">
+      <Link>Configuration\Data\Database.config</Link>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="..\..\H.Service.IISHost\Configuration\Data\DbCommandFiles.config">
+      <Link>Configuration\Data\DbCommandFiles.config</Link>
+    </None>
+    <None Include="..\..\H.Service.IISHost\Configuration\Data\ReportDbCommand\ExportReport.config">
+      <Link>Configuration\Data\ReportDbCommand\ExportReport.config</Link>
+    </None>
+    <None Include="..\..\H.Service.IISHost\Configuration\Data\SqlServerDbCommand\BrowsingHistory.config">
+      <Link>Configuration\Data\DbCommand\BrowsingHistory.config</Link>
+    </None>
+    <None Include="..\..\H.Service.IISHost\Configuration\Data\SqlServerDbCommand\ErrorLog.config">
+      <Link>Configuration\Data\DbCommand\ErrorLog.config</Link>
+    </None>
+    <None Include="..\..\H.Service.IISHost\Configuration\Data\SqlServerDbCommand\Log.config">
+      <Link>Configuration\Data\DbCommand\Log.config</Link>
+    </None>
+    <None Include="..\..\H.Service.IISHost\Configuration\Data\SqlServerDbCommand\MyREST.config">
+      <Link>Configuration\Data\DbCommand\MyREST.config</Link>
+    </None>
+    <None Include="..\..\H.Service.IISHost\Configuration\Data\SqlServerDbCommand\Product.config">
+      <Link>Configuration\Data\DbCommand\Product.config</Link>
+    </None>
+    <None Include="..\..\H.Service.IISHost\Configuration\Data\SqlServerDbCommand\ProductType.config">
+      <Link>Configuration\Data\DbCommand\ProductType.config</Link>
+    </None>
+    <None Include="..\..\H.Service.IISHost\Configuration\Data\SqlServerDbCommand\SystemUser.config">
+      <Link>Configuration\Data\DbCommand\SystemUser.config</Link>
+    </None>
+    <None Include="..\..\H.Service.IISHost\Configuration\Data\SqlServerDbCommand\SystemUser_Privilege.config">
+      <Link>Configuration\Data\DbCommand\SystemUser_Privilege.config</Link>
+    </None>
+    <None Include="..\..\H.Service.IISHost\Configuration\Data\SqlServerDbCommand\SystemUser_Role.config">
+      <Link>Configuration\Data\DbCommand\SystemUser_Role.config</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /C /I /R /Y /S "$(TargetDir)*.dll" "$(SolutionDir)H.Service\H.Service.IISHost\Bin"
+xcopy /C /I /R /Y /S "$(TargetDir)*.pdb" "$(SolutionDir)H.Service\H.Service.IISHost\Bin"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

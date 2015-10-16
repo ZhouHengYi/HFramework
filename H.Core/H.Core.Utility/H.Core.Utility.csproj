@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B2168AC0-AC04-4E54-AA65-BB227FBC15CD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>H.Core.Utility</RootNamespace>
+    <AssemblyName>H.Core.Utility</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Http">
+      <HintPath>..\..\3Party\Microsoft.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Http.Extensions">
+      <HintPath>..\..\3Party\Microsoft.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ServiceModel.Web">
+      <HintPath>..\..\3Party\Microsoft.ServiceModel.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutorunManager.cs" />
+    <Compile Include="ConfigurationManager\WebConfig.cs" />
+    <Compile Include="Cookie\CookieManager.cs" />
+    <Compile Include="DataMapper\Analyst.cs" />
+    <Compile Include="DataMapper\DataMapper.cs" />
+    <Compile Include="DataMapper\EnumCodeMapper.cs" />
+    <Compile Include="DataMapper\InputMap.cs" />
+    <Compile Include="DataMapper\ReturnMap.cs" />
+    <Compile Include="EmailHelper.cs" />
+    <Compile Include="EncryHelper.cs" />
+    <Compile Include="Enum\EnumHelper.cs" />
+    <Compile Include="ExceptionHelper.cs" />
+    <Compile Include="Exception\BizException.cs" />
+    <Compile Include="Extension.cs" />
+    <Compile Include="FastInvoke\EmitHelper.cs" />
+    <Compile Include="FastInvoke\IInvoke.cs" />
+    <Compile Include="FastInvoke\Invoker.cs" />
+    <Compile Include="FastInvoke\InvokerEmitter.cs" />
+    <Compile Include="FastInvoke\InvokerFactory.cs" />
+    <Compile Include="FileWatcher\FileSystemWatcherManager.cs" />
+    <Compile Include="ImageHelper\ImageHelper.cs" />
+    <Compile Include="ImageHelper\ImageResizingManagerBP.cs" />
+    <Compile Include="ImageHelper\ImageResizingManagerForMobileBP.cs" />
+    <Compile Include="Log\Emitter\EmitterFactory.cs" />
+    <Compile Include="Log\Emitter\ILogEmitter.cs" />
+    <Compile Include="Log\Emitter\LogSection.cs" />
+    <Compile Include="Log\Emitter\LogUtility.cs" />
+    <Compile Include="Log\Emitter\TxtEmitter.cs" />
+    <Compile Include="Log\Emitter\WebServiceEmitter.cs" />
+    <Compile Include="Log\LogEntry.cs" />
+    <Compile Include="Log\Logger.cs" />
+    <Compile Include="ObjectFactory\IMetadata.cs" />
+    <Compile Include="ObjectFactory\ObjectFactory.cs" />
+    <Compile Include="ObjectFactory\RealObjectFactory.cs" />
+    <Compile Include="ObjectFactory\TypeVersionConfig.cs" />
+    <Compile Include="ObjectFactory\TypeVersionMap.cs" />
+    <Compile Include="ObjectFactory\VersionExportAttribute.cs" />
+    <Compile Include="PDFHepler.cs" />
+    <Compile Include="Resources\PageConfig.cs" />
+    <Compile Include="Resources\SiteMapConfig.cs" />
+    <Compile Include="RestClient\RestClient.cs" />
+    <Compile Include="ServiceContext.cs" />
+    <Compile Include="Startup\FileSystemWatcherStartup.cs" />
+    <Compile Include="ObjectInstance\DataConvertor.cs" />
+    <Compile Include="ObjectInstance\ObjectInstance.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RestClient\ContentTypes.cs" />
+    <Compile Include="RestClient\Operating.cs" />
+    <Compile Include="SerializerFactory.cs" />
+    <Compile Include="StringUtility.cs" />
+    <Compile Include="UrlMapping\UrlMappingWatcherStartup.cs" />
+    <Compile Include="UtitlityEntity\RestServiceError.cs" />
+    <Compile Include="UtitlityEntity\ResultEntity.cs" />
+    <Compile Include="VerifyCode.cs" />
+    <Compile Include="VideoHelper.cs" />
+    <Compile Include="XmlHelper.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /C /I /R /Y /S "$(TargetDir)*.dll" "$(SolutionDir)H.Service\H.Service.IISHost\Bin"
+xcopy /C /I /R /Y /S "$(TargetDir)*.pdb" "$(SolutionDir)H.Service\H.Service.IISHost\Bin"
+xcopy /C /I /R /Y /S "$(TargetDir)*.dll" "$(SolutionDir)H.Website\H.Website.IISHost\Bin"
+xcopy /C /I /R /Y /S "$(TargetDir)*.pdb" "$(SolutionDir)H.Website\H.Website.IISHost\Bin"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,250 @@
+/************************************************全局body区**************************************************/
+body{ color:#666666; font-size:14px; font-family:Arial,Microsoft Yahei; background-color:#FFF; }
+body,ul,li,ol,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,span,dl,dd,dt{ margin:0;padding:0;border:none;}
+select,input,img,select,textarea{vertical-align:middle; color:#666666; font-size:14px; font-family:Arial,Microsoft Yahei;}
+ul,li{ list-style:none; list-style-type:none;}
+font,h1,h2,h3,h4,h5,h6{ font-size:14px; font-weight:normal;}
+div,p,span{word-wrap:break-word;word-break:break-all;}
+
+/************************************************全局样式**************************************************/
+
+a{ blr:expression(this.onFocus=this.blur());}
+a:focus{outline:none;}
+
+a{color:#666; text-decoration:none;}
+a:hover {color:#000; text-decoration:none;}
+
+a.white{color:#FFF; text-decoration:none;}
+a.white:hover {color:#FFF; text-decoration:none;}
+
+a.red{color:#FF0000; text-decoration:none;}
+a.red:hover {color:#FF0000; text-decoration:none;}
+
+a.orange{color:#FF6600; text-decoration:none;}
+a.orange:hover {color:#FF6600; text-decoration:none;}
+
+a.blue{color:#139ae0; text-decoration:none;}
+a.blue:hover {color:#139ae0; text-decoration:none;}
+
+.red{ color:#ff0000;}
+.green{ color:#00b21d;}
+.blue{ color:#007ac8}
+.golden{ color:#ffd800;}
+.orange{ color:#FF6600;}
+
+.clearfix:after { content:"."; display:block; height:0; clear:both; visibility:hidden;}
+.clearfix { display:inline-block;}
+.clearfix {display:block;}
+
+.blank20{ height:20px; line-height:20px; font-size:0; clear:both; display:block; overflow:hidden;}
+.blank10{ height:10px; line-height:10px; font-size:0; clear:both; display:block; overflow:hidden;}
+
+.rel{ position:relative;}
+.fl{ float:left;}
+.fr{ float:right;}
+.auto{margin:auto;}
+.font12px{ font-size:12px;}
+
+.bodywidth{ width:1040px;}
+
+/***********************************************************首页样式*************************************************************************/
+
+.header{ height:90px; padding-top:10px; width:100%; background-color:#FFF; position:fixed; z-index:99999999; border-bottom:1px #dedede solid;}
+
+
+
+.nav{ float:right; margin-top:20px;}
+.nav li{ width:88px; height:46px; float:left; font-size:14px;  text-align:center; line-height:46px; }
+.nav li a{ width:88px; height:46px; display:block;}
+.nav li a:hover{ width:88px; height:46px;  background:url(../images/icon.png) no-repeat 0px -93px; color:#f8b544;}
+.on {width:88px; height:46px;  background:url(../images/icon.png) no-repeat; color:#52b6ff;    }
+
+#navon{ width:111px; height:39px;  background:url(../images/navhover.jpg) no-repeat; color:#FFF;}
+
+/*banner*/
+#focusBar { width:100%; height:500px; clear:both; position:relative; background:url(../images/bannerbg.jpg) center top #0094ff; overflow:hidden;}
+#focusBar li { width:100%; clear:both; height:500px; display:none; position:absolute;/* position:relative;*/}
+#focusBar .focusL { width:1000px; height:500px; position:absolute; z-index:9; /*left:-1000px;*/ top:0px; left:-500px; margin-left:50%;}
+#focusBar .focusR {  width:1000px; height:500px; position:absolute; z-index:19;/* right:1000px; */top:0px; left:-500px; margin-left:50%;}
+
+a.arrL,a.arrR { display:block; width:52px; height:134px; position:absolute; top:190px; z-index:99; cursor:pointer; background-image:url(../images/bt_arr.png); background-repeat:no-repeat;  }
+a.arrL { left:0px; background-position:0px -156px;} a.arrR { right:0px; background-position:0px 0px;}
+a.arrL:hover { background-position:-70px -156px;}
+a.arrR:hover { background-position:-70px 0px;}
+
+/*banner*/
+
+.mbg{ height:103px; background:url(../images/mbg_02.jpg) repeat-x; font-family:Georgia, "Times New Roman", Times, serif; color:#959595; }
+.mbg h4{ font-size:20px;  padding-top:30px; padding-bottom:0px; font-weight:bold; color:#666666;}
+
+.mbg2{ height:103px; background:url(../images/mbg_02.jpg) repeat-x; color:#959595; }
+.mbg2 h4{ font-size:20px;  padding-top:30px; padding-bottom:0px; font-weight:bold; color:#666666;}
+
+.Vtab{}
+.Vtab li{ width:90px; height:32px;  line-height:32px; font-size:14px; margin-left:5px; margin-right:5px; display:inline-block; cursor:pointer;}
+.Vtab li.onclick{ background:url(../images/mbg.jpg) no-repeat; color:#FFF;}
+
+.Hcase{}
+.Hcase li{ width:250px; height:280px;  float:left; margin:5px; display:inline; overflow:hidden; background-color:#000;}
+.Hcase li img{ width:250px; height:250px;}
+.Hcase li p{ line-height:29px; background-color:#FFF; height:29px; text-align:center; overflow:hidden; border-bottom:1px #dedede solid;}
+.Hcase li a{ display:block;}
+.Hcase li div{ width:250px; height:280px; background:url(../images/logodh.jpg) no-repeat center center #0094ff; display:none;}
+
+
+.page{ text-align:center; font-family:SimSun; clear:both; padding-top:20px;}
+.page a{ padding:2px 6px 2px 6px; display:inline-block; border:1px #dedede solid; border-radius:3px; color:#959595;}
+.page a:hover{ border:1px #0094ff solid; background-color:#0094ff; color:#FFF;}
+#pageOn{ border:1px #0094ff solid; background-color:#0094ff;  color:#FFF;}
+
+.servicebox{}
+.servicebox li{ width:332px; height:240px; margin-left:7px; margin-right:7px;
+background-color:#f5f5f5; float:left; display:inline; text-align:center; overflow:hidden;}
+
+.servicebox li img{ margin-top:30px; margin-bottom:0px;}
+.servicebox li p{ line-height:30px; font-size:14px;}
+.servicebox li font{ display:block; color:#959595; line-height:20px; font-size:12px;}
+
+.servicebox li div{ width:332px; height:240px; background-color:#333;  display:none; color:#fd8200}
+.servicebox li div font{ color:#fd8200;}
+
+.clients_box { width:1021px; height:243px; overflow:hidden; border-top:#efeff0 1px solid; border-left:#efeff0 1px solid; background-color:#ffffff; clear:both; overflow:hidden; margin:0px auto 0px auto;}
+.clients_box li { float:left; padding:0px; border-bottom:#efeff0 1px solid; border-right:#efeff0 1px solid; width:169px; height:80px;/**/ overflow:hidden;}
+.clients_box img{ width:165px; height:80px; margin:0px; padding:0px;}
+
+
+.Haboutbg{ background:url(../images/abg_01.png) no-repeat left top ;}
+.Haboutbg2{background:url(../images/abg_03.png) no-repeat left bottom; }
+
+
+.habox{ width:640px; height:360px; margin:auto; overflow:hidden; }
+.hatext{line-height:24px; color:#959595; height:118px; overflow:hidden; padding-top:30px;}
+
+.Hnews{}
+.Hnews li{ background:url(../images/line.jpg) repeat-x left bottom; padding-bottom:20px; margin-bottom:20px;}
+.Hnews li img{ width:200px; height:130px; float:left;}
+.Htext{ width:410px; float:right;}
+.Htext h4{ height:30px; line-height:30px; overflow:hidden;}
+.Htext p{ height:60px; line-height:20px; overflow:hidden; color:#959595;}
+
+
+
+
+.Hleft{ width:69%;}
+.Hright{ width:29%;}
+
+.message{}
+.message li{ height:32px; line-height:32px; margin-bottom:10px;}
+.ipt{ height:30px; border:1px #f5f5f5 solid; border-left:1px #e3e3e3 solid; border-top:1px #e3e3e3 solid; text-indent:5px; width:344px; margin-right:10px;}
+
+
+.sub{ width:90px; height:32px; background-color:#0094ff; border-radius:3px; display:inline-block; text-align:center; color:#FFF;}
+.sub:hover{ background-color:#36abff;}
+
+.text{line-height:24px; color:#959595;}
+
+.map{ width:302px; height:128px;}
+
+.footerline{ height:2px; line-height:2px; overflow:hidden; background:url(../images/mbg_04.jpg) repeat-x;}
+.footer{ height:170px; background:url(../images/mbg_03.jpg) repeat; padding-top:20px; padding-bottom:20px;}
+.BQ{ line-height:60px; text-align:center; background-color:#333; color:#FFF;}
+
+
+.botit{ padding-bottom:15px;}
+.botit font{ font-size:20px; font-weight:bold; font-family:Georgia, "Times New Roman", Times, serif;}
+
+.links{ width:340px; border-right:1px #e3e3e3 solid;}
+.links li{ display:inline-block; line-height:30px; margin-right:15px; color:#999;}
+.links li a{ color:#999;}
+.links li a:hover{ color:#000;}
+
+
+
+
+
+
+.computer{ width:981px; height:564px; background:url(../images/pgbg_03.png) no-repeat; margin-top:40px; padding-top:34px;}
+.combg{ width:746px; height:466px; background:url(../images/logodh.jpg) no-repeat center center #0094ff; margin-left:118px; }
+
+
+
+
+
+/***********************************************************************************************************************************************/
+
+#slides { z-index:0; position: relative; width:746px;  height:466px; }
+.slides_container { width:746px; overflow:hidden; position:relative; left:0px; display:none; }
+.slides_container a { width:746px; height:466px; display:block;}
+.slides_container a img { display:block; }
+
+.pagination { width:746px; height:30px; position:absolute;  z-index:88888; top:472px;  left:0px; text-align:center; }
+.pagination li {  display:inline-block;  margin-left:6px; margin-right:6px;}
+.pagination li a { display:inline-block;  width:10px; height:10px; text-indent:20px;  background:url(../images/bbt_03.png) no-repeat;  overflow:hidden; cursor:pointer; color:#fff; zoom:1; }
+.pagination li.current a{ background:url(../images/bbt_05.png) no-repeat;  cursor:pointer;}
+
+
+#slides .next,#slides .prev {
+	position:absolute;
+	top:190px;
+	left:20px;
+	width:34px;
+	height:53px;
+	display:block;
+	z-index:101;
+}
+
+
+
+#slides .next {
+	left:694px;
+}
+
+
+/*
+    ColorBox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{ position:relative; }
+#cboxLoadedContent{overflow:auto;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block;}
+.cboxIframe{width:100%; height:100%; display:block; border:0;}
+
+/* 
+    User Style:
+    Change the following styles to modify the appearance of ColorBox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay{ background-color:#000; filter: Alpha(Opacity=100); opacity:1;}
+#colorbox{ }
+#cboxTopLeft{width:21px; height:21px; background:url(../images/controls.png) no-repeat -100px 0;}
+#cboxTopRight{width:21px; height:21px; background:url(../images/controls.png) no-repeat -129px 0;}
+#cboxBottomLeft{width:21px; height:21px; background:url(../images/controls.png) no-repeat -100px -29px;}
+#cboxBottomRight{width:21px; height:21px; background:url(../images/controls.png) no-repeat -129px -29px;}
+#cboxMiddleLeft{width:21px; background:url(../images/controls.png) left top repeat-y;}
+#cboxMiddleRight{width:21px; background:url(../images/controls.png) right top repeat-y;}
+#cboxTopCenter{height:21px; background:url(../images/border.png) 0 0 repeat-x #000000;}
+#cboxBottomCenter{height:21px; background:url(../images/border.png) 0 -29px repeat-x #000000;;}
+#cboxContent{background:#fff; overflow:hidden;font-size: 12px;}
+#cboxError{padding:50px; border:1px solid #ccc;}
+#cboxLoadedContent{margin-bottom:28px;}
+#cboxTitle{position:absolute; bottom:4px; left:0; text-align:center; width:100%; color:#949494;}
+#cboxCurrent{position:absolute; bottom:4px; left:58px; color:#949494;}
+#cboxSlideshow{position:absolute; bottom:4px; right:30px; color:#0092ef;}
+#cboxPrevious{position:absolute; bottom:0; left:0; background:url(../images/controls.png) no-repeat -75px 0; width:25px; height:25px; text-indent:-9999px;}
+#cboxPrevious.hover{background-position:-75px -25px;}
+#cboxNext{position:absolute; bottom:0; left:27px; background:url(../images/controls.png) no-repeat -50px 0; width:25px; height:25px; text-indent:-9999px;}
+#cboxNext.hover{background-position:-50px -25px;}
+#cboxLoadingOverlay{background:url(../images/loading_background.png) no-repeat center center;}
+#cboxLoadingGraphic{background:url(../images/logodh.jpg) no-repeat center center #0094ff;}
+#cboxClose{position:absolute; bottom:0; right:0; background:url(../images/controls.png) no-repeat -25px 0; width:25px; height:25px; text-indent:-9999px; }
+#cboxClose.hover{background-position:-25px -25px;}
+
+/*************************************************************************************************/
+
+

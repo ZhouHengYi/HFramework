@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{90591A3F-0F48-4CD7-94F2-66FEF3015C8F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>H.Core.DataAccess</RootNamespace>
+    <AssemblyName>H.Core.DataAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\3Party\mysqldata_43455\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CodeNamePair\CodeNamePair.cs" />
+    <Compile Include="CodeNamePair\CodeNamePairManager.cs" />
+    <Compile Include="CodeNamePair\CodeNamePairSection.cs" />
+    <Compile Include="Config\ConfigHelper.cs" />
+    <Compile Include="Config\DataAccessSection.cs" />
+    <Compile Include="Config\DatabaseList.cs" />
+    <Compile Include="Config\DataCommandFileList.cs" />
+    <Compile Include="Config\DataOperations.cs" />
+    <Compile Include="CustomDataCommand.cs" />
+    <Compile Include="DataAccessEntity\PagingInfo.cs" />
+    <Compile Include="DataCommand.cs" />
+    <Compile Include="DataCommandManager.cs" />
+    <Compile Include="DbHelper.cs" />
+    <Compile Include="DbProvider\ConnectionStringManager.cs" />
+    <Compile Include="DbProvider\DaoSqlException.cs" />
+    <Compile Include="DbProvider\DbFactories.cs" />
+    <Compile Include="DbProvider\IDbFactory.cs" />
+    <Compile Include="DbProvider\MySqlFactory.cs" />
+    <Compile Include="DbProvider\OdbcFactory.cs" />
+    <Compile Include="DbProvider\OleDbFactory.cs" />
+    <Compile Include="DbProvider\SqlServerFactory.cs" />
+    <Compile Include="DbProvider\TransactionScopeConnections.cs" />
+    <Compile Include="DynamicSqlBuilder.cs" />
+    <Compile Include="MicrosoftAccess\AccessDBHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\H.Core.Utility\H.Core.Utility.csproj">
+      <Project>{b2168ac0-ac04-4e54-aa65-bb227fbc15cd}</Project>
+      <Name>H.Core.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MySql\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

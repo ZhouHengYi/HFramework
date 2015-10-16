@@ -1,0 +1,1513 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D5FCA81F-BE27-4966-B697-E59B163E46C1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>H.Website.IISHost</RootNamespace>
+    <AssemblyName>H.Website.IISHost</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxPro.2">
+      <HintPath>..\..\3Party\AjaxPro\新建文件夹\AjaxPro.2.dll</HintPath>
+    </Reference>
+    <Reference Include="LitJSON, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\H.Tools\UploadService\Kindeditor\LitJSON.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Kindeditor\file_manager_json.aspx" />
+    <Content Include="Kindeditor\upload_json.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Pages\Charge\Charge.aspx" />
+    <Content Include="Pages\Charge\Maintain.aspx" />
+    <Content Include="Pages\ClubMembers\ClubMembers.aspx" />
+    <Content Include="Pages\ClubMembers\ClubMembersManager.aspx" />
+    <Content Include="Pages\ClubMembers\css\demo-styles.css" />
+    <Content Include="Pages\ClubMembers\css\styles.css" />
+    <Content Include="Pages\ClubMembers\Data.aspx" />
+    <Content Include="Pages\ClubMembers\images\big-1.jpg" />
+    <Content Include="Pages\ClubMembers\images\big-10.jpg" />
+    <Content Include="Pages\ClubMembers\images\big-11.jpg" />
+    <Content Include="Pages\ClubMembers\images\big-12.jpg" />
+    <Content Include="Pages\ClubMembers\images\big-2.jpg" />
+    <Content Include="Pages\ClubMembers\images\big-3.jpg" />
+    <Content Include="Pages\ClubMembers\images\big-4.jpg" />
+    <Content Include="Pages\ClubMembers\images\big-5.jpg" />
+    <Content Include="Pages\ClubMembers\images\big-6.jpg" />
+    <Content Include="Pages\ClubMembers\images\big-7.jpg" />
+    <Content Include="Pages\ClubMembers\images\big-8.jpg" />
+    <Content Include="Pages\ClubMembers\images\big-9.jpg" />
+    <Content Include="Pages\ClubMembers\images\controls-dark.png" />
+    <Content Include="Pages\ClubMembers\images\controls-light.png" />
+    <Content Include="Pages\ClubMembers\images\controls-light2.png" />
+    <Content Include="Pages\ClubMembers\images\small-1.png" />
+    <Content Include="Pages\ClubMembers\images\small-10.png" />
+    <Content Include="Pages\ClubMembers\images\small-11.png" />
+    <Content Include="Pages\ClubMembers\images\small-12.png" />
+    <Content Include="Pages\ClubMembers\images\small-2.png" />
+    <Content Include="Pages\ClubMembers\images\small-3.png" />
+    <Content Include="Pages\ClubMembers\images\small-4.png" />
+    <Content Include="Pages\ClubMembers\images\small-5.png" />
+    <Content Include="Pages\ClubMembers\images\small-6.png" />
+    <Content Include="Pages\ClubMembers\images\small-7.png" />
+    <Content Include="Pages\ClubMembers\images\small-8.png" />
+    <Content Include="Pages\ClubMembers\images\small-9.png" />
+    <Content Include="Pages\ClubMembers\index.html" />
+    <Content Include="Pages\ClubMembers\js\hammer.js" />
+    <Content Include="Pages\ClubMembers\js\jquery-1.8.2.min.js" />
+    <Content Include="Pages\ClubMembers\js\plugins.js" />
+    <Content Include="Pages\ClubMembers\js\screenfull.min.js" />
+    <Content Include="Pages\ClubMembers\js\scripts.js" />
+    <Content Include="Pages\ClubMembers\Maintain.aspx" />
+    <Content Include="Pages\Management\Maintain.aspx" />
+    <Content Include="Pages\Management\Management.aspx" />
+    <Content Include="Pages\Other\Charts.aspx" />
+    <Content Include="Pages\Index.aspx" />
+    <Content Include="Pages\Other\OnlineUser.aspx" />
+    <Content Include="Pages\Report\Dashboard.aspx" />
+    <Content Include="Pages\Report\SalesTop10.aspx" />
+    <Content Include="Pages\Other\Task.aspx" />
+    <Content Include="Pages\Other\TeamBuilding.aspx" />
+    <Content Include="Pages\SystemUserPrivilege\Maintain.aspx.aspx" />
+    <Content Include="Pages\SystemUserPrivilege\SystemUserPrivilege.aspx" />
+    <Content Include="Pages\SystemUserRole\Maintain.aspx.aspx" />
+    <Content Include="Pages\SystemUserRole\SystemUserRole.aspx" />
+    <Content Include="Pages\SystemUserRole\SystemUserRoleMapping.aspx" />
+    <Content Include="Pages\SystemUser\Maintain.aspx" />
+    <Content Include="Pages\SystemUser\SystemUser.aspx" />
+    <Content Include="Pages\SystemUser\UserInfo.aspx" />
+    <Content Include="UserControls\UCPaginationBar.ascx" />
+    <Content Include="UserControls\UCPaginationBar_Ajax.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WebResource\css\bootstrap-responsive.min.css" />
+    <Content Include="WebResource\css\bootstrap-wysihtml5.css" />
+    <Content Include="WebResource\css\bootstrap.min.css" />
+    <Content Include="WebResource\css\colorpicker.css" />
+    <Content Include="WebResource\css\datepicker.css" />
+    <Content Include="WebResource\css\fullcalendar.css" />
+    <Content Include="WebResource\css\jquery.gritter.css" />
+    <Content Include="WebResource\css\matrix-login.css" />
+    <Content Include="WebResource\css\matrix-media.css" />
+    <Content Include="WebResource\css\matrix-style.css" />
+    <Content Include="WebResource\css\select2.css" />
+    <Content Include="WebResource\css\uniform.css" />
+    <Content Include="WebResource\css\upload\uploadify.css" />
+    <Content Include="WebResource\CustomJs\Base.js" />
+    <Content Include="WebResource\CustomJs\bindHelper.js" />
+    <Content Include="WebResource\CustomJs\common.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\.gitignore" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\build.xml" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\baidumap\index.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\baidumap\map.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\code\prettify.css" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\0.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\1.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\10.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\100.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\101.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\102.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\103.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\104.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\105.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\106.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\107.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\108.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\109.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\11.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\110.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\111.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\112.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\113.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\114.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\115.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\116.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\117.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\118.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\119.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\12.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\120.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\121.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\122.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\123.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\124.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\125.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\126.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\127.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\128.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\129.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\13.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\130.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\131.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\132.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\133.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\134.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\14.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\15.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\16.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\17.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\18.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\19.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\2.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\20.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\21.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\22.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\23.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\24.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\25.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\26.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\27.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\28.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\29.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\3.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\30.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\31.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\32.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\33.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\34.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\35.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\36.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\37.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\38.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\39.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\4.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\40.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\41.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\42.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\43.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\44.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\45.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\46.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\47.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\48.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\49.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\5.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\50.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\51.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\52.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\53.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\54.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\55.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\56.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\57.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\58.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\59.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\6.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\60.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\61.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\62.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\63.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\64.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\65.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\66.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\67.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\68.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\69.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\7.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\70.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\71.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\72.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\73.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\74.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\75.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\76.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\77.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\78.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\79.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\8.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\80.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\81.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\82.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\83.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\84.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\85.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\86.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\87.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\88.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\89.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\9.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\90.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\91.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\92.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\93.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\94.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\95.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\96.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\97.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\98.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\99.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\emoticons\images\static.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\filemanager\images\file-16.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\filemanager\images\file-64.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\filemanager\images\folder-16.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\filemanager\images\folder-64.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\filemanager\images\go-up.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\image\images\align_left.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\image\images\align_right.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\image\images\align_top.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\image\images\refresh.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\map\map.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\multiimage\images\image.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\multiimage\images\select-files-en.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\multiimage\images\select-files-zh_CN.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\multiimage\images\swfupload.swf" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\template\html\1.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\template\html\2.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\plugins\template\html\3.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\themes\common\anchor.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\themes\common\blank.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\themes\common\flash.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\themes\common\loading.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\themes\common\media.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\themes\common\rm.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\themes\default\background.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\themes\default\default.css" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\themes\default\default.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\themes\qq\editor.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\themes\qq\qq.css" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\dist\themes\simple\simple.css" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\test\index.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\test\main.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\test\sea.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\asp.net\bin\LitJSON.dll" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\asp.net\demo.aspx" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\asp.net\README.txt" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\asp\demo.asp" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\asp\file_manager_json.asp" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\asp\JSON_2.0.4.asp" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\asp\UpLoad_Class.asp" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\asp\upload_json.asp" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\benchmark\benchmarker.css" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\benchmark\benchmarker.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\benchmark\selector.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\build.xml" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\changelog.txt" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\docs\_static\file.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\docs\_static\firebug_upload_json.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\docs\_templates\classy\layout.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\examples\auto-height.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\examples\colorpicker.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\examples\custom-plugin.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\examples\custom-theme.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\examples\default.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\examples\dialog.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\examples\dynamic-load.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\examples\file-dialog.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\examples\file-manager.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\examples\filter-mode.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\examples\image-dialog.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\examples\index.css" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\examples\index.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\examples\jquery-ui.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\examples\jquery-ui\css\smoothness\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\examples\jquery-ui\css\smoothness\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\examples\jquery-ui\css\smoothness\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\examples\jquery-ui\css\smoothness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\examples\jquery-ui\css\smoothness\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\examples\jquery-ui\css\smoothness\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\examples\jquery-ui\css\smoothness\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\examples\jquery-ui\css\smoothness\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\examples\jquery-ui\css\smoothness\images\ui-icons_222222_256x240.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\examples\jquery-ui\css\smoothness\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\examples\jquery-ui\css\smoothness\images\ui-icons_454545_256x240.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\examples\jquery-ui\css\smoothness\images\ui-icons_888888_256x240.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\examples\jquery-ui\css\smoothness\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\examples\jquery-ui\css\smoothness\jquery-ui-1.9.2.custom.css" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\examples\jquery-ui\css\smoothness\jquery-ui-1.9.2.custom.min.css" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\examples\jquery-ui\js\jquery-ui-1.9.2.custom.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\examples\jquery-ui\js\jquery-ui-1.9.2.custom.min.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\examples\jquery.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\examples\jquery.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\examples\multi-image-dialog.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\examples\multi-language.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\examples\newline.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\examples\node.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\examples\paste-type.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\examples\qqstyle.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\examples\readonly.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\examples\simple.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\examples\uploadbutton.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\examples\url-type.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\examples\word-count.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\Gruntfile.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\hrt-config.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\jsp\lib\commons-fileupload-1.2.1.jar" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\jsp\lib\commons-io-1.4.jar" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\jsp\lib\json_simple-1.1.jar" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\jsp\README.txt" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\kindeditor-all-min.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\kindeditor-all.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\kindeditor-min.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\kindeditor.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\kindpage\index.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\kindpage\kindpage.css" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\kindpage\kindpage.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lang\ar.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lang\en.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lang\ko.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lang\zh_CN.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lang\zh_TW.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\closure-compiler.jar" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\background.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\contentScript.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\firebug-lite-beta.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\firebug.jpg" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\firebug128.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\firebug16.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\firebug24.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\firebug24_disabled.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\firebug32.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\firebug48.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\googleChrome.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\license.txt" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\blank.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\buttonBg.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\buttonBgHover.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\detach.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\detachHover.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\disable.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\disable.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\disableHover.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\disableHover.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\down.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\downActive.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\downHover.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\errorIcon-sm.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\errorIcon.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\errorIcon.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\firebug-1.3a2.css" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\firebug.css" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\firebug.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\firebug.IE6.css" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\firebug.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\group.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\infoIcon.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\infoIcon.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\loading_16.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\min.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\minHover.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\off.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\offHover.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\pixel_transparent.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\roundCorner.svg" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\search.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\search.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\shadow.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\shadow2.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\shadowAlpha.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\sprite.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\tabHoverLeft.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\tabHoverMid.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\tabHoverRight.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\tabLeft.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\tabMenuCheckbox.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\tabMenuPin.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\tabMenuRadio.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\tabMenuTarget.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\tabMenuTargetHover.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\tabMid.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\tabRight.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\textEditorBorders.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\textEditorBorders.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\textEditorCorners.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\textEditorCorners.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\titlebarMid.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\toolbarMid.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\tree_close.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\tree_open.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\up.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\upActive.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\upHover.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\warningIcon.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\skin\xp\warningIcon.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\background.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\contentScript.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\firebug-lite.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\firebug.jpg" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\firebug128.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\firebug16.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\firebug24.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\firebug24_disabled.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\firebug32.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\firebug48.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\googleChrome.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\license.txt" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\blank.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\buttonBg.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\buttonBgHover.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\detach.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\detachHover.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\disable.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\disable.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\disableHover.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\disableHover.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\down.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\downActive.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\downHover.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\errorIcon-sm.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\errorIcon.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\errorIcon.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\firebug-1.3a2.css" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\firebug.css" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\firebug.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\firebug.IE6.css" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\firebug.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\group.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\infoIcon.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\infoIcon.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\loading_16.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\min.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\minHover.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\off.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\offHover.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\pixel_transparent.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\roundCorner.svg" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\search.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\search.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\shadow.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\shadow2.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\shadowAlpha.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\sprite.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\tabHoverLeft.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\tabHoverMid.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\tabHoverRight.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\tabLeft.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\tabMenuCheckbox.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\tabMenuPin.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\tabMenuRadio.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\tabMenuTarget.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\tabMenuTargetHover.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\tabMid.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\tabRight.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\textEditorBorders.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\textEditorBorders.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\textEditorCorners.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\textEditorCorners.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\titlebarMid.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\toolbarMid.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\tree_close.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\tree_open.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\up.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\upActive.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\upHover.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\warningIcon.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\skin\xp\warningIcon.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\firebug-lite-beta.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\firebug-lite-debug.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\firebug-lite.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\license.txt" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\blank.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\buttonBg.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\buttonBgHover.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\detach.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\detachHover.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\disable.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\disable.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\disableHover.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\disableHover.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\down.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\downActive.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\downHover.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\errorIcon-sm.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\errorIcon.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\errorIcon.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\firebug.css" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\firebug.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\firebug.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\group.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\infoIcon.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\infoIcon.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\loading_16.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\min.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\minHover.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\off.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\offHover.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\pixel_transparent.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\roundCorner.svg" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\search.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\search.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\shadow.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\shadow2.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\shadowAlpha.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\sprite.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\tabHoverLeft.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\tabHoverMid.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\tabHoverRight.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\tabLeft.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\tabMenuCheckbox.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\tabMenuPin.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\tabMenuRadio.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\tabMenuTarget.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\tabMenuTargetHover.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\tabMid.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\tabRight.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\textEditorBorders.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\textEditorBorders.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\textEditorCorners.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\textEditorCorners.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\titlebarMid.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\toolbarMid.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\tree_close.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\tree_open.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\twistyClosed.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\twistyOpen.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\up.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\upActive.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\upHover.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\warningIcon.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\classic\warningIcon.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\blank.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\buttonBg.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\buttonBgHover.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\close.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\closeHover.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\detach.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\detachHover.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\disable.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\disable.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\disableHover.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\disableHover.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\down.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\downActive.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\downHover.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\errorIcon-sm.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\errorIcon.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\errorIcon.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\firebug.css" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\firebug.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\firebug.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\group.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\infoIcon.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\infoIcon.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\loading_16.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\min.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\minHover.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\off.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\offHover.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\pixel_transparent.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\roundCorner.svg" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\search.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\search.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\shadow.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\shadow2.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\shadowAlpha.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\sprite.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\tabHoverLeft.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\tabHoverMid.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\tabHoverRight.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\tabLeft.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\tabMenuCheckbox.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\tabMenuPin.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\tabMenuRadio.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\tabMenuTarget.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\tabMenuTargetHover.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\tabMid.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\tabRight.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\textEditorBorders.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\textEditorBorders.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\textEditorCorners.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\textEditorCorners.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\titlebarMid.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\toolbarMid.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\tree_close.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\tree_open.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\twistyClosed.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\twistyOpen.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\up.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\upActive.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\upHover.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\warningIcon.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\light\warningIcon.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\blank.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\buttonBg.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\buttonBgHover.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\detach.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\detachHover.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\disable.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\disable.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\disableHover.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\disableHover.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\down.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\downActive.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\downHover.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\errorIcon-sm.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\errorIcon.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\errorIcon.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\firebug-1.3a2.css" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\firebug.css" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\firebug.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\firebug.IE6.css" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\firebug.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\group.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\infoIcon.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\infoIcon.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\loading_16.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\min.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\minHover.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\off.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\offHover.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\pixel_transparent.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\roundCorner.svg" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\search.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\search.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\shadow.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\shadow2.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\shadowAlpha.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\sprite.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\tabHoverLeft.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\tabHoverMid.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\tabHoverRight.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\tabLeft.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\tabMenuCheckbox.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\tabMenuPin.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\tabMenuRadio.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\tabMenuTarget.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\tabMenuTargetHover.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\tabMid.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\tabRight.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\textEditorBorders.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\textEditorBorders.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\textEditorCorners.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\textEditorCorners.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\titlebarMid.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\toolbarMid.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\tree_close.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\tree_open.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\up.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\upActive.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\upHover.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\warningIcon.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\skin\xp\warningIcon.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\jquery-ui\css\smoothness\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\jquery-ui\css\smoothness\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\jquery-ui\css\smoothness\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\jquery-ui\css\smoothness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\jquery-ui\css\smoothness\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\jquery-ui\css\smoothness\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\jquery-ui\css\smoothness\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\jquery-ui\css\smoothness\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\jquery-ui\css\smoothness\images\ui-icons_222222_256x240.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\jquery-ui\css\smoothness\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\jquery-ui\css\smoothness\images\ui-icons_454545_256x240.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\jquery-ui\css\smoothness\images\ui-icons_888888_256x240.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\jquery-ui\css\smoothness\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\jquery-ui\css\smoothness\jquery-ui-1.9.2.custom.css" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\jquery-ui\css\smoothness\jquery-ui-1.9.2.custom.min.css" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\jquery-ui\js\jquery-ui-1.9.2.custom.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\jquery-ui\js\jquery-ui-1.9.2.custom.min.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\jquery.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\jslint\js.jar" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\jslint\jslint-check.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\jslint\jslint.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\markdown\html2markdown.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\markdown\htmldomparser.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\markdown\htmlparser.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\markdown\showdown.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\mootools.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\qunit\qunit.css" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\qunit\qunit.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\swfobject.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\taobao.css" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\license.txt" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\anchor\anchor.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\autoheight\autoheight.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\baidumap\baidumap.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\baidumap\index.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\baidumap\map.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\clearhtml\clearhtml.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\code\code.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\code\prettify.css" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\code\prettify.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\emoticons.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\0.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\1.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\10.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\100.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\101.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\102.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\103.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\104.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\105.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\106.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\107.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\108.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\109.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\11.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\110.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\111.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\112.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\113.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\114.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\115.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\116.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\117.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\118.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\119.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\12.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\120.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\121.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\122.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\123.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\124.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\125.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\126.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\127.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\128.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\129.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\13.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\130.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\131.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\132.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\133.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\134.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\14.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\15.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\16.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\17.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\18.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\19.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\2.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\20.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\21.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\22.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\23.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\24.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\25.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\26.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\27.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\28.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\29.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\3.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\30.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\31.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\32.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\33.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\34.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\35.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\36.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\37.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\38.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\39.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\4.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\40.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\41.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\42.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\43.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\44.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\45.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\46.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\47.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\48.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\49.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\5.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\50.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\51.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\52.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\53.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\54.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\55.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\56.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\57.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\58.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\59.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\6.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\60.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\61.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\62.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\63.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\64.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\65.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\66.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\67.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\68.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\69.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\7.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\70.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\71.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\72.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\73.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\74.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\75.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\76.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\77.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\78.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\79.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\8.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\80.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\81.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\82.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\83.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\84.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\85.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\86.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\87.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\88.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\89.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\9.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\90.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\91.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\92.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\93.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\94.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\95.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\96.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\97.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\98.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\99.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\emoticons\images\static.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\filemanager\filemanager.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\filemanager\images\file-16.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\filemanager\images\file-64.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\filemanager\images\folder-16.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\filemanager\images\folder-64.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\filemanager\images\go-up.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\flash\flash.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\image\image.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\image\images\align_left.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\image\images\align_right.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\image\images\align_top.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\image\images\refresh.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\insertfile\insertfile.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\lineheight\lineheight.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\link\link.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\map\map.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\map\map.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\media\media.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\multiimage\images\image.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\multiimage\images\select-files-en.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\multiimage\images\select-files-zh_CN.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\multiimage\images\swfupload.swf" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\multiimage\multiimage.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\pagebreak\pagebreak.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\plainpaste\plainpaste.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\preview\preview.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\quickformat\quickformat.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\table\table.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\template\html\1.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\template\html\2.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\template\html\3.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\template\template.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\plugins\wordpaste\wordpaste.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\src\ajax.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\src\cmd.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\src\colorpicker.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\src\config.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\src\core.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\src\dialog.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\src\edit.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\src\event.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\src\footer.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\src\header.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\src\html.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\src\main.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\src\menu.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\src\node.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\src\range.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\src\selector.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\src\tabs.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\src\toolbar.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\src\uploadbutton.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\src\widget.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\ajax.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\big.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\cmd.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\cmd.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\core.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\core.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\data\logo_180_30.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\dialog.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\edit.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\edit.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\editor.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\editor.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\event.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\event.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\frame.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\hidden.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\html.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\html.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\index.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\leak.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\main.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\menu.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\menu.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\navi.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\node.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\node.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\quirkmode.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\range.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\range.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\remote.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\selector.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\selector.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\tabs.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\toolbar.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\toolbar.js" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\total.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\widget.html" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\themes\common\anchor.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\themes\common\blank.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\themes\common\flash.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\themes\common\loading.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\themes\common\media.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\themes\common\rm.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\themes\default\background.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\themes\default\default.css" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\themes\default\default.png" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\themes\qq\editor.gif" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\themes\qq\qq.css" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\themes\simple\simple.css" />
+    <Content Include="WebResource\CustomJs\upload\jquery.uploadify.js" />
+    <Content Include="WebResource\CustomJs\upload\jquery.uploadify.min.js" />
+    <Content Include="WebResource\CustomJs\upload\uploadify.swf" />
+    <Content Include="WebResource\CustomJs\validate\Validform_v5.3.2_min.js" />
+    <Content Include="WebResource\font-awesome\css\font-awesome.css" />
+    <Content Include="WebResource\images\all1.jpg" />
+    <Content Include="WebResource\images\all2.jpg" />
+    <Content Include="WebResource\images\all3.jpg" />
+    <Content Include="WebResource\images\backgrounds\calActiveBg.html" />
+    <Content Include="WebResource\images\bg1.png" />
+    <Content Include="WebResource\images\bj.jpg" />
+    <Content Include="WebResource\images\bl_20.jpg" />
+    <Content Include="WebResource\images\bl_21.jpg" />
+    <Content Include="WebResource\images\bl_28.jpg" />
+    <Content Include="WebResource\images\box\loading.gif" />
+    <Content Include="WebResource\images\box\load_box.gif" />
+    <Content Include="WebResource\images\box\load_box.png" />
+    <Content Include="WebResource\images\box\load_close.gif" />
+    <Content Include="WebResource\images\button_05.jpg" />
+    <Content Include="WebResource\images\but_03.jpg" />
+    <Content Include="WebResource\images\but_05.jpg" />
+    <Content Include="WebResource\images\canglaoshi.jpg" />
+    <Content Include="WebResource\images\clock.jpg" />
+    <Content Include="WebResource\images\footer_03.jpg" />
+    <Content Include="WebResource\images\footer_06.jpg" />
+    <Content Include="WebResource\images\footer_09.jpg" />
+    <Content Include="WebResource\images\fresh.jpg" />
+    <Content Include="WebResource\images\gallery\imgbox3.html" />
+    <Content Include="WebResource\images\ge_04.jpg" />
+    <Content Include="WebResource\images\hbg_02.jpg" />
+    <Content Include="WebResource\images\heart.jpg" />
+    <Content Include="WebResource\images\hicon_10.jpg" />
+    <Content Include="WebResource\images\hicon_13.jpg" />
+    <Content Include="WebResource\images\hicon_20.jpg" />
+    <Content Include="WebResource\images\Hlogo.png" />
+    <Content Include="WebResource\images\home.jpg" />
+    <Content Include="WebResource\images\icon.png" />
+    <Content Include="WebResource\images\icon\datePicker.gif" />
+    <Content Include="WebResource\images\icon\infoSmall.gif" />
+    <Content Include="WebResource\images\icon\tipsIcon_info_top.gif" />
+    <Content Include="WebResource\images\listbg1.jpg" />
+    <Content Include="WebResource\images\login_03.jpg" />
+    <Content Include="WebResource\images\logo.jpg" />
+    <Content Include="WebResource\images\m_03.jpg" />
+    <Content Include="WebResource\images\ppt_03.jpg" />
+    <Content Include="WebResource\images\quick.jpg" />
+    <Content Include="WebResource\images\return.jpg" />
+    <Content Include="WebResource\images\search2bg.jpg" />
+    <Content Include="WebResource\images\searchbtn.jpg" />
+    <Content Include="WebResource\images\searchbtn2.jpg" />
+    <Content Include="WebResource\images\selected.jpg" />
+    <Content Include="WebResource\images\shbg_05.jpg" />
+    <Content Include="WebResource\images\shez_03.jpg" />
+    <Content Include="WebResource\images\showDialog\macFFBgHack.png" />
+    <Content Include="WebResource\images\showDialog\sd_close.png" />
+    <Content Include="WebResource\images\showDialog\sd_loading.gif" />
+    <Content Include="WebResource\images\status.jpg" />
+    <Content Include="WebResource\images\sub2_07.jpg" />
+    <Content Include="WebResource\images\sub_03.jpg" />
+    <Content Include="WebResource\images\upload\uploadify-cancel.png" />
+    <Content Include="WebResource\images\validate\error.png" />
+    <Content Include="WebResource\images\validate\onLoad.gif" />
+    <Content Include="WebResource\images\validate\right.png" />
+    <Content Include="WebResource\images\zj.jpg" />
+    <Content Include="WebResource\img\alpha.html" />
+    <Content Include="WebResource\img\breadcrumb.png" />
+    <Content Include="WebResource\img\demo\av1.jpg" />
+    <Content Include="WebResource\img\demo\av2.jpg" />
+    <Content Include="WebResource\img\demo\av3.jpg" />
+    <Content Include="WebResource\img\demo\av4.jpg" />
+    <Content Include="WebResource\img\demo\av5.jpg" />
+    <Content Include="WebResource\img\demo\demo-image1.jpg" />
+    <Content Include="WebResource\img\demo\demo-image2.jpg" />
+    <Content Include="WebResource\img\demo\demo-image3.jpg" />
+    <Content Include="WebResource\img\demo\envelope.png" />
+    <Content Include="WebResource\img\gallery\imgbox1.jpg" />
+    <Content Include="WebResource\img\gallery\imgbox2.jpg" />
+    <Content Include="WebResource\img\gallery\imgbox3.jpg" />
+    <Content Include="WebResource\img\gallery\imgbox4.jpg" />
+    <Content Include="WebResource\img\gallery\imgbox5.jpg" />
+    <Content Include="WebResource\img\glyphicons-halflings-white.png" />
+    <Content Include="WebResource\img\glyphicons-halflings.html" />
+    <Content Include="WebResource\img\gritter.png" />
+    <Content Include="WebResource\img\hue.png" />
+    <Content Include="WebResource\img\larrow.png" />
+    <Content Include="WebResource\img\line.png" />
+    <Content Include="WebResource\img\logo.png" />
+    <Content Include="WebResource\img\menu-active.png" />
+    <Content Include="WebResource\img\rarrow.png" />
+    <Content Include="WebResource\img\saturation.png" />
+    <Content Include="WebResource\img\select2.png" />
+    <Content Include="WebResource\img\spinner.gif" />
+    <Content Include="WebResource\img\sprite.png" />
+    <Content Include="WebResource\js\bootstrap-colorpicker.js" />
+    <Content Include="WebResource\js\bootstrap-datepicker.js" />
+    <Content Include="WebResource\js\bootstrap-daterangepicker\bootstrap.min.css" />
+    <Content Include="WebResource\js\bootstrap-daterangepicker\daterangepicker-bs3.css" />
+    <Content Include="WebResource\js\bootstrap-daterangepicker\daterangepicker.js" />
+    <Content Include="WebResource\js\bootstrap-daterangepicker\moment.js" />
+    <Content Include="WebResource\js\bootstrap-wysihtml5.js" />
+    <Content Include="WebResource\js\bootstrap.min.js" />
+    <Content Include="WebResource\js\excanvas.min.js" />
+    <Content Include="WebResource\js\fullcalendar.min.js" />
+    <Content Include="WebResource\js\jquery.dataTables.min.js" />
+    <Content Include="WebResource\js\jquery.flot.min.js" />
+    <Content Include="WebResource\js\jquery.flot.pie.min.js" />
+    <Content Include="WebResource\js\jquery.flot.resize.min.js" />
+    <Content Include="WebResource\js\jquery.gritter.min.js" />
+    <Content Include="WebResource\js\jquery.min.js" />
+    <Content Include="WebResource\js\jquery.peity.min.js" />
+    <Content Include="WebResource\js\jquery.toggle.buttons.html" />
+    <Content Include="WebResource\js\jquery.ui.custom.js" />
+    <Content Include="WebResource\js\jquery.uniform.js" />
+    <Content Include="WebResource\js\jquery.validate.js" />
+    <Content Include="WebResource\js\jquery.wizard.js" />
+    <Content Include="WebResource\js\maruti.html" />
+    <Content Include="WebResource\js\masked.js" />
+    <Content Include="WebResource\js\matrix.calendar.js" />
+    <Content Include="WebResource\js\matrix.charts.js" />
+    <Content Include="WebResource\js\matrix.chat.js" />
+    <Content Include="WebResource\js\matrix.dashboard.js" />
+    <Content Include="WebResource\js\matrix.form_common.js" />
+    <Content Include="WebResource\js\matrix.form_validation.js" />
+    <Content Include="WebResource\js\matrix.interface.js" />
+    <Content Include="WebResource\js\matrix.js" />
+    <Content Include="WebResource\js\matrix.login.js" />
+    <Content Include="WebResource\js\matrix.popover.js" />
+    <Content Include="WebResource\js\matrix.tables.js" />
+    <Content Include="WebResource\js\matrix.wizard.js" />
+    <Content Include="WebResource\js\select2.min.js" />
+    <Content Include="WebResource\js\wysihtml5-0.3.0.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Kindeditor\file_manager_json.aspx.cs">
+      <DependentUpon>file_manager_json.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kindeditor\file_manager_json.aspx.designer.cs">
+      <DependentUpon>file_manager_json.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kindeditor\upload_json.aspx.cs">
+      <DependentUpon>upload_json.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kindeditor\upload_json.aspx.designer.cs">
+      <DependentUpon>upload_json.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Maintain.Master.cs">
+      <DependentUpon>Maintain.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\Maintain.Master.designer.cs">
+      <DependentUpon>Maintain.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Master.Master.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\Master.Master.designer.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Charge\Charge.aspx.cs">
+      <DependentUpon>Charge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Charge\Charge.aspx.designer.cs">
+      <DependentUpon>Charge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Charge\Maintain.aspx.cs">
+      <DependentUpon>Maintain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Charge\Maintain.aspx.designer.cs">
+      <DependentUpon>Maintain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ClubMembers\ClubMembers.aspx.cs">
+      <DependentUpon>ClubMembers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ClubMembers\ClubMembers.aspx.designer.cs">
+      <DependentUpon>ClubMembers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ClubMembers\ClubMembersManager.aspx.cs">
+      <DependentUpon>ClubMembersManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ClubMembers\ClubMembersManager.aspx.designer.cs">
+      <DependentUpon>ClubMembersManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ClubMembers\Data.aspx.cs">
+      <DependentUpon>Data.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ClubMembers\Data.aspx.designer.cs">
+      <DependentUpon>Data.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ClubMembers\Maintain.aspx.cs">
+      <DependentUpon>Maintain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ClubMembers\Maintain.aspx.designer.cs">
+      <DependentUpon>Maintain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Management\Maintain.aspx.cs">
+      <DependentUpon>Maintain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Management\Maintain.aspx.designer.cs">
+      <DependentUpon>Maintain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Management\Management.aspx.cs">
+      <DependentUpon>Management.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Management\Management.aspx.designer.cs">
+      <DependentUpon>Management.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Other\Charts.aspx.cs">
+      <DependentUpon>Charts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Other\Charts.aspx.designer.cs">
+      <DependentUpon>Charts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Other\OnlineUser.aspx.cs">
+      <DependentUpon>OnlineUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Other\OnlineUser.aspx.designer.cs">
+      <DependentUpon>OnlineUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Report\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Report\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Report\SalesTop10.aspx.cs">
+      <DependentUpon>SalesTop10.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Report\SalesTop10.aspx.designer.cs">
+      <DependentUpon>SalesTop10.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Other\Task.aspx.cs">
+      <DependentUpon>Task.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Other\Task.aspx.designer.cs">
+      <DependentUpon>Task.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Other\TeamBuilding.aspx.cs">
+      <DependentUpon>TeamBuilding.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Other\TeamBuilding.aspx.designer.cs">
+      <DependentUpon>TeamBuilding.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SystemUserPrivilege\Maintain.aspx.aspx.cs">
+      <DependentUpon>Maintain.aspx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SystemUserPrivilege\Maintain.aspx.aspx.designer.cs">
+      <DependentUpon>Maintain.aspx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SystemUserPrivilege\SystemUserPrivilege.aspx.cs">
+      <DependentUpon>SystemUserPrivilege.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SystemUserPrivilege\SystemUserPrivilege.aspx.designer.cs">
+      <DependentUpon>SystemUserPrivilege.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SystemUserRole\Maintain.aspx.aspx.cs">
+      <DependentUpon>Maintain.aspx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SystemUserRole\Maintain.aspx.aspx.designer.cs">
+      <DependentUpon>Maintain.aspx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SystemUserRole\SystemUserRole.aspx.cs">
+      <DependentUpon>SystemUserRole.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SystemUserRole\SystemUserRole.aspx.designer.cs">
+      <DependentUpon>SystemUserRole.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SystemUserRole\SystemUserRoleMapping.aspx.cs">
+      <DependentUpon>SystemUserRoleMapping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SystemUserRole\SystemUserRoleMapping.aspx.designer.cs">
+      <DependentUpon>SystemUserRoleMapping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SystemUser\Maintain.aspx.cs">
+      <DependentUpon>Maintain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SystemUser\Maintain.aspx.designer.cs">
+      <DependentUpon>Maintain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SystemUser\SystemUser.aspx.cs">
+      <DependentUpon>SystemUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SystemUser\SystemUser.aspx.designer.cs">
+      <DependentUpon>SystemUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SystemUser\UserInfo.aspx.cs">
+      <DependentUpon>UserInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SystemUser\UserInfo.aspx.designer.cs">
+      <DependentUpon>UserInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\UCPaginationBar.ascx.cs">
+      <DependentUpon>UCPaginationBar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCPaginationBar.ascx.designer.cs">
+      <DependentUpon>UCPaginationBar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCPaginationBar_Ajax.aspx.cs">
+      <DependentUpon>UCPaginationBar_Ajax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCPaginationBar_Ajax.aspx.designer.cs">
+      <DependentUpon>UCPaginationBar_Ajax.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Configuration\Page\Page.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Configuration\Page\SiteMap.config" />
+    <Content Include="Configuration\Autorun.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Configuration\FileWatcher.config" />
+    <Content Include="Master\Master.Master" />
+    <Content Include="Configuration\Page\UrlMapping.config" />
+    <Content Include="Master\Maintain.Master" />
+    <None Include="Properties\PublishProfiles\ElleShop_Portal.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="WebResource\images\backgrounds\blank2" />
+    <Content Include="WebResource\images\backgrounds\Descr.WD3" />
+    <Content Include="WebResource\images\backgrounds\skype_3Asuniljoshi19%40call" />
+    <Content Include="WebResource\img\demo\Descr.WD3" />
+    <Content Include="WebResource\img\Descr.WD3" />
+    <Content Include="WebResource\img\gallery\Descr.WD3" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\package.json" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\adapter\seajs\src\kindeditor.transport" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\asp.net\file_manager_json.ashx" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\asp.net\upload_json.ashx" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\docs\_templates\classy\static\classy.css_t" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\docs\_templates\classy\theme.conf" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\docs\ajax.rst" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\docs\changelog.rst" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\docs\classyext.py" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\docs\classyext.pyc" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\docs\cmd.rst" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\docs\colorpicker.rst" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\docs\conf.py" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\docs\core.rst" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\docs\dialog.rst" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\docs\editor.rst" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\docs\event.rst" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\docs\index.rst" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\docs\make.bat" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\docs\Makefile" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\docs\menu.rst" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\docs\node.rst" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\docs\option.rst" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\docs\plugin.rst" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\docs\qna.rst" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\docs\range.rst" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\docs\selector.rst" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\docs\tabs.rst" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\docs\theme.rst" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\docs\upgrade.rst" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\docs\upload.rst" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\docs\uploadbutton.rst" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\docs\usage.rst" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\docs\widget.rst" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\jsp\demo.jsp" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\jsp\file_manager_json.jsp" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\jsp\upload_json.jsp" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\.htaccess" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\build.bat" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension\manifest.json" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\chrome-extension-beta\manifest.json" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\build\compress.bat" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\lib\firebug-lite\plugin\proxy\proxy.php" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\package.json" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\php\demo.php" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\php\file_manager_json.php" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\php\JSON.php" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\php\upload_json.php" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\README.md" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\webdriver\all-chrome.bat" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\webdriver\all-firefox.bat" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\webdriver\all-ie.bat" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\webdriver\all.php" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\webdriver\KindEditorDriver.php" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\webdriver\php-webdriver\__init__.php" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\webdriver\php-webdriver\README.md" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\webdriver\php-webdriver\WebDriver.php" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\webdriver\php-webdriver\WebDriverBase.php" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\webdriver\php-webdriver\WebDriverContainer.php" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\webdriver\php-webdriver\WebDriverElement.php" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\webdriver\php-webdriver\WebDriverEnvironment.php" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\webdriver\php-webdriver\WebDriverExceptions.php" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\webdriver\php-webdriver\WebDriverSession.php" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\webdriver\php-webdriver\WebDriverSimpleItem.php" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\webdriver\test-default.php" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\webdriver\test-dialog.php" />
+    <Content Include="WebResource\CustomJs\kindeditor-master\test\webdriver\test-unittest.php" />
+    <Content Include="WebResource\font-awesome\css\Descr.WD3" />
+    <Content Include="WebResource\font-awesome\font\Descr.WD3" />
+    <Content Include="WebResource\font-awesome\font\fontawesome-webfont.eot" />
+    <Content Include="WebResource\font-awesome\font\fontawesome-webfont.eot%40" />
+    <Content Include="WebResource\font-awesome\font\fontawesome-webfont.ttf" />
+    <Content Include="WebResource\font-awesome\font\fontawesome-webfont.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\H.Core\H.Core.DataAccess\H.Core.DataAccess.csproj">
+      <Project>{90591a3f-0f48-4cd7-94f2-66fef3015c8f}</Project>
+      <Name>H.Core.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\H.Core\H.Core.Utility\H.Core.Utility.csproj">
+      <Project>{b2168ac0-ac04-4e54-aa65-bb227fbc15cd}</Project>
+      <Name>H.Core.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\H.Entity\H.Entity\H.Entity.csproj">
+      <Project>{3cf47e36-13d7-4663-905c-424b3dc6c127}</Project>
+      <Name>H.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\H.Website.Facade\H.Website.Facade.csproj">
+      <Project>{8bf4dff6-0f68-4558-a70e-a8549819cc9b}</Project>
+      <Name>H.Website.Facade</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>988</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:58886/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

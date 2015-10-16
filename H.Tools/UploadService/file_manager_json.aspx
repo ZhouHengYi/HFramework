@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="file_manager_json.aspx.cs" Inherits="H.Website.IISHost.Kindeditor.file_manager_json1" %>

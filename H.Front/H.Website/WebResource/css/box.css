@@ -1,0 +1,56 @@
+/* Loading */
+.loading {
+    background:url("../images/box/load_box.png") no-repeat scroll 0 0 transparent;
+    height:75px;
+    position:absolute;
+    text-align:center;
+    width:211px;
+    z-index:999999;
+}
+.loading .close {
+    background:url("../images/box/load_close.gif") no-repeat scroll 0 0 transparent;
+    height:10px;
+    position:absolute;
+    right:10px;
+    top:10px;
+    width:10px;
+}
+.loading p {
+    font:bold 11px/1.5 Arial;
+    padding:20px 0 0;
+}
+.loading .loadImg {
+    background:url("../images/box/loading.gif") no-repeat scroll 0 0 transparent;
+    height:8px;
+    margin-left:15px;
+    overflow:hidden;
+    width:176px;
+}
+#formMask_overlay {
+    height:100%;
+    left:0;
+    position:fixed;
+    top:0;
+    width:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

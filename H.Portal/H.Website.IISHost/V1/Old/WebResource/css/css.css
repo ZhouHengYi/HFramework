@@ -1,0 +1,91 @@
+/* 全局样式 */
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div{margin:0;padding:0;border:0;}
+body{background:#fff;color:#333;font-size:12px; font-family:"宋体"; font-family:Arial, Helvetica, sans-serif; }
+ul,ol{list-style-type:none;}
+select,input,img,select{vertical-align:middle;}
+
+a{text-decoration:none;}
+a:link{color:#333;}
+a:visited{color:#333;}
+a:hover,a:active,a:focus{color:#c00;}
+.clearit{clear:both;}
+.global { width:1000px; margin:0 auto;}
+/* 全局样式 */
+
+/* Loading */
+.loading {
+    background:url("../images/box/load_box.png") no-repeat scroll 0 0 transparent;
+    height:75px;
+    position:absolute;
+    text-align:center;
+    width:211px;
+    z-index:999999;
+}
+.loading .close {
+    background:url("../images/box/load_close.gif") no-repeat scroll 0 0 transparent;
+    height:10px;
+    position:absolute;
+    right:10px;
+    top:10px;
+    width:10px;
+}
+.loading p {
+    font:bold 11px/1.5 Arial;
+    padding:20px 0 0;
+}
+.loading .loadImg {
+    background:url("../images/box/loading.gif") no-repeat scroll 0 0 transparent;
+    height:8px;
+    margin-left:15px;
+    overflow:hidden;
+    width:176px;
+}
+#formMask_overlay {
+    height:100%;
+    left:0;
+    position:fixed;
+    top:0;
+    width:100%;
+}
+
+/* 登陆 */
+.bj{ width:100%; background:url(../images/bj.jpg) no-repeat top center #d1e5fd; height:763px; font-size:14px;}
+.main1{ width:469px; height:244px; background:url(../images/zj.jpg) no-repeat top center; margin:0 auto;}
+.logo{ padding-top:10px; padding-left:18px;}
+.yonghu{ padding-top:46px; color:#FFFFFF; padding-left:115px;}
+.hu{ border:1px #3a9aff solid; height:25px; width:203px;}
+.mima{ padding-top:10px; padding-left:10px;}
+.mima img{ padding-left:10px; }
+.mi{ border:1px #3a9aff solid; height:25px; width:150px;}
+.deng{ padding-top:18px; padding-left:56px;}
+.jua{ padding-left:15px; background:url(../images/yh_07.jpg) no-repeat; width:61px; height:26px; border:none; cursor:pointer}
+
+/* 后台 */
+.bei{ width:100%; background:url(../images/bj_01.jpg) repeat-x top center; height:81px;}
+.b_l{ width:89px; height:61px; padding-top:11px; padding-left:31px; float:left;}
+.b_r{ float:left; margin-left:20px;}
+.tab1{ padding-top:4px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3CF47E36-13D7-4663-905C-424B3DC6C127}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>H.Entity</RootNamespace>
+    <AssemblyName>H.Entity</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\BrowsingHistoryEntity.cs" />
+    <Compile Include="Common\ErrorLogEntity.cs" />
+    <Compile Include="ElleUser\ElleUserEntity.cs" />
+    <Compile Include="PageBase.cs" />
+    <Compile Include="Product\ProductEntity.cs" />
+    <Compile Include="Product\ProductTypeEntity.cs" />
+    <Compile Include="QueryCondition.cs" />
+    <Compile Include="Report\SaleTopEntity.cs" />
+    <Compile Include="ResultEntity.cs" />
+    <Compile Include="Log\Log.cs" />
+    <Compile Include="RestServiceError.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SystemLogin\AuthUserEntity.cs" />
+    <Compile Include="SystemUser\SystemUserEntity.cs" />
+    <Compile Include="SystemUser\SystemUser_PrivilegeEntity.cs" />
+    <Compile Include="SystemUser\SystemUser_RoleEntity.cs" />
+    <Compile Include="SZJHDB\ChargeEntity.cs" />
+    <Compile Include="SZJHDB\ClubMembersEntity.cs" />
+    <Compile Include="SZJHDB\FilesEntity.cs" />
+    <Compile Include="SZJHDB\ManagementEntity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\H.Core\H.Core.DataAccess\H.Core.DataAccess.csproj">
+      <Project>{90591a3f-0f48-4cd7-94f2-66fef3015c8f}</Project>
+      <Name>H.Core.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /C /I /R /Y /S "$(TargetDir)*.dll" "$(SolutionDir)H.Service\H.Service.IISHost\Bin"
+xcopy /C /I /R /Y /S "$(TargetDir)*.pdb" "$(SolutionDir)H.Service\H.Service.IISHost\Bin"
+xcopy /C /I /R /Y /S "$(TargetDir)*.dll" "$(SolutionDir)H.Website\H.Website.IISHost\Bin"
+xcopy /C /I /R /Y /S "$(TargetDir)*.pdb" "$(SolutionDir)H.Website\H.Website.IISHost\Bin"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

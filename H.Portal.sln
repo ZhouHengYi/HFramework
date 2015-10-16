@@ -1,0 +1,189 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00_H.Core", "00_H.Core", "{14805447-51A4-4B0A-9D0E-AE41D9B0E09D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H.Core.Rest", "H.Core\H.Core.Rest\H.Core.Rest.csproj", "{4E3B35BD-FDD2-4D72-AA57-E323DA17DDF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H.Core.Utility", "H.Core\H.Core.Utility\H.Core.Utility.csproj", "{B2168AC0-AC04-4E54-AA65-BB227FBC15CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H.Core.DataAccess", "H.Core\H.Core.DataAccess\H.Core.DataAccess.csproj", "{90591A3F-0F48-4CD7-94F2-66FEF3015C8F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02_Service", "02_Service", "{E9187754-7822-4444-A24C-44266B511394}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H.Service.IISHost", "H.Service\H.Service.IISHost\H.Service.IISHost.csproj", "{F6D7706A-300F-4F89-B285-69629C1133DE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "H.Service.Domain", "H.Service.Domain", "{3AD36132-1E01-4824-AB8D-289874E2C30A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H.Service.Rest", "H.Service\H.Service.Domain\H.Service.Rest\H.Service.Rest.csproj", "{D52B7D7C-8C1A-413D-9D9B-88E62F17EBBC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01_Entity", "01_Entity", "{48D1267A-4101-4F85-8B4C-226F87460C8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H.Entity", "H.Entity\H.Entity\H.Entity.csproj", "{3CF47E36-13D7-4663-905C-424B3DC6C127}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03_Portal", "03_Portal", "{C9451FC1-8740-4EB8-BE65-B75ACC359CFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H.Website.IISHost", "H.Portal\H.Website.IISHost\H.Website.IISHost.csproj", "{D5FCA81F-BE27-4966-B697-E59B163E46C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H.Website.Facade", "H.Portal\H.Website.Facade\H.Website.Facade.csproj", "{8BF4DFF6-0F68-4558-A70E-A8549819CC9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H.Service.IDataAccess", "H.Service\H.Service.Domain\H.Service.IDataAccess\H.Service.IDataAccess.csproj", "{E8332746-2B25-43A6-B540-8F553D9D73C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H.Service.SqlDataAccess", "H.Service\H.Service.Domain\H.Service.SqlDataAccess\H.Service.SqlDataAccess.csproj", "{3540F550-B8B5-47DA-834A-3D5EBA52DFCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H.Core.Cache", "H.Core\H.Core.Cache\H.Core.Cache.csproj", "{E5ABA238-61FF-453B-AC84-2275EF19F19E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H.Service.MicrosoftAccessDataAccess", "H.Service\H.Service.Domain\H.Service.MicrosoftAccessDataAccess\H.Service.MicrosoftAccessDataAccess.csproj", "{3E6A8077-4637-4D3C-A981-0E49681AE7B8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "09_Tools", "09_Tools", "{FC513DBE-7DC0-49B7-842E-A13DAF5AE771}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UploadService", "H.Tools\UploadService\UploadService.csproj", "{D6088C78-8FF5-4BA4-AE1A-F727612BC2BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H.Service.MySql", "H.Service\H.Service.Domain\H.Service.MySql\H.Service.MySql.csproj", "{D4C2709E-129D-45DD-92DA-BC50DEEDF300}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 15
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://115.29.192.182:8080/tfs/home
+		SccProjectUniqueName0 = H.Core\\H.Core.Rest\\H.Core.Rest.csproj
+		SccProjectTopLevelParentUniqueName0 = H.Portal.sln
+		SccProjectName0 = H.Core/H.Core.Rest
+		SccLocalPath0 = H.Core\\H.Core.Rest
+		SccProjectUniqueName1 = H.Core\\H.Core.Utility\\H.Core.Utility.csproj
+		SccProjectTopLevelParentUniqueName1 = H.Portal.sln
+		SccProjectName1 = H.Core/H.Core.Utility
+		SccLocalPath1 = H.Core\\H.Core.Utility
+		SccProjectUniqueName2 = H.Core\\H.Core.DataAccess\\H.Core.DataAccess.csproj
+		SccProjectTopLevelParentUniqueName2 = H.Portal.sln
+		SccProjectName2 = H.Core/H.Core.DataAccess
+		SccLocalPath2 = H.Core\\H.Core.DataAccess
+		SccProjectUniqueName3 = H.Entity\\H.Entity\\H.Entity.csproj
+		SccProjectTopLevelParentUniqueName3 = H.Portal.sln
+		SccProjectName3 = H.Entity/H.Entity
+		SccLocalPath3 = H.Entity\\H.Entity
+		SccProjectUniqueName4 = H.Core\\H.Core.Cache\\H.Core.Cache.csproj
+		SccProjectTopLevelParentUniqueName4 = H.Portal.sln
+		SccProjectName4 = H.Core/H.Core.Cache
+		SccLocalPath4 = H.Core\\H.Core.Cache
+		SccProjectUniqueName5 = H.Tools\\UploadService\\UploadService.csproj
+		SccProjectTopLevelParentUniqueName5 = H.Portal.sln
+		SccProjectName5 = H.Tools/UploadService
+		SccLocalPath5 = H.Tools\\UploadService
+		SccLocalPath6 = .
+		SccProjectUniqueName7 = H.Portal\\H.Website.Facade\\H.Website.Facade.csproj
+		SccProjectTopLevelParentUniqueName7 = H.Portal.sln
+		SccProjectName7 = H.Portal/H.Website.Facade
+		SccLocalPath7 = H.Portal\\H.Website.Facade
+		SccProjectUniqueName8 = H.Portal\\H.Website.IISHost\\H.Website.IISHost.csproj
+		SccProjectTopLevelParentUniqueName8 = H.Portal.sln
+		SccProjectName8 = H.Portal/H.Website.IISHost
+		SccLocalPath8 = H.Portal\\H.Website.IISHost
+		SccProjectUniqueName9 = H.Service\\H.Service.Domain\\H.Service.IDataAccess\\H.Service.IDataAccess.csproj
+		SccProjectTopLevelParentUniqueName9 = H.Portal.sln
+		SccProjectName9 = H.Service/H.Service.Domain/H.Service.IDataAccess
+		SccLocalPath9 = H.Service\\H.Service.Domain\\H.Service.IDataAccess
+		SccProjectUniqueName10 = H.Service\\H.Service.Domain\\H.Service.MicrosoftAccessDataAccess\\H.Service.MicrosoftAccessDataAccess.csproj
+		SccProjectTopLevelParentUniqueName10 = H.Portal.sln
+		SccProjectName10 = H.Service/H.Service.Domain/H.Service.MicrosoftAccessDataAccess
+		SccLocalPath10 = H.Service\\H.Service.Domain\\H.Service.MicrosoftAccessDataAccess
+		SccProjectUniqueName11 = H.Service\\H.Service.Domain\\H.Service.MySql\\H.Service.MySql.csproj
+		SccProjectTopLevelParentUniqueName11 = H.Portal.sln
+		SccProjectName11 = H.Service/H.Service.Domain/H.Service.MySql
+		SccLocalPath11 = H.Service\\H.Service.Domain\\H.Service.MySql
+		SccProjectUniqueName12 = H.Service\\H.Service.Domain\\H.Service.Rest\\H.Service.Rest.csproj
+		SccProjectTopLevelParentUniqueName12 = H.Portal.sln
+		SccProjectName12 = H.Service/H.Service.Domain/H.Service.Rest
+		SccLocalPath12 = H.Service\\H.Service.Domain\\H.Service.Rest
+		SccProjectUniqueName13 = H.Service\\H.Service.Domain\\H.Service.SqlDataAccess\\H.Service.SqlDataAccess.csproj
+		SccProjectTopLevelParentUniqueName13 = H.Portal.sln
+		SccProjectName13 = H.Service/H.Service.Domain/H.Service.SqlDataAccess
+		SccLocalPath13 = H.Service\\H.Service.Domain\\H.Service.SqlDataAccess
+		SccProjectUniqueName14 = H.Service\\H.Service.IISHost\\H.Service.IISHost.csproj
+		SccProjectTopLevelParentUniqueName14 = H.Portal.sln
+		SccProjectName14 = H.Service/H.Service.IISHost
+		SccLocalPath14 = H.Service\\H.Service.IISHost
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E3B35BD-FDD2-4D72-AA57-E323DA17DDF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E3B35BD-FDD2-4D72-AA57-E323DA17DDF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E3B35BD-FDD2-4D72-AA57-E323DA17DDF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E3B35BD-FDD2-4D72-AA57-E323DA17DDF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2168AC0-AC04-4E54-AA65-BB227FBC15CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2168AC0-AC04-4E54-AA65-BB227FBC15CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2168AC0-AC04-4E54-AA65-BB227FBC15CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2168AC0-AC04-4E54-AA65-BB227FBC15CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90591A3F-0F48-4CD7-94F2-66FEF3015C8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90591A3F-0F48-4CD7-94F2-66FEF3015C8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90591A3F-0F48-4CD7-94F2-66FEF3015C8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90591A3F-0F48-4CD7-94F2-66FEF3015C8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6D7706A-300F-4F89-B285-69629C1133DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6D7706A-300F-4F89-B285-69629C1133DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6D7706A-300F-4F89-B285-69629C1133DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6D7706A-300F-4F89-B285-69629C1133DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D52B7D7C-8C1A-413D-9D9B-88E62F17EBBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D52B7D7C-8C1A-413D-9D9B-88E62F17EBBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D52B7D7C-8C1A-413D-9D9B-88E62F17EBBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D52B7D7C-8C1A-413D-9D9B-88E62F17EBBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CF47E36-13D7-4663-905C-424B3DC6C127}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CF47E36-13D7-4663-905C-424B3DC6C127}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CF47E36-13D7-4663-905C-424B3DC6C127}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CF47E36-13D7-4663-905C-424B3DC6C127}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5FCA81F-BE27-4966-B697-E59B163E46C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5FCA81F-BE27-4966-B697-E59B163E46C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5FCA81F-BE27-4966-B697-E59B163E46C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5FCA81F-BE27-4966-B697-E59B163E46C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BF4DFF6-0F68-4558-A70E-A8549819CC9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BF4DFF6-0F68-4558-A70E-A8549819CC9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BF4DFF6-0F68-4558-A70E-A8549819CC9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BF4DFF6-0F68-4558-A70E-A8549819CC9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8332746-2B25-43A6-B540-8F553D9D73C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8332746-2B25-43A6-B540-8F553D9D73C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8332746-2B25-43A6-B540-8F553D9D73C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8332746-2B25-43A6-B540-8F553D9D73C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3540F550-B8B5-47DA-834A-3D5EBA52DFCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3540F550-B8B5-47DA-834A-3D5EBA52DFCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3540F550-B8B5-47DA-834A-3D5EBA52DFCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3540F550-B8B5-47DA-834A-3D5EBA52DFCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5ABA238-61FF-453B-AC84-2275EF19F19E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5ABA238-61FF-453B-AC84-2275EF19F19E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5ABA238-61FF-453B-AC84-2275EF19F19E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5ABA238-61FF-453B-AC84-2275EF19F19E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E6A8077-4637-4D3C-A981-0E49681AE7B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E6A8077-4637-4D3C-A981-0E49681AE7B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E6A8077-4637-4D3C-A981-0E49681AE7B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E6A8077-4637-4D3C-A981-0E49681AE7B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6088C78-8FF5-4BA4-AE1A-F727612BC2BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6088C78-8FF5-4BA4-AE1A-F727612BC2BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6088C78-8FF5-4BA4-AE1A-F727612BC2BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6088C78-8FF5-4BA4-AE1A-F727612BC2BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4C2709E-129D-45DD-92DA-BC50DEEDF300}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4C2709E-129D-45DD-92DA-BC50DEEDF300}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4C2709E-129D-45DD-92DA-BC50DEEDF300}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4C2709E-129D-45DD-92DA-BC50DEEDF300}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4E3B35BD-FDD2-4D72-AA57-E323DA17DDF7} = {14805447-51A4-4B0A-9D0E-AE41D9B0E09D}
+		{B2168AC0-AC04-4E54-AA65-BB227FBC15CD} = {14805447-51A4-4B0A-9D0E-AE41D9B0E09D}
+		{90591A3F-0F48-4CD7-94F2-66FEF3015C8F} = {14805447-51A4-4B0A-9D0E-AE41D9B0E09D}
+		{E5ABA238-61FF-453B-AC84-2275EF19F19E} = {14805447-51A4-4B0A-9D0E-AE41D9B0E09D}
+		{F6D7706A-300F-4F89-B285-69629C1133DE} = {E9187754-7822-4444-A24C-44266B511394}
+		{3AD36132-1E01-4824-AB8D-289874E2C30A} = {E9187754-7822-4444-A24C-44266B511394}
+		{D52B7D7C-8C1A-413D-9D9B-88E62F17EBBC} = {3AD36132-1E01-4824-AB8D-289874E2C30A}
+		{E8332746-2B25-43A6-B540-8F553D9D73C9} = {3AD36132-1E01-4824-AB8D-289874E2C30A}
+		{3540F550-B8B5-47DA-834A-3D5EBA52DFCA} = {3AD36132-1E01-4824-AB8D-289874E2C30A}
+		{3E6A8077-4637-4D3C-A981-0E49681AE7B8} = {3AD36132-1E01-4824-AB8D-289874E2C30A}
+		{D4C2709E-129D-45DD-92DA-BC50DEEDF300} = {3AD36132-1E01-4824-AB8D-289874E2C30A}
+		{3CF47E36-13D7-4663-905C-424B3DC6C127} = {48D1267A-4101-4F85-8B4C-226F87460C8B}
+		{D5FCA81F-BE27-4966-B697-E59B163E46C1} = {C9451FC1-8740-4EB8-BE65-B75ACC359CFB}
+		{8BF4DFF6-0F68-4558-A70E-A8549819CC9B} = {C9451FC1-8740-4EB8-BE65-B75ACC359CFB}
+		{D6088C78-8FF5-4BA4-AE1A-F727612BC2BD} = {FC513DBE-7DC0-49B7-842E-A13DAF5AE771}
+	EndGlobalSection
+EndGlobal

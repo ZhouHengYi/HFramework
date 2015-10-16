@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Configuration/Data/Database.config">
+      <publishTime>07/23/2013 19:53:51</publishTime>
+    </File>
+    <File Include="bin/Configuration/Data/DbCommand/Log.config">
+      <publishTime>07/20/2013 17:10:09</publishTime>
+    </File>
+    <File Include="bin/Configuration/Data/DbCommand/MyREST.config">
+      <publishTime>07/02/2013 15:39:38</publishTime>
+    </File>
+    <File Include="bin/Configuration/Data/DbCommandFiles.config">
+      <publishTime>07/10/2013 21:11:39</publishTime>
+    </File>
+    <File Include="bin/H.Core.Utility.dll">
+      <publishTime>07/25/2013 16:12:19</publishTime>
+    </File>
+    <File Include="bin/H.Entity.dll">
+      <publishTime>07/25/2013 16:12:16</publishTime>
+    </File>
+    <File Include="bin/H.Facade.dll">
+      <publishTime>07/25/2013 16:12:21</publishTime>
+    </File>
+    <File Include="bin/H.Website.dll">
+      <publishTime>07/25/2013 16:12:23</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Http.dll">
+      <publishTime>12/10/2009 09:38:22</publishTime>
+    </File>
+    <File Include="bin/PostSharp.dll">
+      <publishTime>05/02/2013 18:56:08</publishTime>
+    </File>
+    <File Include="Configuration/Autorun.config">
+      <publishTime>07/20/2013 16:59:34</publishTime>
+    </File>
+    <File Include="Configuration/Data/Database.config">
+      <publishTime>07/23/2013 19:53:51</publishTime>
+    </File>
+    <File Include="Configuration/Data/DbCommand/Log.config">
+      <publishTime>07/20/2013 17:10:09</publishTime>
+    </File>
+    <File Include="Configuration/Data/DbCommand/MyREST.config">
+      <publishTime>07/02/2013 15:39:38</publishTime>
+    </File>
+    <File Include="Configuration/Data/DbCommandFiles.config">
+      <publishTime>07/10/2013 21:11:39</publishTime>
+    </File>
+    <File Include="Configuration/FileWatcher.config">
+      <publishTime>07/20/2013 16:47:06</publishTime>
+    </File>
+    <File Include="Configuration/Language/CN/language_cn.config">
+      <publishTime>07/25/2013 15:56:02</publishTime>
+    </File>
+    <File Include="Configuration/Language/CN/language_cn.js">
+      <publishTime>07/25/2013 15:19:12</publishTime>
+    </File>
+    <File Include="Configuration/Language/EN/language_cn.config">
+      <publishTime>07/25/2013 15:58:07</publishTime>
+    </File>
+    <File Include="Configuration/Language/EN/language_cn.js">
+      <publishTime>07/25/2013 16:10:14</publishTime>
+    </File>
+    <File Include="Configuration/UrlMapping.config">
+      <publishTime>07/25/2013 14:57:49</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>07/20/2013 16:16:43</publishTime>
+    </File>
+    <File Include="Demo/Product/Product.aspx">
+      <publishTime>07/20/2013 17:02:46</publishTime>
+    </File>
+    <File Include="Demo/Product/ProShow.aspx">
+      <publishTime>07/20/2013 17:02:57</publishTime>
+    </File>
+    <File Include="Demo/Register/Register.aspx">
+      <publishTime>07/25/2013 16:09:01</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>07/20/2013 16:17:11</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>07/25/2013 16:57:13</publishTime>
+    </File>
+    <File Include="WebResource/css/box.css">
+      <publishTime>07/25/2013 14:55:34</publishTime>
+    </File>
+    <File Include="WebResource/images/box/loading.gif">
+      <publishTime>07/25/2013 14:54:49</publishTime>
+    </File>
+    <File Include="WebResource/images/box/load_box.gif">
+      <publishTime>07/25/2013 14:54:49</publishTime>
+    </File>
+    <File Include="WebResource/images/box/load_box.png">
+      <publishTime>07/25/2013 14:54:49</publishTime>
+    </File>
+    <File Include="WebResource/images/box/load_close.gif">
+      <publishTime>07/25/2013 14:54:49</publishTime>
+    </File>
+    <File Include="WebResource/js/Base.js">
+      <publishTime>07/25/2013 14:53:57</publishTime>
+    </File>
+    <File Include="WebResource/js/common.js">
+      <publishTime>07/25/2013 14:53:57</publishTime>
+    </File>
+    <File Include="WebResource/js/jquery.min-1.7.1.js">
+      <publishTime>07/25/2013 14:53:57</publishTime>
+    </File>
+    <File Include="WebResource/js/upload/jquery.uploadify.js">
+      <publishTime>07/25/2013 14:53:57</publishTime>
+    </File>
+    <File Include="WebResource/js/upload/jquery.uploadify.min.js">
+      <publishTime>07/25/2013 14:53:57</publishTime>
+    </File>
+    <File Include="WebResource/js/upload/uploadify.swf">
+      <publishTime>07/25/2013 14:53:57</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

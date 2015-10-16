@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/H.BizEntity.dll">
+      <publishTime>06/15/2013 14:45:49</publishTime>
+    </File>
+    <File Include="bin/H.Core.DataAccess.dll">
+      <publishTime>04/20/2014 11:36:20</publishTime>
+    </File>
+    <File Include="bin/H.Core.Rest.dll">
+      <publishTime>04/20/2014 11:36:21</publishTime>
+    </File>
+    <File Include="bin/H.Core.Utility.dll">
+      <publishTime>04/20/2014 11:36:20</publishTime>
+    </File>
+    <File Include="bin/H.Entity.dll">
+      <publishTime>04/20/2014 11:36:21</publishTime>
+    </File>
+    <File Include="bin/H.Service.AppService.dll">
+      <publishTime>06/15/2013 14:45:51</publishTime>
+    </File>
+    <File Include="bin/H.Service.IDataAccess.dll">
+      <publishTime>04/20/2014 11:36:22</publishTime>
+    </File>
+    <File Include="bin/H.Service.IISHost.dll">
+      <publishTime>04/20/2014 11:36:26</publishTime>
+    </File>
+    <File Include="bin/H.Service.MicrosoftAccessDataAccess.dll">
+      <publishTime>04/20/2014 11:36:23</publishTime>
+    </File>
+    <File Include="bin/H.Service.MySql.dll">
+      <publishTime>04/20/2014 11:36:22</publishTime>
+    </File>
+    <File Include="bin/H.Service.Rest.dll">
+      <publishTime>04/20/2014 11:36:24</publishTime>
+    </File>
+    <File Include="bin/H.Service.Restful.dll">
+      <publishTime>06/15/2013 14:45:51</publishTime>
+    </File>
+    <File Include="bin/H.Service.SqlDataAccess.dll">
+      <publishTime>04/20/2014 11:36:23</publishTime>
+    </File>
+    <File Include="bin/H.Utility.DataAccess.dll">
+      <publishTime>06/15/2013 14:45:50</publishTime>
+    </File>
+    <File Include="bin/H.Utility.dll">
+      <publishTime>06/15/2013 14:45:49</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Http.dll">
+      <publishTime>12/10/2009 09:38:22</publishTime>
+    </File>
+    <File Include="bin/MySql.Data.dll">
+      <publishTime>05/22/2013 17:21:18</publishTime>
+    </File>
+    <File Include="bin/PostSharp.dll">
+      <publishTime>05/02/2013 18:56:08</publishTime>
+    </File>
+    <File Include="bin/PostSharp.Laos.dll">
+      <publishTime>05/02/2013 18:56:08</publishTime>
+    </File>
+    <File Include="Configuration/Autorun.config">
+      <publishTime>04/18/2014 14:42:48</publishTime>
+    </File>
+    <File Include="Configuration/Data/AccessDbCommand/SystemUser.config">
+      <publishTime>03/24/2014 08:13:04</publishTime>
+    </File>
+    <File Include="Configuration/Data/Database.config">
+      <publishTime>04/19/2014 06:51:44</publishTime>
+    </File>
+    <File Include="Configuration/Data/DbCommand/MyREST.config">
+      <publishTime>06/04/2013 22:52:34</publishTime>
+    </File>
+    <File Include="Configuration/Data/DbCommandFiles.config">
+      <publishTime>04/19/2014 22:14:26</publishTime>
+    </File>
+    <File Include="Configuration/Data/ElleShopAdminDbCommand/ElleUser.config">
+      <publishTime>04/09/2014 19:34:02</publishTime>
+    </File>
+    <File Include="Configuration/Data/MyREST/MyREST.config">
+      <publishTime>05/25/2013 14:37:56</publishTime>
+    </File>
+    <File Include="Configuration/Data/MySqlDbCommand/SystemUser.config">
+      <publishTime>04/18/2014 18:11:22</publishTime>
+    </File>
+    <File Include="Configuration/Data/ReportDbCommand/ExportReport.config">
+      <publishTime>04/03/2014 15:03:52</publishTime>
+    </File>
+    <File Include="Configuration/Data/SqlServerDbCommand/BrowsingHistory.config">
+      <publishTime>12/15/2013 23:50:04</publishTime>
+    </File>
+    <File Include="Configuration/Data/SqlServerDbCommand/Charge.config">
+      <publishTime>04/20/2014 01:59:15</publishTime>
+    </File>
+    <File Include="Configuration/Data/SqlServerDbCommand/ClubMembers.config">
+      <publishTime>04/20/2014 09:06:40</publishTime>
+    </File>
+    <File Include="Configuration/Data/SqlServerDbCommand/ErrorLog.config">
+      <publishTime>04/19/2014 07:16:46</publishTime>
+    </File>
+    <File Include="Configuration/Data/SqlServerDbCommand/Files.config">
+      <publishTime>04/20/2014 01:21:01</publishTime>
+    </File>
+    <File Include="Configuration/Data/SqlServerDbCommand/Log.config">
+      <publishTime>04/19/2014 07:16:52</publishTime>
+    </File>
+    <File Include="Configuration/Data/SqlServerDbCommand/Management.config">
+      <publishTime>04/20/2014 02:22:32</publishTime>
+    </File>
+    <File Include="Configuration/Data/SqlServerDbCommand/MyREST.config">
+      <publishTime>11/10/2013 13:48:28</publishTime>
+    </File>
+    <File Include="Configuration/Data/SqlServerDbCommand/Product.config">
+      <publishTime>12/04/2013 21:09:34</publishTime>
+    </File>
+    <File Include="Configuration/Data/SqlServerDbCommand/ProductType.config">
+      <publishTime>12/04/2013 21:09:38</publishTime>
+    </File>
+    <File Include="Configuration/Data/SqlServerDbCommand/SystemUser.config">
+      <publishTime>04/19/2014 13:23:54</publishTime>
+    </File>
+    <File Include="Configuration/Data/SqlServerDbCommand/SystemUser_Privilege.config">
+      <publishTime>04/19/2014 07:17:58</publishTime>
+    </File>
+    <File Include="Configuration/Data/SqlServerDbCommand/SystemUser_Role.config">
+      <publishTime>04/19/2014 07:18:16</publishTime>
+    </File>
+    <File Include="Configuration/FileWatcher.config">
+      <publishTime>04/19/2014 06:40:58</publishTime>
+    </File>
+    <File Include="Configuration/RestService.config">
+      <publishTime>04/20/2014 02:18:52</publishTime>
+    </File>
+    <File Include="Configuration/TypeVersion.config">
+      <publishTime>04/19/2014 07:06:18</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>07/10/2013 21:39:24</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>05/17/2013 22:40:18</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/20/2014 12:03:42</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,11 @@
+C:\Users\hz07\Desktop\H.Framework_V2\H.Front\H.Facade\bin\Release\H.Facade.dll
+C:\Users\hz07\Desktop\H.Framework_V2\H.Front\H.Facade\bin\Release\H.Facade.pdb
+C:\Users\hz07\Desktop\H.Framework_V2\H.Front\H.Facade\bin\Release\H.Core.Utility.dll
+C:\Users\hz07\Desktop\H.Framework_V2\H.Front\H.Facade\bin\Release\PostSharp.dll
+C:\Users\hz07\Desktop\H.Framework_V2\H.Front\H.Facade\bin\Release\Microsoft.Http.dll
+C:\Users\hz07\Desktop\H.Framework_V2\H.Front\H.Facade\bin\Release\H.Entity.dll
+C:\Users\hz07\Desktop\H.Framework_V2\H.Front\H.Facade\bin\Release\H.Core.Utility.pdb
+C:\Users\hz07\Desktop\H.Framework_V2\H.Front\H.Facade\bin\Release\H.Entity.pdb
+C:\Users\hz07\Desktop\H.Framework_V2\H.Front\H.Facade\obj\Release\H.Facade.csprojResolveAssemblyReference.cache
+C:\Users\hz07\Desktop\H.Framework_V2\H.Front\H.Facade\obj\Release\H.Facade.dll
+C:\Users\hz07\Desktop\H.Framework_V2\H.Front\H.Facade\obj\Release\H.Facade.pdb

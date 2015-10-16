@@ -1,0 +1,540 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>TGVISON双晖传媒品牌机构官方网站 | 移动应用解决方案专家，交互设计，视觉设计，产品研发</title>
+<meta name="Keywoeywords" content="北京双晖文化传播有限公司,双晖传媒,北京知名设计公司,移动应用,android,ios,win8,APP,网页,企业整站,icon,界面,交互,视觉,设计,开发,移动端,手机,平板,iphone,ipad" />
+<meta name="Description" content="北京双晖文化传播有限公司，作为国内知名专业设计公司，TGVISION双晖传媒聚集了从事界面设计多年的专业人士，拥有多年与国内外知名公司丰富的成功合作经验。为客户提供品牌化、一站式的解决方案。服务涵盖了互联网，掌上移动设备、桌面平台以及电子消费类产品等。为客户提供从品牌设计、概念设计、交互设计、图形界面视觉设计、功能开发到最终的产品实现。多年积累的各领域多平台设计经验为客户提供真正具有前瞻性及独创性的产品体验。" />
+<link rel="apple-touch-icon-precomposed" href="/skin/tg2013/images/icon.png" />
+<link href="/skin/tg2013/css/tg_style.css" rel="stylesheet" type="text/css" />
+<link href="/skin/tg2013/css/tg_index.css" rel="stylesheet" type="text/css" />
+<link href="/skin/tg2013/css/news.css" rel="stylesheet" type="text/css" />
+<!--[if IE 6]>
+<script src="/skin/tg2013/js/DD_belatedPNG_0.0.8a-min.js"></script>
+<script>
+DD_belatedPNG.fix('a.arrL,a.arrR');
+</script>
+<![endif]-->
+<script type="text/javascript" src="/skin/tg2013/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="/skin/tg2013/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="/skin/tg2013/js/scrolltopcontrol.js"></script>
+<script type="text/javascript" src="/skin/tg2013/js/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.4"></script>
+<style type="text/css">
+.mypng img {
+azimuth: expression( this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none", this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')", this.src = "transparent.gif"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("', '').replace('")', ''), this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='crop')", this.runtimeStyle.backgroundImage = "none")), this.pngSet=true);
+}
+</style>
+</head>
+<body>
+<div class="zpConFullScreen"></div>
+<div class="fullScreen"></div>
+<div id="indexDiv" style="overflow:hidden;">
+<div class="topHeader">
+  <div id="header">
+    <div id="logo"><a href="/"><img src="/skin/tg2013/images/logo.jpg" width="220" height="62" /></a></div>
+        <a href="javascript:void(0);" class="searchBt">&nbsp;</a>
+    <div class="searchInput">
+<form action='/TG/search/index.php' method="post" name="search_news" id="search_news">
+<a href="javascript:void(0);" onclick="$('#search_news').submit();return false;" class="searchSubmitBt">&nbsp;</a>
+<input type="hidden" name="classid" value="16" />
+<input type="hidden" name="show" value="title,smalltext,newstext" />
+<input name="keyboard" type="text" id="keyboard" size="42" />
+<input type="hidden" name="Submit22" class="searchSubmitBt" value="搜索" />
+</form>
+    </div>
+
+<script type="text/javascript">
+$(function() {
+	$(".searchBt").toggle(
+	  function () {
+		  $(".searchInput").slideDown("fast");
+		$(this).addClass("searchOn");
+                    $('body').one('click', function() {    //给BODY绑定一次性点击事件   
+		        if($(".searchBt").hasClass("searchOn"))$(".searchBt").trigger("click");
+                    });
+	  },
+	  function () {
+		 $(".searchInput").slideUp("fast");
+		$(this).removeClass("searchOn");
+	  }
+	);
+        $(".searchInput input").click(function() {     //点击显示部分不隐藏   
+                return false;   
+       });
+});
+</script>
+    <div class="top_nav" id="menuNav"><a href="#Home" class="on">首页
+      <div class="navBg" style="display:block;" id="navBgOn"></div>
+      </a><a href="#Portfolio">案例
+      <div class="navBg"></div>
+      </a><a href="#services">服务
+      <div class="navBg"></div>
+      </a><a href="#about">关于
+      <div class="navBg"></div>
+      </a><a href="#contact">联系
+      <div class="navBg"></div>
+      </a></div>
+  </div>
+</div>
+<div id="Home"></div>
+<div id="focusBar" > <a href="javascript:void(0)" class="arrL" onclick="prePage()">&nbsp;</a><a href="javascript:void(0)" class="arrR" onclick="nextPage()">&nbsp;</a>
+  <ul class="mypng">
+    <li id="focusIndex1" style="display:block;background:url(/d/file/indexlink/focus/201303/483a26db99919a40eee1f0dd652ad53b.gif) repeat;">
+      <div class="focusL"><a href="/portfolio/app/201306/68.html"><img src="/d/file/indexlink/focus/201306/0240ddc5fa163156719b498c45d4ded2.png" width="1000" height="644" /></a></div>
+      <div class="focusR"><a href="/portfolio/app/201306/68.html"><img src="/d/file/indexlink/focus/201306/e92807f2bcc6f6e4fc92a2b07ef3eb26.png" width="1000" height="644" /></a></div>
+    </li>
+    <li id="focusIndex2" style="background:url(/d/file/indexlink/focus/201306/e08eb50b6911dd1ebfd53a65a5629f94.jpg) repeat;">
+      <div class="focusL"><a href="/portfolio/app/201305/54.html"><img src="/d/file/indexlink/focus/201306/2d20716b5ecc36c5c9e35a7dfc1834a4.png" width="1000" height="644" /></a></div>
+      <div class="focusR"><a href="/portfolio/app/201305/54.html"><img src="/d/file/indexlink/focus/201306/2a18e9128aad06d0b6b8d908ecf7c2a1.png" width="1000" height="644" /></a></div>
+    </li>
+    <li id="focusIndex3" style="background:url(/d/file/indexlink/focus/201303/8bc531a341bac9421a25093ccf376e7d.gif) repeat;">
+      <div class="focusL"><a href="/portfolio/app/201303/12.html"><img src="/d/file/indexlink/focus/201306/b249cfb8cebc4696d7a317181b823eb3.png" width="1000" height="644" /></a></div>
+      <div class="focusR"><a href="/portfolio/app/201303/12.html"><img src="/d/file/indexlink/focus/201306/dc0e4583d9af6915d306cabb9ac6df64.png" width="1000" height="644" /></a></div>
+    </li>
+  </ul>
+</div>
+<!--Portfolio-->
+<div class="colTitBar" id="Portfolio">
+  <h2 class="tit1" title="Portfolio"></h2>
+</div>
+<a name="Portfolios"  id="Portfolios" style="position:absolute;top:780px;"></a>
+<div class="portfolioMenu">
+<a href="javascript:void(0)" id="box21" onclick="showPagei(1,5,2)">精选案例
+  <div class="menuBg" style="display:block;" title="menuBgOn">精选案例</div>
+  </a><a href="javascript:void(0)" id="box22" onclick="showPagei(2,5,2)">移动应用
+  <div class="menuBg">移动应用</div>
+  </a><a href="javascript:void(0)" id="box23" onclick="showPagei(3,5,2)">网站界面
+  <div class="menuBg">网站界面</div>
+  </a><a href="javascript:void(0)" id="box24" onclick="showPagei(4,5,2)">标志图标
+  <div class="menuBg">标志图标</div>
+  </a><!-- a href="javascript:void(0)" id="box25" onclick="showPagei(5,5,2)">平面印刷
+  <div class="menuBg">平面印刷</div>
+  </a --></div>
+<!--作品begin-->
+<!--page1-->
+<div  id="page21" style="display:block;">
+  <div class="zp_list">
+    <div class="zp_box">
+      <div class="pop_tit"><span class="p_tit1" title="Quick Car APP">Quick Car APP</span><br />
+        <span class="p_tit2">Mobile APP</span></div>
+      <a href="/portfolio/app/201305/54.html"><img src="/d/file/portfolio/app/201305/b2227b1bc98f05f257aed08568e5138f.jpg" /></a></div>
+    <div class="zp_box">
+      <div class="pop_tit"><span class="p_tit1" title="《世界》杂志APP">《世界》杂志APP</span><br />
+        <span class="p_tit2">Mobile APP</span></div>
+      <a href="/portfolio/app/201303/22.html"><img src="/d/file/portfolio/app/201303/d98d054481bc4b385ef1b70d514c5a35.jpg" /></a></div>
+    <div class="zp_box">
+      <div class="pop_tit"><span class="p_tit1" title="ShareControl APP">ShareControl APP</span><br />
+        <span class="p_tit2">Mobile APP</span></div>
+      <a href="/portfolio/app/201306/68.html"><img src="/d/file/portfolio/app/201306/47973b6a2f1ae9a77ec4bf1cd42e49f2.jpg" /></a></div>
+    <div class="zp_box">
+      <div class="pop_tit"><span class="p_tit1" title="7Q Online Music Player">7Q Online Music Player</span><br />
+        <span class="p_tit2">Web UI</span></div>
+      <a href="/portfolio/web/201309/72.html"><img src="/d/file/portfolio/web/201309/8c01488573761d2fef2d31a56d7b6142.jpg" /></a></div>
+    <div class="zp_box">
+      <div class="pop_tit"><span class="p_tit1" title="爱宠家园APP">爱宠家园APP</span><br />
+        <span class="p_tit2">Mobile APP</span></div>
+      <a href="/portfolio/app/201306/69.html"><img src="/d/file/portfolio/app/201306/7e33572dab89fac378332257c6fa285e.jpg" /></a></div>
+    <div class="zp_box">
+      <div class="pop_tit"><span class="p_tit1" title="Mediaweek Icon">Mediaweek Icon</span><br />
+        <span class="p_tit2">Logo & Icon</span></div>
+      <a href="/portfolio/icon/201303/21.html"><img src="/d/file/portfolio/icon/201303/6b089e685b97bd545e2bc42f83610c80.jpg" /></a></div>
+    <div class="zp_box">
+      <div class="pop_tit"><span class="p_tit1" title="SpeedTest">SpeedTest</span><br />
+        <span class="p_tit2">Mobile APP</span></div>
+      <a href="/portfolio/app/201303/12.html"><img src="/d/file/portfolio/app/201303/c9b635d25bbe689e356055e470bd2f13.jpg" /></a></div>
+    <div class="zp_box">
+      <div class="pop_tit"><span class="p_tit1" title="Photo Cinema">Photo Cinema</span><br />
+        <span class="p_tit2">Mobile APP</span></div>
+      <a href="/portfolio/app/201303/23.html"><img src="/d/file/portfolio/app/201303/c5f7334f7c886ca1450bd1c7401a9a30.jpg" /></a></div>
+    <div class="zp_box">
+      <div class="pop_tit"><span class="p_tit1" title="法国雷诺纬度">法国雷诺纬度</span><br />
+        <span class="p_tit2">Mobile APP</span></div>
+      <a href="/portfolio/app/201303/24.html"><img src="/d/file/portfolio/app/201303/8054c5b937db27ddfbbdf61d589a4528.jpg" /></a></div>
+  </div>
+  <div class="pages"><a class="page">&lt;</a><span class="page">1</span><a class="page">&gt;</a></div>
+</div>
+<!--page1end-->
+<!--page2-->
+<div  id="page22" style="display:none;">
+  <div class="zp_list">
+    <div class="zp_box">
+      <div class="pop_tit"><span class="p_tit1" title="Quick Car APP">Quick Car APP</span><br />
+        <span class="p_tit2">Mobile APP</span></div>
+      <a href="/portfolio/app/201305/54.html"><img src="/d/file/portfolio/app/201305/b2227b1bc98f05f257aed08568e5138f.jpg" /></a></div>
+    <div class="zp_box">
+      <div class="pop_tit"><span class="p_tit1" title="《世界》杂志APP">《世界》杂志APP</span><br />
+        <span class="p_tit2">Mobile APP</span></div>
+      <a href="/portfolio/app/201303/22.html"><img src="/d/file/portfolio/app/201303/d98d054481bc4b385ef1b70d514c5a35.jpg" /></a></div>
+    <div class="zp_box">
+      <div class="pop_tit"><span class="p_tit1" title="ShareControl APP">ShareControl APP</span><br />
+        <span class="p_tit2">Mobile APP</span></div>
+      <a href="/portfolio/app/201306/68.html"><img src="/d/file/portfolio/app/201306/47973b6a2f1ae9a77ec4bf1cd42e49f2.jpg" /></a></div>
+    <div class="zp_box">
+      <div class="pop_tit"><span class="p_tit1" title="爱宠家园APP">爱宠家园APP</span><br />
+        <span class="p_tit2">Mobile APP</span></div>
+      <a href="/portfolio/app/201306/69.html"><img src="/d/file/portfolio/app/201306/7e33572dab89fac378332257c6fa285e.jpg" /></a></div>
+    <div class="zp_box">
+      <div class="pop_tit"><span class="p_tit1" title="SpeedTest">SpeedTest</span><br />
+        <span class="p_tit2">Mobile APP</span></div>
+      <a href="/portfolio/app/201303/12.html"><img src="/d/file/portfolio/app/201303/c9b635d25bbe689e356055e470bd2f13.jpg" /></a></div>
+    <div class="zp_box">
+      <div class="pop_tit"><span class="p_tit1" title="Photo Cinema">Photo Cinema</span><br />
+        <span class="p_tit2">Mobile APP</span></div>
+      <a href="/portfolio/app/201303/23.html"><img src="/d/file/portfolio/app/201303/c5f7334f7c886ca1450bd1c7401a9a30.jpg" /></a></div>
+    <div class="zp_box">
+      <div class="pop_tit"><span class="p_tit1" title="法国雷诺纬度">法国雷诺纬度</span><br />
+        <span class="p_tit2">Mobile APP</span></div>
+      <a href="/portfolio/app/201303/24.html"><img src="/d/file/portfolio/app/201303/8054c5b937db27ddfbbdf61d589a4528.jpg" /></a></div>
+    <div class="zp_box">
+      <div class="pop_tit"><span class="p_tit1" title="China Daily News">China Daily News</span><br />
+        <span class="p_tit2">Mobile APP</span></div>
+      <a href="/portfolio/app/201304/33.html"><img src="/d/file/portfolio/app/201304/f4ca8f7462a508db36770e891f469a12.jpg" /></a></div>
+    <div class="zp_box">
+      <div class="pop_tit"><span class="p_tit1" title="SleepUP熟睡!(100%深度睡眠)">SleepUP熟睡!(100%深度睡眠)</span><br />
+        <span class="p_tit2">Mobile APP</span></div>
+      <a href="/portfolio/app/201304/32.html"><img src="/d/file/portfolio/app/201304/e6a83e28908b81c25b8775cae06c47ac.jpg" /></a></div>
+  </div>
+  <div class="pages"><a class="page">&lt;</a><span class="page">1</span><a class="page">&gt;</a></div>
+</div>
+<!--page2end-->
+<!--page3-->
+<div  id="page23" style="display:none;">
+  <div class="zp_list">
+    <div class="zp_box">
+      <div class="pop_tit"><span class="p_tit1" title="7Q Online Music Player">7Q Online Music Player</span><br />
+        <span class="p_tit2">Web UI</span></div>
+      <a href="/portfolio/web/201309/72.html"><img src="/d/file/portfolio/web/201309/8c01488573761d2fef2d31a56d7b6142.jpg" /></a></div>
+    <div class="zp_box">
+      <div class="pop_tit"><span class="p_tit1" title="Lenovo Technology Flash Minisite">Lenovo Technology Flash Minisite</span><br />
+        <span class="p_tit2">Web UI</span></div>
+      <a href="/portfolio/web/201305/53.html"><img src="/d/file/portfolio/web/201305/9c6ca29bcbf7b3120f551031424ae11b.jpg" /></a></div>
+    <div class="zp_box">
+      <div class="pop_tit"><span class="p_tit1" title="百谷艺术官网">百谷艺术官网</span><br />
+        <span class="p_tit2">Web UI</span></div>
+      <a href="/portfolio/web/201303/19.html"><img src="/d/file/portfolio/web/201303/7a2038c56cb4a16f80a0296154e2dabd.jpg" /></a></div>
+    <div class="zp_box">
+      <div class="pop_tit"><span class="p_tit1" title="ChinaDaily亚太官网">ChinaDaily亚太官网</span><br />
+        <span class="p_tit2">Web UI</span></div>
+      <a href="/portfolio/web/201305/34.html"><img src="/d/file/portfolio/web/201305/7f26f1f48427e3760652dd6a511195bd.jpg" /></a></div>
+    <div class="zp_box">
+      <div class="pop_tit"><span class="p_tit1" title="Lord Steel">Lord Steel</span><br />
+        <span class="p_tit2">Web UI</span></div>
+      <a href="/portfolio/web/201304/31.html"><img src="/d/file/portfolio/web/201304/fd129f30d8bbc801d47a8118a9ff1ab9.jpg" /></a></div>
+    <div class="zp_box">
+      <div class="pop_tit"><span class="p_tit1" title="新浪UC官网设计">新浪UC官网设计</span><br />
+        <span class="p_tit2">Web UI</span></div>
+      <a href="/portfolio/web/201304/27.html"><img src="/d/file/portfolio/web/201304/9303f412050df3bdd3cd7a9b64f90568.jpg" /></a></div>
+  </div>
+  <div class="pages"><a class="page">&lt;</a><span class="page">1</span><a class="page">&gt;</a></div>
+</div>
+<!--page3end-->
+<!--page4-->
+<div  id="page24" style="display:none;">
+  <div class="zp_list">
+    <div class="zp_box">
+      <div class="pop_tit"><span class="p_tit1" title="Mediaweek Icon">Mediaweek Icon</span><br />
+        <span class="p_tit2">Logo & Icon</span></div>
+      <a href="/portfolio/icon/201303/21.html"><img src="/d/file/portfolio/icon/201303/6b089e685b97bd545e2bc42f83610c80.jpg" /></a></div>
+    <div class="zp_box">
+      <div class="pop_tit"><span class="p_tit1" title="Econ CIA System">Econ CIA System</span><br />
+        <span class="p_tit2">Logo & Icon</span></div>
+      <a href="/portfolio/icon/201303/20.html"><img src="/d/file/portfolio/icon/201303/2f88166ea22df3ccf84b47edb23f6a86.jpg" /></a></div>
+  </div>
+  <div class="pages"><a class="page">&lt;</a><span class="page">1</span><a class="page">&gt;</a></div>
+</div>
+<!--page4end-->
+<!--page5-->
+<div  id="page25" style="display:none;">
+  <div class="zp_list">
+  </div>
+  <div class="pages"><a class="page">&lt;</a><span class="page">1</span><a class="page">&gt;</a></div>
+</div>
+<!--page5end-->
+<!--作品end-->
+<!--services-->
+<div class="colTitBar" id="services">
+  <h2 class="tit2" title="Services"></h2>
+</div>
+<div class="cl" style=" width:100%;position:relative;">
+  <div class="servicesPop">
+    <!--serFocus begin-->
+    <div id="serFocus">
+      <div class="fr" style="position:relative;"><a href="javascript:void(0)" class="close" onclick="closeSerPop()">&nbsp;</a></div>
+      <div class="box" id="flash1">
+        <div class="yidongL"><img src="/skin/tg2013/images/services_b1.jpg" width="200" height="273" /></div>
+        <div class="servicesCon">
+          <div class="serTit"><span class="black font18">移动应用产品解决方案</span><br />
+            <span class="font16">Mobile app solutions</span></div>
+          <div class="cl"><span class="Apple">IOS</span><span class="Android">Android</span><span class="Win8">Windows Phone 8</span></div>
+          <ul>
+            <li>iPhone/Android/Win8 APP交互设计 视觉设计 功能定制开发 基于HTML5开发的网页APP</li>
+            <li>iPad/iPad Retina/iPad Mini/Android/Win8 APP交互设计 视觉设计 功能定制开发</li>
+          </ul>
+          <div class="cl"><a href="/MobileApp" class="yidongBt white">移动应用案例</a></div>
+        </div>
+      </div>
+      <div class="box" id="flash2">
+        <div class="fl"><img src="/skin/tg2013/images/services_c1.jpg" width="405" height="273" /></div>
+        <div class="servicesTxt">
+          <div class="serTit" style="padding-top:15px;"><span class="black font18">应用软件解决方案</span><br />
+            <span class="font16">Application software solutions</span></div>
+          <p>我们提供Windows及Mac等多操作系统多平台的应用软件交互设计、视觉设计、应用端开发服务。从用户研究、需求沟通、草图方案、原型制图、视觉设计、定制开发、软件测试维护等全方位的为客户提供最有效的解决方案。</p>
+        </div>
+      </div>
+      <div class="box" id="flash3">
+        <div class="servicesTxt" style="padding-left:85px;">
+          <div class="serTit" style="padding-top:15px;"><span class="black font18">网站及网络产品解决方案</span><br />
+            <span class="font16">Web and network solutions</span></div>
+          <p>根据用户的需求、市场状况、企业情况等进行综合分析可用性的Web解决方案，有效提升企业形象及品牌的知名度。从产品交互原型设计、视觉设计、HTML5页面开发、功能定制开发等高品质、一体化流程的网站建设服务。</p>
+        </div>
+        <div class="fl"><img src="/skin/tg2013/images/services_f1.jpg" width="320" height="273" /></div>
+      </div>
+    </div>
+    <div class="flash_bar"> <span class="no" id="f1" onclick="changeflash(1)"></span> <span class="no" id="f2" onclick="changeflash(2)"></span> <span class="no" id="f3" onclick="changeflash(3)"></span></div>
+    <!--serFocus end-->
+  </div>
+  <div id="servicesBox">
+<div id="serBox1" class="serBox" onclick="serFocus(1)">
+      <div class="serBoxOn"></div>
+      <div class="pic1 mypng"><img src="/skin/tg2013/images/ser_box1.png" /></div>
+      <div class="pic2 mypng"><img src="/skin/tg2013/images/ser_box1b.png" /></div>
+      <div class="txt1"><span class="tit">移动应用产品解决方案</span>iOS/Android/Win8 APP交互设计、视觉设计、HTML5开发、功能定制开发</div>
+      <div class="txt2"><span class="tit">移动应用产品解决方案</span>iOS/Android/Win8 APP交互设计、视觉设计、HTML5开发、功能定制开发</div>
+    </div>
+    <div class="fgH20"></div>
+    <div id="serBox2" class="serBox" onclick="serFocus(2)">
+      <div class="serBoxOn"></div>
+      <div class="pic1 mypng"><img src="/skin/tg2013/images/ser_box2.png" /></div>
+      <div class="pic2 mypng"><img src="/skin/tg2013/images/ser_box2b.png" /></div>
+      <div class="txt1"><span class="tit">应用软件解决方案</span>多操作系统多平台的应用软件交互设计、视觉设计、应用端开发服务</div>
+      <div class="txt2"><span class="tit">应用软件解决方案</span>多操作系统多平台的应用软件交互设计、视觉设计、应用端开发服务</div>
+    </div>
+    <div class="fgH20"></div>
+    <div id="serBox3" class="serBox" onclick="serFocus(3)">
+      <div class="serBoxOn"></div>
+      <div class="pic1 mypng"><img src="/skin/tg2013/images/ser_box3.png" /></div>
+      <div class="pic2 mypng"><img src="/skin/tg2013/images/ser_box3b.png" /></div>
+      <div class="txt1"><span class="tit">网站及网络产品解决方案</span>根据用户的需求、市场状况、企业情况等进行综合分析可用性的Web解决方案 </div>
+      <div class="txt2"><span class="tit">网站及网络产品解决方案</span>根据用户的需求、市场状况、企业情况等进行综合分析可用性的Web解决方案 </div>
+    </div>
+  </div>
+</div>
+<!--clients_box-->
+<div class="clients_box">
+  <ul>
+    <li><img src="/skin/tg2013/images/tg_clients_1.gif" width="165" height="80" /></li>
+    <li><img src="/skin/tg2013/images/tg_clients_2.gif" width="165" height="80" /></li>
+    <li><img src="/skin/tg2013/images/tg_clients_3.gif" width="165" height="80" /></li>
+    <li><img src="/skin/tg2013/images/tg_clients_4.gif" width="165" height="80" /></li>
+    <li><img src="/skin/tg2013/images/tg_clients_5.gif" width="165" height="80" /></li>
+    <li><img src="/skin/tg2013/images/tg_clients_6.gif" width="165" height="80" /></li>
+    <li><img src="/skin/tg2013/images/tg_clients_7.gif" width="165" height="80" /></li>
+    <li><img src="/skin/tg2013/images/tg_clients_8.gif" width="165" height="80" /></li>
+    <li><img src="/skin/tg2013/images/tg_clients_9.gif" width="165" height="80" /></li>
+    <li><img src="/skin/tg2013/images/tg_clients_10.gif" width="165" height="80" /></li>
+    <li><img src="/skin/tg2013/images/tg_clients_11.gif" width="165" height="80" /></li>
+    <li><img src="/skin/tg2013/images/tg_clients_12.gif" width="165" height="80" /></li>
+    <li><img src="/skin/tg2013/images/tg_clients_13.gif" width="165" height="80" /></li>
+    <li><img src="/skin/tg2013/images/tg_clients_14.gif" width="165" height="80" /></li>
+    <li><img src="/skin/tg2013/images/tg_clients_15.gif" width="165" height="80" /></li>
+    <li><img src="/skin/tg2013/images/tg_clients_16.gif" width="165" height="80" /></li>
+    <li><img src="/skin/tg2013/images/tg_clients_17.gif" width="165" height="80" /></li>
+    <li><img src="/skin/tg2013/images/tg_clients_18.gif" width="165" height="80" /></li>
+  </ul>
+</div>
+<!--about-->
+<div class="colTitBar" id="about">
+  <h2 class="tit3" title="About us"></h2>
+</div>
+<div class="aboutPicB">
+  <ul>
+    <li class="li_1"><div class="picFc"><a href="/news/shuanghui/201306/70.html" target="_blank">&nbsp;</a></div><img src="/d/file/indexlink/shshow/201305/2e9c636962688b1009928d6d19aaca8a.jpg" class="grayImg" /><img src="/d/file/indexlink/shshow/201304/4b8c13c2ecb0b86e40a6cf16d698f3be.jpg" class="colorImg" /></li>
+    <li class="li_2"><div class="picFc"><a href="/news/shuanghui/201305/51.html" target="_blank">&nbsp;</a></div><img src="/d/file/indexlink/shshow/201305/bc4477bc804bc66d554402cf1ea1b52c.jpg" class="grayImg" /><img src="/d/file/indexlink/shshow/201304/ec5eb488b330088795539797abd9a88c.jpg" class="colorImg" /></li>
+    <li class="li_3"><div class="picFc"><a href="/news/shuanghui/201305/44.html" target="_blank">&nbsp;</a></div><img src="/d/file/indexlink/shshow/201305/96cdc2fca5d2ba713d6d2c4d489c7b06.jpg" class="grayImg" /><img src="/d/file/indexlink/shshow/201304/3d13d6f4b065d05813765a34cbe34fcf.jpg" class="colorImg" /></li>
+  </ul>
+</div>
+<div class="aboutTab">
+  <div class="main tc"><span class="tab1" id="box11" onclick="showPagei(1,4,1)">关于我们</span><span class="tab2" id="box12" onclick="showPagei(2,4,1)">荣誉奖项</span><span class="tab2" id="box13" onclick="showPagei(3,4,1)">最新动态</span><span class="tab2" id="box14" onclick="showPagei(4,4,1)">加入我们</span></div>
+</div>
+<div class="aboutMain">
+  <!--<div id="container1"></div>-->
+  <!--page1-->
+  <div  id="page11" style="display:block;">
+    <div class="aboutBox">双晖传媒（TGVISION）成立于2006年，我们是一支融交互、创新、视觉设计、产品研发于一体的专业品牌策划与制作团队，鼎力为国内外知名企业提供全方位多平台的产品服务解决方案。以专业的交互设计、创新理念、视觉呈现，服务国内外企业多达100余家，成功案例300余例。涉及IT、汽车、教育、房地产、金融等各个行业，拥有包括中国移动、中国电信、百度、新浪、淘宝、索尼、联想、人民网、中国日报等企业在内的成功案例，在国内拥有较高美誉。</div>
+    <div class="aboutTxt">
+      <div class="box" style="width:310px; padding:0px;"><img src="/skin/tg2013/images/about_num1.gif" width="310" height="100" />
+        <p style="padding-left:8px;">我们通过研究理解用户的思维、行为、和目标，挖掘用户对产品使用的潜在需求，通过我们服务于各行业客户的丰富经验，结合品牌的优势进行分析，让用户在情绪上、行为上感知产品的创新、感受完美的体验。超越品牌的价值。</p>
+      </div>
+      <div class="box"><img src="/skin/tg2013/images/about_num2.gif" width="310" height="100" />
+        <p>我们是一只富有激情的创新团队。我们将设计通过情感的表达把用户和产品很自然的连接在一起，让用户享受使用产品的愉悦，以此来强化对产品、品牌的体验认知！通过自然的交互和生动的设计展现出来，用一个充满情感化的设计打动用户！</p>
+      </div>
+      <div class="box"><img src="/skin/tg2013/images/about_num3.gif" width="310" height="100" />
+        <p>为客户提供品牌化、一站式的解决方案。服务涵盖了互联网，掌上移动设备、桌面平台以及电子消费类产品等。为客户提供从品牌设计、概念设计、交互设计、视觉设计、功能研发到最终产品实现。为客户提供真正具有创新价值的产品体验。</p>
+      </div>
+      <div class="cl"></div>
+    </div>
+  </div>
+  <!--page2-->
+  <div  id="page12" style="display:none;">
+    <p class="rongyu">双晖传媒专精于高品质的全方位设计服务，拥有实力坚强的研发团队及国内外顶尖水平的设计人才，核心成员曾服务于微软、雅虎（美国）、淘宝、新浪、腾讯等全球知名企业，拥有丰富的视觉及交互设计经验。多名设计师在国内外获得设计相关奖项，被多家媒体专访，案例被国内外设计网站收录，如：Newswebpic，CSS DESIGN AWARDS，CSS Winner，CSS Light，站酷，Iconfans，68design，UIRSS，ChinaUI等。 </p>
+    <div class="aboutListBox" onclick="location.href='/news/shuanghui/201305/38.html';"> <img src="/d/file/awards/201305/3aa10bc0bf04ab44efbd748b1c6a0208.jpg" width="175" height="110" />
+      <div class="tit">双晖传媒受邀国际权威在线创意杂志NWP专访</div>
+      <p>TGVISION双晖传媒受邀国际权威网络在线创意杂志NWP专访,刊登于《NewWebPick》第39期。NWP展示全球最前沿的设计作品，收集国际最新设计资讯，辨析设计艺术的动向。杂志每期下载量4,000,000次，来自全球155个国家的10592个城市。</p>
+    </div>
+    <div class="aboutListBox" onclick="location.href='/news/shuanghui/201305/44.html';"> <img src="/d/file/awards/201303/07ddea0492a76dddab002bbbc3e7a942.jpg" width="175" height="110" />
+      <div class="tit">荣获ChinaUI2010及2011年度十佳UI设计师称号</div>
+      <p>TGVISION双晖传媒公司创始人王子年蝉联了国内权威设计机构CHINAUI2011年度十佳UI设计师。年度十佳UI设计师评选是CHINAUI优艾网从2010年起举办的专业设计师评选活动。结合参选设计的作品数量、作品质量、受关注程度等综合评判选得出。</p>
+    </div>
+    <div class="aboutListBox" onclick="location.href='/news/shuanghui/201305/45.html';"> <img src="/d/file/awards/201305/3102d21625b35f70bacbcc66855c8e33.jpg" width="175" height="110" />
+      <div class="tit">荣获年度中国十佳网页(互动)设计师称号</div>
+      <p>双晖传媒创意总监王子年荣获权威设计机构网页设计师联盟（68design）2010-11年度十佳网页设计师称号并接受专访。评选活动是由网页设计师联盟发起的，打造权威的设计师评选活动的品牌。</p>
+    </div>
+    <div class="aboutListBox" onclick="location.href='/news/shuanghui/201305/47.html';"> <img src="/d/file/awards/201305/e2d3ef95f8c0c79ce253cebb6e7c70e1.jpg" width="175" height="110" />
+      <div class="tit">双晖传媒创意总监王子年接受UIRSS专访</div>
+      <p>专访双晖传媒创意总监王子年：深度挖掘以用户体验为中心的设计。UIRSS.com是一个非盈利性全球UI设计专业媒体和信息交流平台，致力于为全球UI爱好者、从业人员和相关企业提供优质的资讯、学习、交流、咨询和设计服务。</p>
+    </div>
+    <div class="aboutListBox" onclick="location.href='/news/shuanghui/201305/49.html';"> <img src="/d/file/awards/201303/12da008515a3ee235a4db566cd459ad0.jpg" width="175" height="110" />
+      <div class="tit">双晖传媒官网被收录于国际权威在线创意杂志NWP</div>
+      <p>TGVISION双晖传媒官网被收录于国际权威在线创意杂志NWP，NWP展示全球最前沿的设计作品，收集国际最新设计资讯，辨析设计艺术的动向。是全球数码艺术领域中最权威的信息交互平台。</p>
+    </div>
+  </div>
+  <!--page3-->
+  <div  id="page13" style="display:none;">
+    <div class="aboutListBox" onclick="location.href='/news/portfolio/201306/71.html';"> <img src="/d/file/news/portfolio/201306/c6e58ed0c0e7e478a7cf749b69513252.jpg" width="175" height="110" />
+      <div class="tit">寰球汽车传媒集团官方移动应用Quick Car</div>
+      <p>双晖传媒团队受邀为寰球汽车传媒集团官方移动应用Quick Car提供解决方案。Quick Car是一款汽车综合服务类应用，我们负责产品的交互设计，视觉设计，功能研发，测试上线全套解决方案。应用于iOS及Android平台。</p>
+    </div>
+    <div class="aboutListBox" onclick="location.href='/news/portfolio/201305/39.html';"> <img src="/d/file/news/portfolio/201305/f02d3413efcbce2405657b0da03ccfc3.jpg" width="175" height="110" />
+      <div class="tit">双晖传媒再度携手中国日报助力亚太官网设计</div>
+      <p>以大量的用户调研结果为依据，设计师通过专业的合理布局，有效的栏目结构梳理，最大程度的提升了用户浏览体验。全新的界面设计更具有中国日报的品牌风格，同时我们为网站视觉制定了严格的页面设计规范，保证了网站页面的协调统一性。</p>
+    </div>
+    <div class="aboutListBox" onclick="location.href='/news/portfolio/201305/40.html';"> <img src="/d/file/news/portfolio/201305/fcafd502daf436de6507afecad8577b4.jpg" width="175" height="110" />
+      <div class="tit">精品传媒集团《世界》杂志官方APP</div>
+      <p>双晖传媒为《世界》杂志量身定制了高端iPad版客户端，以鲜明的旅行态度和独到的杂志视角结合了全新的移动平台进行整合设计，丰富了产品功能的同时提升交互及视觉体验。搭建起与高端读者在线互动的桥梁。</p>
+    </div>
+    <div class="aboutListBox" onclick="location.href='/news/portfolio/201305/42.html';"> <img src="/d/file/news/portfolio/201305/46f93519384193f11c1ea3db1c0ee0ce.jpg" width="175" height="110" />
+      <div class="tit">双晖传媒合作法国雷诺推出新纬度APP体验版</div>
+      <p>双晖传媒合作法国雷诺厂商推出新纬度iPad体验版。抛弃了传统的宣传册和枯燥乏味的各种性能参数。我们为纬度iPad版量身定制的交互体验设计，通过指尖的触控，生动的展示新车的特点。给用户全新流畅的触摸体验。</p>
+    </div>
+    <div class="aboutListBox" onclick="location.href='/news/portfolio/201305/36.html';"> <img src="/d/file/news/portfolio/201305/a431ec3a8d492d6995fc2af935726604.jpg" width="175" height="110" />
+      <div class="tit">China Daily News中国日报新闻APP</div>
+      <p>双晖传媒团队受邀为中国日报打造全新一代官方新闻客户端，在满足读者阅读需求的同时，整合了栏目内容，融入个性时尚的视觉元素，最大化的优化了国内外用户使用的便捷性，扩大了用户阅读空间。是领先国内市场的全新阅读模式。</p>
+    </div>
+    <div class="tc" style="padding-top:15px; height:38px; clear:both;"><a href="/news/" class="ckAll white">更多动态</a></div>
+  </div>
+  <!--page4-->
+  <div  id="page14" style="display:none;">
+    <div class="zpBox">
+      <div class="tit">实习设计师助理</div>
+            <p>岗位职责：<br />
+参与项目设计执行流程，了解产品开发全过程。辅助设计师完成重大项目。参与一定的产品分析，交互设计，产品界面视觉设计及规范文档整理工作；</p>
+<p>任职要求：<br />
+精通设计类相关软件，热衷于界面设计与交互设计；具有一定的交互分析以及理解能力；优秀的视觉设计感觉与潜力；有完整独立作品可供参考。</p>
+<p>招聘人数：1<br />
+工作地点：北京</p>
+<p>请发简历到：hr@tg-vision.com</p>    </div>
+    <div class="zpBox">
+      <div class="tit">高级视觉设计师</div>
+            <p>岗位职责：<br />
+对用户行为做分析，形成观点和需求，对行业产品趋势分析，评估现有产品的用户体验；撰写用户体验分析文档，配合视觉设计师完成产品设计。</p>
+<p>任职要求：<br />
+一年以上相关工作经验，性格开朗，积极乐观,良好的沟通、表达能力, 团队意识强烈，热衷于研究各类电子产品或互联网产品，有较好的英语读写能力。</p>
+<p>招聘人数：3<br />
+工作地点：北京</p>
+<p>请发简历到：hr@tg-vision.com</p>    </div>
+    <div class="zpBox">
+      <div class="tit">iOS/Android开发工程师</div>
+            <p>岗位职责：<br />
+负责iOS或Android客户端应用的设计研发； <br />
+能与团队成员高效配合，完成项目工作。</p>
+<p>任职要求：<br />
+一年以上iOS或Android开发经验； <br />
+有扎实的Object C/C++/C/Java语言基础； <br />
+熟练掌握开发技术，包括UI、网络等方面；<br />
+熟悉相关开发工具和相关测试工具的使用；<br />
+学习能力强，有较强分析解决问题的能力；<br />
+对移动产品有浓厚兴趣</p>
+<p>招聘人数：2<br />
+工作地点：北京</p>
+<p>请发简历到：hr@tg-vision.com</p>    </div>
+    <div class="zpBoxEnd">
+      <div class="tit">PHP开发工程师</div>
+            <p>岗位职责：<br />
+负责网站或相关产品的PHP研发工作；<br />
+能与团队成员高效配合，完成项目工作。</p>
+<p>任职要求：<br />
+至少两年相关工作经验；<br />
+一年以上PHP开发及维护工作经验；<br />
+熟练掌握MySQL数据库，LA/NMP；<br />
+熟练应用HTML/JavaScript;<br />
+熟悉相关开发工具和测试工具的使用；<br />
+学习能力强，有较强分析解决问题的能力</p>
+<p>招聘人数：1<br />
+工作地点：北京</p>
+<p>请发简历到：hr@tg-vision.com</p>    </div>
+  </div>
+  <!--page4 end-->
+  <div class="cl"></div>
+</div>
+<!--contact-->
+<div class="colTitBar" id="contact">
+  <h2 class="tit4" title="Contact us"></h2>
+</div>
+<div class="main">
+  <div class="contactL">
+    <ul>
+      <li class="tit">告诉我们您的需求</li>
+      <li style="height:38px;">
+        <input name="contact_tel" id="contact_tel" type="text" class="input1 fr" value="联系电话" title="contactForm" onFocus="if(value == '联系电话'){value=''}" onBlur="if(!value){value=defaultValue;}" />
+        <input name="contact_name" id="contact_name" type="text" class="input1 fl" value="填写姓名" title="contactForm" onFocus="if(value == '填写姓名'){value=''}" onBlur="if(!value){value=defaultValue;}" />
+      </li>
+      <li>
+        <input name="contact_mail" id="contact_mail" type="text" class="input2" value="电子邮箱" title="contactForm" onFocus="if(value == '电子邮箱'){value=''}" onBlur="if(!value){value=defaultValue;}" />
+      </li>
+      <li>
+        <input name="contact_com" id="contact_com" type="text" class="input2" value="您的公司" title="contactForm" onFocus="if(value == '您的公司'){value=''}" onBlur="if(!value){value=defaultValue;}" />
+      </li>
+      <li style="height:253px; overflow:hidden;">
+        <textarea name="contact_con" id="contact_con" cols="" title="contactForm" class="input3" onFocus="if(value == '填写详细需求'){value=''}" onBlur="if(!value){value=defaultValue;}">填写详细需求</textarea>
+      </li>
+      <li style="height:32px;"><a href="javascript:sendXQ();" class="submitBt white" id="sendBtn">发送</a>
+        <div class="fl" style=" line-height:32px;">&nbsp;&nbsp;<span class="gray" id="sendInfo">我们将在1个工作日内回复，资料会保密处理。</span></div>
+      </li>
+    </ul>
+  </div>
+  <div class="contactR">
+    <p class="tit">与我们在线洽谈</p>
+    <div><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=623326742&site=qq&menu=yes" class="qqBt fl white">点击咨询</a><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=5629313&site=qq&menu=yes" class="qqBt fr white">点击咨询</a></div>
+    <div class="contactTxt">商务 : +86 18601357649&nbsp;&nbsp;<span class="gray">[产品/视觉设计咨询]</span><br />
+      电话 : 010-84874449&nbsp;&nbsp;<span class="gray">[周一至周五 10:00-19:00]</span><br />
+      QQ  : 623326742 / 5629313<br />
+      邮箱 : sh@tg-vision.com</div>
+    <div id="baidumapBox" class="mapBox"><img src="/skin/tg2013/images/temp_map.jpg" width="320" height="250" /></div>
+    </div>
+  <div class="cl"></div>
+</div>
+<div class="footer">
+  <div class="main">
+    <div id="footerLogo"><img src="/skin/tg2013/images/footer_logo.jpg" width="180" height="110" /></div>
+    <div class="footerLinks"><span class="tit"></span>
+      <div class="linksList">
+        <ul>
+          <li><a href="http://baike.baidu.com/view/7852061.htm" target="_blank">TGVISION双晖传媒百度百科</a></li>
+          <li><a href="http://e.weibo.com/tgvisionstudio" target="_blank">TGVISION双晖传媒新浪官方微博</a></li>
+          <li><a href="http://2011.tg-vision.com " target="_blank">TGVISION 2011官网</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footerContact"><span class="tit">&nbsp;</span><span class="add">北京市朝阳区大屯里317号金泉时代C座1119室</span> <span class="tel">&nbsp;</span> <span class="yellow">sh@tg-vision.com</span></div>
+  </div>
+</div>
+<div id="Copyright">
+  <div class="main"><a href="/copyright" target="_blank">&copy; 2006-2013TGVISION双晖传媒. All Right Reserved.</a>  京ICP备12043438号 <script src="http://s19.cnzz.com/stat.php?id=2885255&web_id=2885255&show=pic" language="JavaScript"></script>
+
+</div>
+</div>
+</div>
+<script type="text/javascript" src="/skin/tg2013/js/index.js"></script>
+</body>
+</html>

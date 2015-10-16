@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F6D7706A-300F-4F89-B285-69629C1133DE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>H.Service.IISHost</RootNamespace>
+    <AssemblyName>H.Service.IISHost</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PostSharp, Version=2.1.0.0, Culture=neutral, PublicKeyToken=b13fd38b8f9c99d7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\3Party\PostSharp\2.1\PostSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PostSharp.Laos, Version=2.1.0.0, Culture=neutral, PublicKeyToken=b13fd38b8f9c99d7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\3Party\PostSharp\2.1\PostSharp.Laos.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Activation" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Configuration\RestService.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Configuration\Autorun.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Configuration\Data\Database.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Configuration\Data\DbCommandFiles.config" />
+    <Content Include="Configuration\FileWatcher.config" />
+    <Content Include="Configuration\TypeVersion.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Configuration\Data\AccessDbCommand\SystemUser.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Configuration\Data\ElleShopAdminDbCommand\ElleUser.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Configuration\Data\ReportDbCommand\ExportReport.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Configuration\Data\MySqlDbCommand\SystemUser.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Configuration\Data\SqlServerDbCommand\ErrorLog.config" />
+    <Content Include="Configuration\Data\SqlServerDbCommand\Log.config" />
+    <Content Include="Configuration\Data\SqlServerDbCommand\SystemUser.config" />
+    <Content Include="Configuration\Data\SqlServerDbCommand\SystemUser_Privilege.config" />
+    <Content Include="Configuration\Data\SqlServerDbCommand\SystemUser_Role.config" />
+    <Content Include="Configuration\Data\SqlServerDbCommand\Management.config" />
+    <Content Include="Configuration\Data\SqlServerDbCommand\Charge.config" />
+    <Content Include="Configuration\Data\SqlServerDbCommand\ClubMembers.config" />
+    <Content Include="Configuration\Data\SqlServerDbCommand\Files.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Properties\PublishProfiles\H.Service.IISHost.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\H.Core\H.Core.Rest\H.Core.Rest.csproj">
+      <Project>{4e3b35bd-fdd2-4d72-aa57-e323da17ddf7}</Project>
+      <Name>H.Core.Rest</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\H.Core\H.Core.Utility\H.Core.Utility.csproj">
+      <Project>{b2168ac0-ac04-4e54-aa65-bb227fbc15cd}</Project>
+      <Name>H.Core.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\H.Entity\H.Entity\H.Entity.csproj">
+      <Project>{3cf47e36-13d7-4663-905c-424b3dc6c127}</Project>
+      <Name>H.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\H.Service.Domain\H.Service.IDataAccess\H.Service.IDataAccess.csproj">
+      <Project>{e8332746-2b25-43a6-b540-8f553d9d73c9}</Project>
+      <Name>H.Service.IDataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\H.Service.Domain\H.Service.MicrosoftAccessDataAccess\H.Service.MicrosoftAccessDataAccess.csproj">
+      <Project>{3e6a8077-4637-4d3c-a981-0e49681ae7b8}</Project>
+      <Name>H.Service.MicrosoftAccessDataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\H.Service.Domain\H.Service.MySql\H.Service.MySql.csproj">
+      <Project>{d4c2709e-129d-45dd-92da-bc50deedf300}</Project>
+      <Name>H.Service.MySql</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\H.Service.Domain\H.Service.Rest\H.Service.Rest.csproj">
+      <Project>{d52b7d7c-8c1a-413d-9d9b-88e62f17ebbc}</Project>
+      <Name>H.Service.Rest</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\H.Service.Domain\H.Service.SqlDataAccess\H.Service.SqlDataAccess.csproj">
+      <Project>{3540f550-b8b5-47da-834a-3d5eba52dfca}</Project>
+      <Name>H.Service.SqlDataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>8816</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:11016/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
